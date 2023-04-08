@@ -2,137 +2,101 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="It's a Main page">
-    <meta name="keywords" content="Main, page">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <link rel="shortcut icon" href="/assets/images/favicon.5c84d44.ico">
-    <title>ibrush | test</title>
-  <link href="/assets/css/bundle.d2e0bb5.bundle.css" rel="stylesheet"></head>
-  <body>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="#603cba" name="msapplication-TileColor">
+    <meta content="#ffffff" name="theme-color">
+    <meta content="Главная страница" name="description">
+    <meta content="Главная, страница" name="keywords">
+    <meta content="summary" name="twitter:card">
+    <meta content="Bellos" name="twitter:description">
+    <meta content="Bellos" name="twitter:image">
+    <meta content="Bellos" property="og:title">
+    <meta content="Bellos" property="og:description">
+    <meta content="Bellos" property="og:image">
+    <link href="/assets/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/assets/images/favicons/favicon.ico" rel="shortcut icon">
+    <link color="#5bbad5" href="/assets/images/favicons/safari-pinned-tab.svg" rel="mask-icon">
+    <title>Bellos | Главная</title>
+    <link href="./manifest.json" rel="manifest" crossorigin>
+    <meta content="./browserconfig.xml" name="msapplication-config">
     <script>
       function autorun() {}
-        if (window.addEventListener) window.addEventListener('load', autorun, false)
-        else window.onload = autorun
+      if (window.addEventListener) window.addEventListener("load", autorun, false);
+      else window.onload = autorun;
     </script>
     <noscript>
-      Hey, you have JavaScript disabled, that's why you can see this message.
+      Похоже у вас отключён Javascript, поэтому вы видете это сообщение.
       
     </noscript>
+  <link href="/assets/css/bundle.e5caf49.bundle.css" rel="stylesheet"></head>
+  <body>
+    <div class="render"></div>
+<header class="header">
+  <div class="wrapper">
+    <div class="header__wrapper">
+      <div class="header__left"><a class="header__logo" href="/"><img src="/assets/images/logo.svg" alt="logo"></a>
+        <nav class="header__menu"><a class="header__link" href="#">О компании</a><a class="header__link" href="#">Бренды</a><a class="header__link" href="#">Акции</a><a class="header__link" href="#">Контакты</a></nav>
+      </div>
+      <div class="header__mobmenu"><img src="/assets/images/header-menu.svg" alt="header-menu"></div>
+      <div class="header__right">
+        <div class="header__socials"><a class="header__social" href="https://wa.me/XXXXXXXXXXX"><img class="header__icon" src="/assets/images/header-wa.svg" alt="header-wa"></a><a class="header__social" href="https://t.me/XXXXXXXXXXX"><img class="header__icon" src="/assets/images/header-tg.svg" alt="header-tg"></a></div>
+        <button class="header__login" type="button"><img class="header__icon" src="/assets/images/header-login.svg" alt="header-login">
+          <div class="header__username">Имя пользователя</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
     <main>
+            <div class="breadcrumbs">
+              <div class="wrapper">
+                <ul class="breadcrumbs__list">
+                  <li><a href="/">Главная</a></li><img src="/assets/images/breadcrumbs.svg" alt="breadcrumbs">
+                  <li>
+                    <p>О компании</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
 <section class="hero">
   <div class="wrapper">
-    <div class="hero__wrapper">
-      <h1 class="hero__title"> 
-        <div class="hero__title__text">Путь JavaScript</div>
-      </h1>
-      <p class="hero__text">Можно выделить три основных направления для прогресса JavaScript Middle...</p>
-      <div class="hero__slider swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img class="hero__img" src="/assets/images/hero.png" alt="hero"></div>
-        </div>
-        <div class="swiper-scrollbar"></div>
-      </div>
-      <p class="hero__description">Можно выделить три основных направления для прогресса JavaScript </p>
-    </div>
-  </div>
-</section>
-<section class="blockquote">
-  <div class="wrapper">
-    <div class="blockquote__wrapper">
-      <h2 class="blockquote__title">Серверный JavaScript</h2>
-      <div class="blockquote__block"><img class="blockquote__img" src="/assets/images/quotation.png" alt="quotation">
-        <blockquote class="blockquote__description">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.<span class="blockquote__description-gray">— Р. Мартин</span></blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="ads section-gray">
-  <div class="wrapper-small">
-    <div class="ads__wrapper">
-      <p class="ads__description">Реклама на blabla.com <a class="ads__link" href="#" target="_blank" rel="noopener noreferrer">blabla.com</a></p><img class="ads__img" src="/assets/images/ads.png" alt="ads"><img class="ads__img-small" src="/assets/images/ads-mob.png" alt="ads-mob">
-    </div>
-  </div>
-</section>
-<section class="text">
-  <div class="wrapper">
-    <div class="text__wrapper">
-      <h2 class="text__title">Заключение</h2>
-      <p class="text__description">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
-    </div>
-  </div>
-</section>
-<section class="feedback section-gray">
-  <div class="wrapper">
-    <form class="feedback__wrapper" action="#">
-      <h2 class="feedback__title">Оцените статью</h2>
-      <div class="feedback__rating">
-        <input class="feedback__star" type="radio" id="star-5" name="rating" value="5">
-        <label for="star-5" title="Оценка «5»"></label>
-        <input class="feedback__star" type="radio" id="star-4" name="rating" value="4">
-        <label for="star-4" title="Оценка «4»"></label>
-        <input class="feedback__star" type="radio" id="star-3" name="rating" value="3">
-        <label for="star-3" title="Оценка «3»"></label>
-        <input class="feedback__star" type="radio" id="star-2" name="rating" value="2">
-        <label for="star-2" title="Оценка «2»"></label>
-        <input class="feedback__star" type="radio" id="star-1" name="rating" value="1">
-        <label for="star-1" title="Оценка «1»"> </label>
-      </div>
-      <h2 class="feedback__title feedback__mt">Добавить комментарий к книге</h2>
-      <div class="feedback__form">
-        <label class="feedback__label">
-          <input class="feedback__input" type="text" name="name" required placeholder="Введите имя"><span class="feedback__placeholder">Имя</span>
-        </label>
-        <label class="feedback__label">
-          <input class="feedback__input" type="email" name="email" required placeholder="Введите E-mail"><span class="feedback__placeholder">E-mail</span>
-        </label>
-        <div class="feedback__select">
-          <div class="feedback__value">
-            <label class="feedback__select__label"><span class="feedback__placeholder">Тема обращения</span></label>
-            <input class="feedback__input" type="text" name="theme"><img class="feedback__arrow" src="/assets/images/arrow-down.png" alt="arrow-down">
+    <div class="hero_wrapper"><img class="hero__logo" src="/assets/images/hero-logo.svg" alt="hero-logo">
+      <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="hero__slider">
+        <div class="swiper hero-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/assets/images/hero-slide1.png" alt="hero-slide1"></div>
+            <div class="swiper-slide"><img src="/assets/images/hero-slide2.png" alt="hero-slide2"></div>
+            <div class="swiper-slide"><img src="/assets/images/hero-slide1.png" alt="hero-slide1"></div>
+            <div class="swiper-slide"><img src="/assets/images/hero-slide2.png" alt="hero-slide2"></div>
           </div>
-          <div class="feedback__list"> 
-            <p class="feedback__list__item">JavaScript ниндзя</p>
-            <p class="feedback__list__item">Pragmatic Guide to JavaScript</p>
-            <p class="feedback__list__item">Pro JavaScript Techniques</p>
-            <p class="feedback__list__item">Выразительный JavaScript</p>
+          <div class="hero__slider__navigation">
+            <div class="hero__slider-prev"><img src="/assets/images/arrow-prev.svg" alt="arrow-prev"></div>
+            <div class="hero__slider-next"><img src="/assets/images/arrow-next.svg" alt="arrow-next"></div>
           </div>
         </div>
-        <textarea class="feedback__textarea" name="comment" placeholder="Ваш отзыв" minlength="2"></textarea>
-        <button class="feedback__button" type="submit">ОТПРАВИТЬ</button>
       </div>
-    </form>
-  </div>
-</section>
-<section class="posts">
-  <div class="wrapper">
-    <div class="posts__wrapper">
-      <h2 class="posts__title">Похожие посты</h2>
-      <div class="posts__blocks swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide posts__block"><img class="posts__img" src="/assets/images/posts1.png" alt="posts1"><img class="posts__img-mob" src="/assets/images/posts-mob.png" alt="posts-mob">
-            <div class="posts__description">События жизненного цикла ReactJS</div>
-          </div>
-          <div class="swiper-slide posts__block"> <img class="posts__img" src="/assets/images/posts2.png" alt="posts2"><img class="posts__img-mob" src="/assets/images/posts-mob.png" alt="posts-mob">
-            <div class="posts__description">CSS Grids. Полное руководство</div>
-          </div>
-          <div class="swiper-slide posts__block"><img class="posts__img" src="/assets/images/posts3.png" alt="posts3"><img class="posts__img-mob" src="/assets/images/posts-mob.png" alt="posts-mob">
-            <div class="posts__description">Асинхронность в JavaScript</div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
+      <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="hero__application">
+        <h3 class="hero__subtitle">Оставь заявку, чтобы узнать о продукции</h3>
+        <button class="hero__button" type="button"><span class="hero__button__text">заявка на личный кабинет</span><img src="/assets/images/hero-icon.svg" alt="hero-icon"></button>
       </div>
     </div>
   </div>
 </section>
     </main>
-  <script defer src="/assets/js/vendor.303f723.bundle.js"></script><script defer src="/assets/js/bundle.8d0b6ca.bundle.js"></script></body>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__wrapper">
+      <nav class="footer__menu"><a class="footer__link" href="#">О компании</a><a class="footer__link" href="#">Бренды</a><a class="footer__link" href="#">Акции</a><a class="footer__link" href="#">Контакты</a><a class="footer__link" href="#">Личный кабинет</a></nav><a class="footer__logo" href="/"><img src="/assets/images/footer-logo.svg" alt="footer-logo"></a>
+      <div class="footer__block">
+        <address class="footer__text">г. Москва, проезд Походный, д. 4 к. 1 этаж МАНСАРДНЫЙ пом. XIII Ч К №4</address><a class="footer__text footer__policy" href="#">Политика конфеденциальности</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script defer src="/assets/js/vendor.3691f8a.bundle.js"></script><script defer src="/assets/js/bundle.dbba96c.bundle.js"></script></body>
 </html>
