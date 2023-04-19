@@ -1,0 +1,106 @@
+.container.range-plugin {
+  transform: translateY(-33px) translateX(276px);
+  box-shadow: 0px 2px 27px rgba(180, 180, 180, 0.25);
+  right: 0;
+  left: auto;
+  width: 182px;
+}
+
+.container.range-plugin main {
+  border: 1px solid rgba(139, 139, 139, 0.4);
+  border-radius: 4px;
+}
+
+.calendar>.header {
+  padding: 0;
+}
+
+.calendar>.header .month-name {
+  white-space: nowrap;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 600;
+}
+
+.calendar>.header .month-name>span {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.calendar>.header button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.calendar>.daynames-row {
+  margin: 8px 0;
+}
+
+.container.range-plugin .days-grid {
+  gap: 4px;
+  grid-template-columns: repeat(7, 20px);
+}
+
+.container.range-plugin .day {
+  padding: 0;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  width: 20px;
+}
+
+.calendar>.header button>svg {
+  transform: scale(1);
+}
+
+.calendar>.daynames-row>.dayname {
+  padding: 0;
+  font-size: 8px;
+  line-height: 10px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #1A2030;
+}
+
+.calendar>.days-grid>.day {
+  font-size: 10px;
+  line-height: 12.5px;
+}
+
+.calendar>.days-grid>.day,
+.calendar>.days-grid>.day:hover {
+  border: none;
+}
+
+.calendar>.days-grid>.day.today {
+  color: #1D5BFB;
+}
+
+.calendar>.days-grid>.day:hover,
+.container.range-plugin .calendar>.days-grid>.day.end, 
+.container.range-plugin .calendar>.days-grid>.day.start {
+  background-color: #1D5BFB;
+  color: #fff;
+}
+
+.container.range-plugin .calendar>.days-grid>.day.in-range {
+  background-color: rgba(29, 91, 251, 0.1);
+  color: #1A2030;
+}
+
+.container.range-plugin .calendar>.days-grid>.day,
+.container.range-plugin .calendar>.days-grid>.day.in-range,
+.container.range-plugin .calendar>.days-grid>.day.start.flipped,
+.container.range-plugin .calendar>.days-grid>.day.start.end,
+.container.range-plugin .calendar>.days-grid>.day.start,
+.container.range-plugin .calendar>.days-grid>.day.end,
+.container.range-plugin .calendar>.days-grid>.day.end.flipped {
+  border-radius: 4px;
+}
+
+.container.range-plugin .calendar>.days-grid>.day.start:after,
+.container.range-plugin .calendar>.days-grid>.day.end:after {
+  display: none;
+}
