@@ -6,8 +6,8 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <meta content="#ffc40d" name="msapplication-TileColor">
     <meta content="#ffffff" name="theme-color">
-    <meta content="Страница категории" name="description">
-    <meta content="Страница, категории" name="keywords">
+    <meta content="Избранное" name="description">
+    <meta content="Избранное" name="keywords">
     <meta content="summary" name="twitter:card">
     <meta content="" name="twitter:description">
     <meta content="" name="twitter:image">
@@ -32,7 +32,7 @@
       Похоже у вас отключён Javascript, поэтому вы видете это сообщение.
       
     </noscript>
-  <script defer src="/assets/js/bundle.a0c112a.bundle.js"></script><link href="/assets/css/857.43c60f0.bundle.css" rel="stylesheet"><link href="/assets/css/bundle.bf1abc3.bundle.css" rel="stylesheet"></head>
+  <script defer src="/assets/js/vendor.6ca3f51.bundle.js"></script><script defer src="/assets/js/bundle.8c54769.bundle.js"></script><link href="/assets/css/777.6ca3f51.bundle.css" rel="stylesheet"><link href="/assets/css/bundle.57e1347.bundle.css" rel="stylesheet"></head>
   <body>
     <div class="render"></div>
 <header class="header">
@@ -43,16 +43,16 @@
         <div class="header__localization">
           <button class="header__translate" type="button"><span>Eng</span><img class="header__translate__icon" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue"></button>
           <div class="header__languages">
-            <div class="header__language"> <span>En</span><img src="/assets/images/icons/flag-en.svg" alt="flag-en"></div>
-            <div class="header__language"> <span>Th</span><img src="/assets/images/icons/flag-th.svg" alt="flag-th"></div>
-            <div class="header__language"> <span>Ru</span><img src="/assets/images/icons/flag-ru.svg" alt="flag-ru"></div>
+            <div class="header__language"><span>En</span><img src="/assets/images/icons/flag-en.svg" alt="flag-en"></div>
+            <div class="header__language"><span>Th</span><img src="/assets/images/icons/flag-th.svg" alt="flag-th"></div>
+            <div class="header__language"><span>Ru</span><img src="/assets/images/icons/flag-ru.svg" alt="flag-ru"></div>
           </div>
           <div class="header__geo">
             <button class="header__geo__current countries__button" type="button"><img src="/assets/images/icons/pin.svg" alt="pin"><span>Thailand</span></button>
             <div class="header__search countries__search">
               <form class="header__search__block" action="#">
-                <div class="header__search__input"> <img class="header__search__icon" src="/assets/images/icons/search.svg" alt="search">
-                  <input type="search" name="search" placeholder="Search">
+                <div class="header__search__input"><img class="header__search__icon" src="/assets/images/icons/search.svg" alt="search">
+                  <input type="search" placeholder="Search" name="search">
                 </div>
               </form>
               <div class="header__search__countries">
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="header__login"> 
+        <div class="header__login">
           <button class="header__registration" type="button">Log in & Registration</button>
           <button class="header__user" type="button"><img class="header__user__photo" src="/assets/images/avatar.png" alt="header-photo"><span>Regina Miles</span><img class="header__user__icon" src="/assets/images/icons/arrow-down-black.svg" alt="arrow-down-black"></button>
           <div class="header__profile">
@@ -85,12 +85,12 @@
 </header>
     <main>
       <div class="page-container">
-<nav class="menu"> 
+<nav class="menu">
   <div class="wrapper">
-    <div class="menu__wrapper"><a class="menu__item" href="#">Property </a><a class="menu__item" href="#">Pets</a><a class="menu__item" href="#">Services</a><a class="menu__item" href="#">Car & Vehicles</a><a class="menu__item" href="#">Hobby</a><a class="menu__item" href="#">Browse all categories</a></div>
+    <div class="menu__wrapper"><a class="menu__item" href="#">Property</a><a class="menu__item" href="#">Pets</a><a class="menu__item" href="#">Services</a><a class="menu__item" href="#">Car & Vehicles</a><a class="menu__item" href="#">Hobby</a><a class="menu__item" href="#">Browse all categories</a></div>
   </div>
 </nav>
-        <div class="profile"> 
+        <div class="profile">
           <div class="wrapper">
             <div class="page-layout">
               <aside class="profile__sidebar">
@@ -111,16 +111,16 @@
               <div class="profile__content">
                 <h1 class="page__title profile__title">Favorites</h1>
                 <div class="grid-categories">
-<div class="sorting"> 
+<div class="sorting">
   <button class="sorting__filter" type="button">
     <input type="text" name="sorting"><span>Sorting</span><img src="/assets/images/icons/sorting.svg" alt="sorting">
-    <div class="sorting__choose">
-      <div class="sorting__choose__item" data-value="by_many">By many</div>
-      <div class="sorting__choose__item" data-value="cheaper">Cheaper</div>
-      <div class="sorting__choose__item" data-value="expensive">Expensive</div>
-      <div class="sorting__choose__item" data-value="by_date">By date</div>
-    </div>
   </button>
+  <div class="sorting__choose">
+    <div class="sorting__choose__item" data-value="by_many">By many</div>
+    <div class="sorting__choose__item" data-value="cheaper">Cheaper</div>
+    <div class="sorting__choose__item" data-value="expensive">Expensive</div>
+    <div class="sorting__choose__item" data-value="by_date">By date</div>
+  </div>
   <div class="sorting__views">
     <button class="sorting__view sorting__view-list" type="button"><img src="/assets/images/icons/sorting-list.svg" alt="sorting-list"></button>
     <button class="sorting__view sorting__view-cards active" type="button"><img src="/assets/images/icons/sorting-cards.svg" alt="sorting-cards"></button>
@@ -145,8 +145,8 @@
                                             <div class="card__date">1 day ago</div>
                                           </div></a>
                                         <div class="card__right">
-                                          <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                          <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                          <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                          <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                             <div class="card__user__title">Regina Miles</div>
                                             <div class="rating">
                                               <div class="rating__amount">
@@ -173,8 +173,8 @@
                                             <div class="card__date">1 hours ago</div>
                                           </div></a>
                                         <div class="card__right">
-                                          <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                          <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                          <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                          <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                             <div class="card__user__title">Regina Miles</div>
                                             <div class="rating">
                                               <div class="rating__amount">
@@ -201,8 +201,8 @@
                                             <div class="card__date">20 hours ago</div>
                                           </div></a>
                                         <div class="card__right">
-                                          <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                          <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                          <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                          <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                             <div class="card__user__title">Regina Miles</div>
                                             <div class="rating">
                                               <div class="rating__amount">
@@ -229,8 +229,8 @@
                                             <div class="card__date">Week ago</div>
                                           </div></a>
                                         <div class="card__right">
-                                          <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                          <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                          <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                          <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                             <div class="card__user__title">Regina Miles</div>
                                             <div class="rating">
                                               <div class="rating__amount">
@@ -257,8 +257,8 @@
                                             <div class="card__date">2 days ago</div>
                                           </div></a>
                                         <div class="card__right">
-                                          <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                          <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                          <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                          <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                             <div class="card__user__title">Regina Miles</div>
                                             <div class="rating">
                                               <div class="rating__amount">
@@ -285,8 +285,8 @@
                                             <div class="card__date">12 hours ago</div>
                                           </div></a>
                                         <div class="card__right">
-                                          <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                          <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                          <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                          <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                             <div class="card__user__title">Regina Miles</div>
                                             <div class="rating">
                                               <div class="rating__amount">
@@ -301,7 +301,7 @@
                                       </div>
                                     </div>
                   </div>
-<div class="more__button"> 
+<div class="more__button">
   <button type="button">Load more</button>
 </div>
                 </div>
@@ -310,13 +310,36 @@
           </div>
         </div>
       </div>
-<footer class="footer"> 
+<footer class="footer">
   <div class="footer__wrapper">
     <nav class="footer__links"><a class="footer__links" href="#">Place an ad</a><a class="footer__links" href="#">Ads</a><a class="footer__links" href="#">Categories</a><a class="footer__links" href="#">Registration</a><a class="footer__links" href="#">Data processing policy</a></nav>
     <div class="footer__rights">All Right Reserved.</div>
   </div>
 </footer>
     </main>
+<form class="signin" action="#">
+  <div class="signin__popup">
+    <div class="settings__popup__title">Sign in</div>
+    <div class="settings__close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="signin__mail settings__input">
+      <input type="email" placeholder="Enter your email" name="email" required><img class="settings__input__img" src="/assets/images/icons/close-black.svg" alt="close-black">
+    </div>
+    <div class="settings__input settings__input__password">
+      <input type="password" placeholder="New password" name="new-password" required><img class="settings__input__img" src="/assets/images/icons/eyeslash.svg" alt="eyeslash">
+    </div>
+    <div class="signin__password">
+      <label class="signin__password__label">
+        <input type="checkbox" name=""><span>Remember password</span>
+      </label>
+      <button class="signin__question" type="button">Forgot your password?</button>
+    </div>
+    <div class="signin__buttons">
+      <button class="settings__button settings__button-white" type="button">Register a new account</button>
+      <button class="settings__button settings__button-active" type="button">Sign in</button>
+    </div>
+  </div>
+</form>
     <div class="bg"></div>
+    <div class="popup-bg"></div>
   </body>
 </html>

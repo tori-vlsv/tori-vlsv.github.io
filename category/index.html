@@ -6,8 +6,8 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <meta content="#ffc40d" name="msapplication-TileColor">
     <meta content="#ffffff" name="theme-color">
-    <meta content="Страница категории" name="description">
-    <meta content="Страница, категории" name="keywords">
+    <meta content="Категория" name="description">
+    <meta content="Категория" name="keywords">
     <meta content="summary" name="twitter:card">
     <meta content="" name="twitter:description">
     <meta content="" name="twitter:image">
@@ -32,7 +32,7 @@
       Похоже у вас отключён Javascript, поэтому вы видете это сообщение.
       
     </noscript>
-  <script defer src="/assets/js/bundle.a0c112a.bundle.js"></script><link href="/assets/css/857.43c60f0.bundle.css" rel="stylesheet"><link href="/assets/css/bundle.bf1abc3.bundle.css" rel="stylesheet"></head>
+  <script defer src="/assets/js/vendor.6ca3f51.bundle.js"></script><script defer src="/assets/js/bundle.8c54769.bundle.js"></script><link href="/assets/css/777.6ca3f51.bundle.css" rel="stylesheet"><link href="/assets/css/bundle.57e1347.bundle.css" rel="stylesheet"></head>
   <body>
     <div class="render"></div>
 <header class="header">
@@ -43,16 +43,16 @@
         <div class="header__localization">
           <button class="header__translate" type="button"><span>Eng</span><img class="header__translate__icon" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue"></button>
           <div class="header__languages">
-            <div class="header__language"> <span>En</span><img src="/assets/images/icons/flag-en.svg" alt="flag-en"></div>
-            <div class="header__language"> <span>Th</span><img src="/assets/images/icons/flag-th.svg" alt="flag-th"></div>
-            <div class="header__language"> <span>Ru</span><img src="/assets/images/icons/flag-ru.svg" alt="flag-ru"></div>
+            <div class="header__language"><span>En</span><img src="/assets/images/icons/flag-en.svg" alt="flag-en"></div>
+            <div class="header__language"><span>Th</span><img src="/assets/images/icons/flag-th.svg" alt="flag-th"></div>
+            <div class="header__language"><span>Ru</span><img src="/assets/images/icons/flag-ru.svg" alt="flag-ru"></div>
           </div>
           <div class="header__geo">
             <button class="header__geo__current countries__button" type="button"><img src="/assets/images/icons/pin.svg" alt="pin"><span>Thailand</span></button>
             <div class="header__search countries__search">
               <form class="header__search__block" action="#">
-                <div class="header__search__input"> <img class="header__search__icon" src="/assets/images/icons/search.svg" alt="search">
-                  <input type="search" name="search" placeholder="Search">
+                <div class="header__search__input"><img class="header__search__icon" src="/assets/images/icons/search.svg" alt="search">
+                  <input type="search" placeholder="Search" name="search">
                 </div>
               </form>
               <div class="header__search__countries">
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="header__login"> 
+        <div class="header__login">
           <button class="header__registration" type="button">Log in & Registration</button>
           <button class="header__user" type="button"><img class="header__user__photo" src="/assets/images/avatar.png" alt="header-photo"><span>Regina Miles</span><img class="header__user__icon" src="/assets/images/icons/arrow-down-black.svg" alt="arrow-down-black"></button>
           <div class="header__profile">
@@ -85,7 +85,7 @@
 </header>
     <main>
       <div class="page-container">
-<section class="search"> 
+<section class="search">
   <div class="wrapper">
     <div class="search__wrapper">
       <div class="search__menu">
@@ -96,12 +96,12 @@
         <div class="header__search countries__search"></div>
       </div>
 <form class="search__form" action="#">
-  <label class="search__input"> <img class="search__icon" src="/assets/images/icons/search.svg" alt="search">
-    <input type="search" name="search" placeholder="Search" autocomplete="off" required>
+  <label class="search__input"><img class="search__icon" src="/assets/images/icons/search.svg" alt="search">
+    <input type="search" placeholder="Search" autocomplete="off" name="search" required>
     <div class="search__results custom-scroll"><a class="search__results-item search__results-main" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
         <div class="search__results__arrow"><---</div>
-        <div class="search__results__text">Car & Vehicles </div></a><a class="search__results-item search__results-secondary" href="#">
+        <div class="search__results__text">Car & Vehicles</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
         <div class="search__results__text">Camry</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
@@ -109,7 +109,7 @@
         <div class="search__results__title search__results__title-blue">Toyota</div>
         <div class="search__results__text">Land Cruiser 100</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
-        <div class="search__results__text">Land Cruiser 200 (2007 - 2012) </div></a><a class="search__results-item search__results-secondary" href="#">
+        <div class="search__results__text">Land Cruiser 200 (2007 - 2012)</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
         <div class="search__results__text">Land Cruiser 200 restyling (2012 - 2015)</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
@@ -119,83 +119,111 @@
   </label>
   <button class="search__button" type="submit">Find</button>
 </form>
-      <div class="search__categories"> 
+      <div class="search__categories">
         <div class="search__container">
           <div class="search__list custom-scroll">
-            <button class="search__category" type="button" data-id="1"><img class="search__cat__image" src="/assets/images/search/item-1.png" alt="item-1"><span>Property</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="2"><img class="search__cat__image" src="/assets/images/search/item-2.png" alt="item-2"><span>Pets</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category active" type="button" data-id="3"><img class="search__cat__image" src="/assets/images/search/item-3.png" alt="item-3"><span>Services</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="4"><img class="search__cat__image" src="/assets/images/search/item-4.png" alt="item-4"><span>Car & Vehicles</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="5"><img class="search__cat__image" src="/assets/images/search/item-5.png" alt="item-5"><span>Parts</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="6"><img class="search__cat__image" src="/assets/images/search/item-6.png" alt="item-6"><span>Hobby</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="7"><img class="search__cat__image" src="/assets/images/search/item-7.png" alt="item-7"><span>Garden</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="8"><img class="search__cat__image" src="/assets/images/search/item-8.png" alt="item-8"><span>Jobs</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="9"><img class="search__cat__image" src="/assets/images/search/item-9.png" alt="item-9"><span>Fashion</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="10"><img class="search__cat__image" src="/assets/images/search/item-10.png" alt="item-10"><span>For kids</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="11"><img class="search__cat__image" src="/assets/images/search/item-11.png" alt="item-11"><span>Electronics</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="12"><img class="search__cat__image" src="/assets/images/search/item-12.png" alt="item-12"><span>Collecting</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="13"><img class="search__cat__image" src="/assets/images/search/item-13.png" alt="item-13"><span>Furniture</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="14"><img class="search__cat__image" src="/assets/images/search/item-14.png" alt="item-14"><span>Other</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="search__category" type="button" data-id="1"><img class="search__cat__image" src="/assets/images/search/item-1.png" alt="item-1"><span>Property</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="2"><img class="search__cat__image" src="/assets/images/search/item-2.png" alt="item-2"><span>Pets</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category active" type="button" data-id="3"><img class="search__cat__image" src="/assets/images/search/item-3.png" alt="item-3"><span>Services</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="4"><img class="search__cat__image" src="/assets/images/search/item-4.png" alt="item-4"><span>Car & Vehicles</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="5"><img class="search__cat__image" src="/assets/images/search/item-5.png" alt="item-5"><span>Parts</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="6"><img class="search__cat__image" src="/assets/images/search/item-6.png" alt="item-6"><span>Hobby</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="7"><img class="search__cat__image" src="/assets/images/search/item-7.png" alt="item-7"><span>Garden</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="8"><img class="search__cat__image" src="/assets/images/search/item-8.png" alt="item-8"><span>Jobs</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="9"><img class="search__cat__image" src="/assets/images/search/item-9.png" alt="item-9"><span>Fashion</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="10"><img class="search__cat__image" src="/assets/images/search/item-10.png" alt="item-10"><span>For kids</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="11"><img class="search__cat__image" src="/assets/images/search/item-11.png" alt="item-11"><span>Electronics</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="12"><img class="search__cat__image" src="/assets/images/search/item-12.png" alt="item-12"><span>Collecting</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="13"><img class="search__cat__image" src="/assets/images/search/item-13.png" alt="item-13"><span>Furniture</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="14"><img class="search__cat__image" src="/assets/images/search/item-14.png" alt="item-14"><span>Other</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
           </div>
           <div class="search__innercats">
-            <div class="search__innercat" data-id="1" style="display: block;">
+            <div class="search__innercat" style="display: block" data-id="1">
               <div class="search__title">Services</div>
               <div class="search__grid custom-scroll">
                 <div class="search__column">
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Transport, transportation</a></h2><a class="search__childcat" href="#">Car service</a><a class="search__childcat" href="#">Rent a car</a><a class="search__childcat" href="#">Commercial transportation</a><a class="search__childcat" href="#">Movers</a><a class="search__childcat" href="#">Moving</a><a class="search__childcat" href="#">Special equipment</a>
+                    <h2 class="search__subcat"><a href="#">Transport, transportation</a></h2><a class="search__childcat" href="#">Car service</a><a class="search__childcat" href="#">Rent a car</a><a class="search__childcat" href="#">Commercial transportation</a><a class="search__childcat" href="#">Movers</a><a class="search__childcat" href="#">Moving</a><a class="search__childcat" href="#">Special equipment</a>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Business Services</a></h2><a class="search__childcat" href="#">Accounting, finance</a><a class="search__childcat" href="#">Consulting</a><a class="search__childcat" href="#">Typesetting and text correction</a><a class="search__childcat" href="#">Translation</a><a class="search__childcat" href="#">Insurance</a><a class="search__childcat" href="#">Legal services</a>
+                    <h2 class="search__subcat"><a href="#">Business Services</a></h2><a class="search__childcat" href="#">Accounting, finance</a><a class="search__childcat" href="#">Consulting</a><a class="search__childcat" href="#">Typesetting and text correction</a><a class="search__childcat" href="#">Translation</a><a class="search__childcat" href="#">Insurance</a><a class="search__childcat" href="#">Legal services</a>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Household services</a></h2><a class="search__childcat" href="#">Production of keys</a><a class="search__childcat" href="#">Tailoring and repair of clothes</a>
-                  </div>
-                </div>
-                <div class="search__column">
-                  <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Cleaning</a></h2><a class="search__childcat" href="#">Garbage removal</a><a class="search__childcat" href="#">Spring-cleaning</a><a class="search__childcat" href="#">Ironing</a><a class="search__childcat" href="#">Movers</a><a class="search__childcat" href="#">Window cleaning</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
-                    <button class="search__more" type="button">4 more</button>
-                  </div>
-                  <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Training, courses</a></h2><a class="search__childcat" href="#">School and university subjects</a><a class="search__childcat" href="#">Foreign languages</a><a class="search__childcat" href="#">Driving</a><a class="search__childcat" href="#">Music, theater</a><a class="search__childcat" href="#">Sports, dancing</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
-                    <button class="search__more" type="button">4 more</button>
-                  </div>
-                  <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Transport, transportation</a></h2><a class="search__childcat" href="#">Car service</a><a class="search__childcat" href="#">Rent a car</a><a class="search__childcat" href="#">Commercial transportation</a>
+                    <h2 class="search__subcat"><a href="#">Household services</a></h2><a class="search__childcat" href="#">Production of keys</a><a class="search__childcat" href="#">Tailoring and repair of clothes</a>
                   </div>
                 </div>
                 <div class="search__column">
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Garden, landscaping</a></h2><a class="search__childcat" href="#">Wells</a><a class="search__childcat" href="#">Ponds and fountains</a><a class="search__childcat" href="#">Road construction</a><a class="search__childcat" href="#">Fences, railings, awnings</a><a class="search__childcat" href="#">Excavation</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
+                    <h2 class="search__subcat"><a href="#">Cleaning</a></h2><a class="search__childcat" href="#">Garbage removal</a><a class="search__childcat" href="#">Spring-cleaning</a><a class="search__childcat" href="#">Ironing</a><a class="search__childcat" href="#">Movers</a><a class="search__childcat" href="#">Window cleaning</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
+                    <button class="search__more" type="button">4 more</button>
+                  </div>
+                  <div class="search__block">
+                    <h2 class="search__subcat"><a href="#">Training, courses</a></h2><a class="search__childcat" href="#">School and university subjects</a><a class="search__childcat" href="#">Foreign languages</a><a class="search__childcat" href="#">Driving</a><a class="search__childcat" href="#">Music, theater</a><a class="search__childcat" href="#">Sports, dancing</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
+                    <button class="search__more" type="button">4 more</button>
+                  </div>
+                  <div class="search__block">
+                    <h2 class="search__subcat"><a href="#">Transport, transportation</a></h2><a class="search__childcat" href="#">Car service</a><a class="search__childcat" href="#">Rent a car</a><a class="search__childcat" href="#">Commercial transportation</a>
+                  </div>
+                </div>
+                <div class="search__column">
+                  <div class="search__block">
+                    <h2 class="search__subcat"><a href="#">Garden, landscaping</a></h2><a class="search__childcat" href="#">Wells</a><a class="search__childcat" href="#">Ponds and fountains</a><a class="search__childcat" href="#">Road construction</a><a class="search__childcat" href="#">Fences, railings, awnings</a><a class="search__childcat" href="#">Excavation</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
                     <button class="search__more" type="button">3 more</button>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Equipment repair</a></h2><a class="search__childcat" href="#">TVs</a><a class="search__childcat" href="#">Mobile devices</a><a class="search__childcat" href="#">Small household appliances</a><a class="search__childcat" href="#">Photo, audio, video equipment</a><a class="search__childcat" href="#">Computer technology</a><a class="search__childcat" href="#">Gaming consoles</a><a class="search__childcat" href="#">Large home appliances</a>
+                    <h2 class="search__subcat"><a href="#">Equipment repair</a></h2><a class="search__childcat" href="#">TVs</a><a class="search__childcat" href="#">Mobile devices</a><a class="search__childcat" href="#">Small household appliances</a><a class="search__childcat" href="#">Photo, audio, video equipment</a><a class="search__childcat" href="#">Computer technology</a><a class="search__childcat" href="#">Gaming consoles</a><a class="search__childcat" href="#">Large home appliances</a>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">IT, internet, telecom</a></h2><a class="search__childcat" href="#">Creation and promotion of sites</a>
+                    <h2 class="search__subcat"><a href="#">IT, internet, telecom</a></h2><a class="search__childcat" href="#">Creation and promotion of sites</a>
                   </div>
                 </div>
                 <div class="search__column">
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Beauty, health</a></h2><a class="search__childcat" href="#">Hairdresser services</a><a class="search__childcat" href="#">Mani Pedi</a><a class="search__childcat" href="#">Makeup</a><a class="search__childcat" href="#">Cosmetology, hair removal</a><a class="search__childcat" href="#">SPA services, health</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
+                    <h2 class="search__subcat"><a href="#">Beauty, health</a></h2><a class="search__childcat" href="#">Hairdresser services</a><a class="search__childcat" href="#">Mani Pedi</a><a class="search__childcat" href="#">Makeup</a><a class="search__childcat" href="#">Cosmetology, hair removal</a><a class="search__childcat" href="#">SPA services, health</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
                     <button class="search__more" type="button">2 more</button>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Equipment installation</a></h2>
+                    <h2 class="search__subcat"><a href="#">Equipment installation</a></h2>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Equipment, production</a></h2><a class="search__childcat" href="#">Equipment rent</a><a class="search__childcat" href="#">Installation and maintenance of equipment</a><a class="search__childcat" href="#">Production, processing</a>
+                    <h2 class="search__subcat"><a href="#">Equipment, production</a></h2><a class="search__childcat" href="#">Equipment rent</a><a class="search__childcat" href="#">Installation and maintenance of equipment</a><a class="search__childcat" href="#">Production, processing</a>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Master for an hour</a></h2>
+                    <h2 class="search__subcat"><a href="#">Master for an hour</a></h2>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Food and grocery delivery</a></h2>
+                    <h2 class="search__subcat"><a href="#">Food and grocery delivery</a></h2>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Advertising, printing</a></h2><a class="search__childcat" href="#">Marketing, advertising, PR</a><a class="search__childcat" href="#">Printing, design</a>
+                    <h2 class="search__subcat"><a href="#">Advertising, printing</a></h2><a class="search__childcat" href="#">Marketing, advertising, PR</a><a class="search__childcat" href="#">Printing, design</a>
                   </div>
                 </div>
               </div>
@@ -206,10 +234,10 @@
     </div>
   </div>
 </section>
-<div class="breadcrumbs"> 
+<div class="breadcrumbs">
   <div class="wrapper">
     <ul class="breadcrumbs__list">
-      <li> <a href="#">Clothes</a><span>/</span></li>
+      <li><a href="#">Clothes</a><span>/</span></li>
       <li><a href="#">Men's Clothing</a><span>/</span></li>
       <li><a href="#">Outerwear</a><span>/</span></li>
       <li>
@@ -218,13 +246,13 @@
     </ul>
   </div>
 </div>
-        <section class="category"> 
-          <div class="wrapper"> 
-            <h1 class="page__title category__title">Hobby <span>153</span></h1>
-            <div class="category__wrapper"> 
-<form class="filter" action="#"> 
+        <section class="category">
+          <div class="wrapper">
+            <h1 class="page__title category__title">Hobby<span>153</span></h1>
+            <div class="category__wrapper">
+<form class="filter" action="#">
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Price</h3>
     </div>
     <div class="filter__block">
@@ -244,14 +272,14 @@
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Condition</h3>
       <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <div class="filter__labels custom-scroll">
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="new_with_tags" value="New with tags" checked><span class="filter__checkbox">New with tags</span>
+          <input class="filter__input" type="checkbox" checked name="new_with_tags" value="New with tags"><span class="filter__checkbox">New with tags</span>
         </label>
         <label class="filter__label">
           <input class="filter__input" type="checkbox" name="new_with_defects" value="New with defects"><span class="filter__checkbox">New with defects</span>
@@ -266,19 +294,19 @@
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Brand</h3>
-      <button class="filter__reset" type="button">Reset all </button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
+      <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <div class="filter__search">
-        <div class="filter__search__input"> <img class="filter__search__icon" src="/assets/images/icons/search.svg" alt="search">
-          <input type="search" name="search" placeholder="Search">
+        <div class="filter__search__input"><img class="filter__search__icon" src="/assets/images/icons/search.svg" alt="search">
+          <input type="search" placeholder="Search" name="search">
         </div>
       </div>
       <div class="filter__labels custom-scroll">
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="adidas" value="Adidas" checked><span class="filter__checkbox">Adidas</span>
+          <input class="filter__input" type="checkbox" checked name="adidas" value="Adidas"><span class="filter__checkbox">Adidas</span>
         </label>
         <label class="filter__label">
           <input class="filter__input" type="checkbox" name="nike" value="Nike"><span class="filter__checkbox">Nike</span>
@@ -297,14 +325,14 @@
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Size</h3>
-      <button class="filter__reset" type="button">Reset all </button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
+      <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <div class="filter__labels filter__labels-grid filter__labels-grid-two custom-scroll">
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="size_s" value="46 (S)" checked><span class="filter__checkbox">46 (S)</span>
+          <input class="filter__input" type="checkbox" checked name="size_s" value="46 (S)"><span class="filter__checkbox">46 (S)</span>
         </label>
         <label class="filter__label">
           <input class="filter__input" type="checkbox" name="size_xxl" value="54 (XXL)"><span class="filter__checkbox">54 (XXL)</span>
@@ -335,40 +363,40 @@
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Color</h3>
-      <button class="filter__reset" type="button">Reset all </button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
+      <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <div class="filter__search">
-        <div class="filter__search__input"> <img class="filter__search__icon" src="/assets/images/icons/search.svg" alt="search">
-          <input type="search" name="search" placeholder="Search">
+        <div class="filter__search__input"><img class="filter__search__icon" src="/assets/images/icons/search.svg" alt="search">
+          <input type="search" placeholder="Search" name="search">
         </div>
       </div>
       <div class="filter__labels custom-scroll">
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="beige" value="Beige"><span class="filter__checkbox filter__checkbox-color" style="--value-color:#FFEFDF">Beige</span>
+          <input class="filter__input" type="checkbox" name="beige" value="Beige"><span class="filter__checkbox filter__checkbox-color" style="--value-color: #ffefdf">Beige</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="black" value="Black"><span class="filter__checkbox filter__checkbox-color" style="--value-color:#1A2030">Black</span>
+          <input class="filter__input" type="checkbox" name="black" value="Black"><span class="filter__checkbox filter__checkbox-color" style="--value-color: #1a2030">Black</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="blue" value="Blue"><span class="filter__checkbox filter__checkbox-color" style="--value-color:#0000FF">Blue</span>
+          <input class="filter__input" type="checkbox" name="blue" value="Blue"><span class="filter__checkbox filter__checkbox-color" style="--value-color: #0000ff">Blue</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="brown" value="Brown"><span class="filter__checkbox filter__checkbox-color" style="--value-color:#7B3F00">Brown</span>
+          <input class="filter__input" type="checkbox" name="brown" value="Brown"><span class="filter__checkbox filter__checkbox-color" style="--value-color: #7b3f00">Brown</span>
         </label>
         <label class="filter__label filter__label-hidden">
-          <input class="filter__input" type="checkbox" name="one_more_color" value="One more color"><span class="filter__checkbox filter__checkbox-color" style="--value-color:#ff0000">One more color</span>
+          <input class="filter__input" type="checkbox" name="one_more_color" value="One more color"><span class="filter__checkbox filter__checkbox-color" style="--value-color: #ff0000">One more color</span>
         </label>
       </div>
       <button class="filter__showall" type="button">Show all</button>
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Authenticity</h3>
-      <button class="filter__reset" type="button">Reset all </button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
+      <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <div class="filter__labels custom-scroll">
@@ -379,9 +407,9 @@
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Seller rating</h3>
-      <button class="filter__reset" type="button">Reset all </button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
+      <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <div class="filter__labels custom-scroll">
@@ -392,9 +420,9 @@
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Seller</h3>
-      <button class="filter__reset" type="button">Reset all </button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
+      <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <div class="filter__labels custom-scroll">
@@ -411,49 +439,59 @@
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Check in and out</h3>
-      <button class="filter__reset" type="button">Reset all </button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
+      <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <label class="filter__calendar">
         <div class="filter__calendar__input">
-          <input id="datepicker" name="datepicker" placeholder="Choose date">
-          <div class="filter__calendar__icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.666 1.74967H11.0827V0.583008H9.91601V1.74967H4.08268V0.583008H2.91602V1.74967H2.33268C1.69102 1.74967 1.16602 2.27467 1.16602 2.91634V12.2497C1.16602 12.8913 1.69102 13.4163 2.33268 13.4163H11.666C12.3077 13.4163 12.8327 12.8913 12.8327 12.2497V2.91634C12.8327 2.27467 12.3077 1.74967 11.666 1.74967ZM11.666 12.2497H2.33268V5.83301H11.666V12.2497ZM11.666 4.66634H2.33268V2.91634H11.666V4.66634Z" fill="#1A2030"/></svg></div>
+          <input id="datepicker" placeholder="Choose date" name="datepicker">
+          <div class="filter__calendar__icon">
+            <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M11.666 1.74967H11.0827V0.583008H9.91601V1.74967H4.08268V0.583008H2.91602V1.74967H2.33268C1.69102 1.74967 1.16602 2.27467 1.16602 2.91634V12.2497C1.16602 12.8913 1.69102 13.4163 2.33268 13.4163H11.666C12.3077 13.4163 12.8327 12.8913 12.8327 12.2497V2.91634C12.8327 2.27467 12.3077 1.74967 11.666 1.74967ZM11.666 12.2497H2.33268V5.83301H11.666V12.2497ZM11.666 4.66634H2.33268V2.91634H11.666V4.66634Z" fill="#1A2030"/></svg>
+          </div>
         </div>
       </label>
     </div>
   </div>
   <div class="filter__item">
-    <div class="filter__title"> 
+    <div class="filter__title">
       <h3>Body type</h3>
-      <button class="filter__reset" type="button">Reset all </button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
+      <button class="filter__reset" type="button">Reset all</button><img class="filter__toggle" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue">
     </div>
     <div class="filter__block">
       <div class="filter__labels filter__labels-grid filter__labels-grid-three filter__autoheight">
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="convertible" value="Convertible"><svg width="80" height="41" viewBox="0 0 80 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.2374 16.393C15.2395 16.394 55.3006 16.393 55.3006 16.393L72.1479 19.0889L74.55 21.3936V26.009L69.5006 28.434H67.4411C67.6364 27.8364 67.74 27.2001 67.74 26.5419C67.74 23.0329 64.7663 20.177 61.11 20.177C57.4537 20.177 54.48 23.0319 54.48 26.5419C54.48 27.2001 54.5848 27.8364 54.779 28.434H29.2295C29.4248 27.8364 29.5285 27.2001 29.5285 26.5419C29.5285 23.0329 26.5548 20.177 22.8985 20.177C19.2421 20.177 16.2685 23.0319 16.2685 26.5419C16.2685 26.7472 16.2806 26.9505 16.3006 27.1507L7.87951 25.8363L9.45846 16.392H15.2379M36.7306 8.13759H37.9648L51.5837 14.6736H38.8363L36.7306 8.13759ZM61.11 31.1844C58.4432 31.1844 56.2721 29.1008 56.2721 26.5399C56.2721 23.9774 58.4432 21.8959 61.11 21.8959C63.7785 21.8959 65.949 23.9784 65.949 26.5399C65.949 29.1023 63.7785 31.1844 61.11 31.1844ZM22.8995 31.1844C20.2311 31.1844 18.0606 29.1008 18.0606 26.5399C18.0606 23.9774 20.2311 21.8959 22.8995 21.8959C25.5663 21.8959 27.7374 23.9784 27.7374 26.5399C27.7374 29.1023 25.5663 31.1844 22.8995 31.1844ZM16.7832 28.9948C17.7858 31.2883 20.1495 32.9032 22.8995 32.9032C25.1585 32.9032 27.1521 31.8125 28.3516 30.1513H55.659C56.8569 31.8115 58.8532 32.9032 61.1111 32.9032C63.369 32.9032 65.3637 31.8125 66.5632 30.1513H69.7111C69.85 30.1513 69.9879 30.1197 70.1116 30.0601L75.8448 27.3071C76.1485 27.1614 76.34 26.8634 76.34 26.5373V21.0339C76.34 20.8052 76.2453 20.5871 76.0774 20.4262L73.2111 17.6732C73.0785 17.5473 72.909 17.4623 72.7258 17.4327L55.6558 14.7022L38.5748 6.50537C38.4532 6.44831 38.3153 6.41724 38.1764 6.41724H35.8774L35.1316 6.79982L37.1927 14.2406C37.1927 14.2406 8.19267 14.4378 8.19267 14.5162L7.86267 14.6069L6.0874 26.5424C6.08845 26.952 6.38951 27.3045 6.8074 27.385L16.7811 28.9964" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M36.8422 17.717H40.0001V18.7359H36.8422V17.717Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.2105 16.1886H7.89471L7.18103 11.0942L14.2105 16.1886Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6842 9.56616H25.2632V14.6605H23.6842V9.56616Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.579 10.585H23.1579V15.6793H21.579V10.585Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Convertible</span>
+          <input class="filter__input" type="checkbox" name="convertible" value="Convertible">
+          <svg>width="80" height="41" viewBox="0 0 80 41" fill="none" xmlns="http://www.w3.org/2000/svg" <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2374 16.393C15.2395 16.394 55.3006 16.393 55.3006 16.393L72.1479 19.0889L74.55 21.3936V26.009L69.5006 28.434H67.4411C67.6364 27.8364 67.74 27.2001 67.74 26.5419C67.74 23.0329 64.7663 20.177 61.11 20.177C57.4537 20.177 54.48 23.0319 54.48 26.5419C54.48 27.2001 54.5848 27.8364 54.779 28.434H29.2295C29.4248 27.8364 29.5285 27.2001 29.5285 26.5419C29.5285 23.0329 26.5548 20.177 22.8985 20.177C19.2421 20.177 16.2685 23.0319 16.2685 26.5419C16.2685 26.7472 16.2806 26.9505 16.3006 27.1507L7.87951 25.8363L9.45846 16.392H15.2379M36.7306 8.13759H37.9648L51.5837 14.6736H38.8363L36.7306 8.13759ZM61.11 31.1844C58.4432 31.1844 56.2721 29.1008 56.2721 26.5399C56.2721 23.9774 58.4432 21.8959 61.11 21.8959C63.7785 21.8959 65.949 23.9784 65.949 26.5399C65.949 29.1023 63.7785 31.1844 61.11 31.1844ZM22.8995 31.1844C20.2311 31.1844 18.0606 29.1008 18.0606 26.5399C18.0606 23.9774 20.2311 21.8959 22.8995 21.8959C25.5663 21.8959 27.7374 23.9784 27.7374 26.5399C27.7374 29.1023 25.5663 31.1844 22.8995 31.1844ZM16.7832 28.9948C17.7858 31.2883 20.1495 32.9032 22.8995 32.9032C25.1585 32.9032 27.1521 31.8125 28.3516 30.1513H55.659C56.8569 31.8115 58.8532 32.9032 61.1111 32.9032C63.369 32.9032 65.3637 31.8125 66.5632 30.1513H69.7111C69.85 30.1513 69.9879 30.1197 70.1116 30.0601L75.8448 27.3071C76.1485 27.1614 76.34 26.8634 76.34 26.5373V21.0339C76.34 20.8052 76.2453 20.5871 76.0774 20.4262L73.2111 17.6732C73.0785 17.5473 72.909 17.4623 72.7258 17.4327L55.6558 14.7022L38.5748 6.50537C38.4532 6.44831 38.3153 6.41724 38.1764 6.41724H35.8774L35.1316 6.79982L37.1927 14.2406C37.1927 14.2406 8.19267 14.4378 8.19267 14.5162L7.86267 14.6069L6.0874 26.5424C6.08845 26.952 6.38951 27.3045 6.8074 27.385L16.7811 28.9964" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M36.8422 17.717H40.0001V18.7359H36.8422V17.717Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.2105 16.1886H7.89471L7.18103 11.0942L14.2105 16.1886Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6842 9.56616H25.2632V14.6605H23.6842V9.56616Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.579 10.585H23.1579V15.6793H21.579V10.585Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Convertible</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="hatchback" value="Hatchback"><svg width="81" height="41" viewBox="0 0 81 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.3838 16.393C18.3859 16.394 57.9462 16.393 57.9462 16.393L74.583 19.0889L76.9551 21.3936V26.009L71.9687 28.434H69.935C70.1278 27.8364 70.2302 27.2001 70.2302 26.5419C70.2302 23.0329 67.2937 20.177 63.6831 20.177C60.0725 20.177 57.1359 23.0319 57.1359 26.5419C57.1359 27.2001 57.2394 27.8364 57.4311 28.434H21.8084C22.0012 27.8364 22.1036 27.2001 22.1036 26.5419C22.1036 23.0329 19.1671 20.177 15.5565 20.177C11.9459 20.177 9.00935 23.0319 9.00935 26.5419C9.00935 26.7472 9.0213 26.9505 9.04105 27.1507L8.00159 25.8363V16.392H18.3864M37.321 8.13759V14.6736H9.2188L21.8552 8.13759H37.3189M39.0886 8.13759H40.8271L54.2758 14.6736H39.0891L39.0886 8.13759ZM63.6831 31.1844C61.0496 31.1844 58.9056 29.1008 58.9056 26.5399C58.9056 23.9774 61.0496 21.8959 63.6831 21.8959C66.3181 21.8959 68.4615 23.9784 68.4615 26.5399C68.4615 29.1023 66.3181 31.1844 63.6831 31.1844ZM15.5554 31.1844C12.9204 31.1844 10.777 29.1008 10.777 26.5399C10.777 23.9774 12.9204 21.8959 15.5554 21.8959C18.1889 21.8959 20.3329 23.9784 20.3329 26.5399C20.3329 29.1023 18.1889 31.1844 15.5554 31.1844ZM9.51557 28.9948C10.5057 31.2883 12.8398 32.9032 15.5554 32.9032C17.7861 32.9032 19.7549 31.8125 20.9394 30.1513H58.3001C59.4831 31.8115 61.4544 32.9032 63.6841 32.9032C65.9138 32.9032 67.8836 31.8125 69.0681 30.1513H72.1766C72.3138 30.1513 72.45 30.1197 72.5721 30.0601L78.2336 27.3071C78.5335 27.1614 78.7227 26.8634 78.7227 26.5373V21.0339C78.7227 20.8052 78.6291 20.5871 78.4633 20.4262L75.6329 17.6732C75.5019 17.5473 75.3345 17.4623 75.1537 17.4327L58.297 14.7022L41.4295 6.50537C41.3094 6.44831 41.1733 6.41724 41.0361 6.41724H21.0937C20.7985 6.41724 20.522 6.56141 20.3573 6.79982L6.90182 14.0333C6.85608 14.1031 6.82541 14.1698 6.80047 14.2406C6.76357 14.3634 6.75057 14.4378 6.75057 14.5162L6.4247 14.6069L6.23083 26.5424C6.23187 26.952 6.52916 27.3045 6.94183 27.385L9.51453 28.9964" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39.7185 17.717H42.8369V18.7359H39.7185V17.717Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Hatchback</span>
+          <input class="filter__input" type="checkbox" name="hatchback" value="Hatchback">
+          <svg>width="81" height="41" viewBox="0 0 81 41" fill="none" xmlns="http://www.w3.org/2000/svg" <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3838 16.393C18.3859 16.394 57.9462 16.393 57.9462 16.393L74.583 19.0889L76.9551 21.3936V26.009L71.9687 28.434H69.935C70.1278 27.8364 70.2302 27.2001 70.2302 26.5419C70.2302 23.0329 67.2937 20.177 63.6831 20.177C60.0725 20.177 57.1359 23.0319 57.1359 26.5419C57.1359 27.2001 57.2394 27.8364 57.4311 28.434H21.8084C22.0012 27.8364 22.1036 27.2001 22.1036 26.5419C22.1036 23.0329 19.1671 20.177 15.5565 20.177C11.9459 20.177 9.00935 23.0319 9.00935 26.5419C9.00935 26.7472 9.0213 26.9505 9.04105 27.1507L8.00159 25.8363V16.392H18.3864M37.321 8.13759V14.6736H9.2188L21.8552 8.13759H37.3189M39.0886 8.13759H40.8271L54.2758 14.6736H39.0891L39.0886 8.13759ZM63.6831 31.1844C61.0496 31.1844 58.9056 29.1008 58.9056 26.5399C58.9056 23.9774 61.0496 21.8959 63.6831 21.8959C66.3181 21.8959 68.4615 23.9784 68.4615 26.5399C68.4615 29.1023 66.3181 31.1844 63.6831 31.1844ZM15.5554 31.1844C12.9204 31.1844 10.777 29.1008 10.777 26.5399C10.777 23.9774 12.9204 21.8959 15.5554 21.8959C18.1889 21.8959 20.3329 23.9784 20.3329 26.5399C20.3329 29.1023 18.1889 31.1844 15.5554 31.1844ZM9.51557 28.9948C10.5057 31.2883 12.8398 32.9032 15.5554 32.9032C17.7861 32.9032 19.7549 31.8125 20.9394 30.1513H58.3001C59.4831 31.8115 61.4544 32.9032 63.6841 32.9032C65.9138 32.9032 67.8836 31.8125 69.0681 30.1513H72.1766C72.3138 30.1513 72.45 30.1197 72.5721 30.0601L78.2336 27.3071C78.5335 27.1614 78.7227 26.8634 78.7227 26.5373V21.0339C78.7227 20.8052 78.6291 20.5871 78.4633 20.4262L75.6329 17.6732C75.5019 17.5473 75.3345 17.4623 75.1537 17.4327L58.297 14.7022L41.4295 6.50537C41.3094 6.44831 41.1733 6.41724 41.0361 6.41724H21.0937C20.7985 6.41724 20.522 6.56141 20.3573 6.79982L6.90182 14.0333C6.85608 14.1031 6.82541 14.1698 6.80047 14.2406C6.76357 14.3634 6.75057 14.4378 6.75057 14.5162L6.4247 14.6069L6.23083 26.5424C6.23187 26.952 6.52916 27.3045 6.94183 27.385L9.51453 28.9964" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39.7185 17.717H42.8369V18.7359H39.7185V17.717Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Hatchback</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="estate" value="Estate"><svg width="81" height="41" viewBox="0 0 81 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.54124 16.393H18.6422L18.6442 16.394L18.6463 16.393H58.2087L74.8455 19.0889L77.2176 21.3936V26.009L72.2312 28.434H70.1975C70.3903 27.8364 70.4927 27.2001 70.4927 26.5419C70.4927 23.0329 67.5562 20.177 63.9455 20.177C60.3349 20.177 57.3984 23.0319 57.3984 26.5419C57.3984 27.2001 57.5019 27.8364 57.6936 28.434H22.0709C22.2637 27.8364 22.3661 27.2001 22.3661 26.5419C22.3661 23.0329 19.4296 20.177 15.819 20.177C12.2083 20.177 9.27183 23.0319 9.27183 26.5419C9.27183 26.7472 9.28378 26.9505 9.30353 27.1507L2.54695 25.8363V16.392H2.54799M7.79734 8.13759H20.2528L18.0112 14.6736H3.31824L7.79993 8.13759M37.5861 8.13759V14.6736H19.8786L22.1202 8.13759H37.584M39.3537 8.13759H41.0922L54.5409 14.6736H39.3542L39.3537 8.13759ZM63.9482 31.1844C61.3146 31.1844 59.1707 29.1008 59.1707 26.5399C59.1707 23.9774 61.3146 21.8959 63.9482 21.8959C66.5832 21.8959 68.7266 23.9784 68.7266 26.5399C68.7266 29.1023 66.5832 31.1844 63.9482 31.1844ZM15.8205 31.1844C13.1854 31.1844 11.0421 29.1008 11.0421 26.5399C11.0421 23.9774 13.1854 21.8959 15.8205 21.8959C18.454 21.8959 20.5979 23.9784 20.5979 26.5399C20.5979 29.1023 18.454 31.1844 15.8205 31.1844ZM1.49085 27.3835L9.78065 28.9948C10.7708 31.2883 13.1049 32.9032 15.8205 32.9032C18.0512 32.9032 20.02 31.8125 21.2045 30.1513H58.5652C59.7482 31.8115 61.7195 32.9032 63.9492 32.9032C66.1789 32.9032 68.1487 31.8125 69.3331 30.1513H72.4417C72.5789 30.1513 72.7151 30.1197 72.8372 30.0601L78.4987 27.3071C78.7986 27.1614 78.9878 26.8634 78.9878 26.5373V21.0339C78.9878 20.8052 78.8942 20.5871 78.7284 20.4262L75.8979 17.6732C75.767 17.5473 75.5996 17.4623 75.4187 17.4327L58.5621 14.7022L41.6946 6.50537C41.5745 6.44831 41.4383 6.41724 41.3011 6.41724H7.32593C7.03072 6.41724 6.75422 6.56141 6.58947 6.79982L0.930052 15.0521L0.929013 15.0542L0.927973 15.0562C0.926934 15.0583 0.925374 15.0593 0.924335 15.0567C0.884315 15.1173 0.853651 15.1841 0.828703 15.2549C0.828184 15.2727 0.816749 15.288 0.812592 15.3058C0.791802 15.3777 0.778809 15.452 0.778809 15.5305V26.5378C0.779848 26.9474 1.07714 27.3 1.48981 27.3804" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M2.54124 16.393H18.6422L18.6442 16.394L18.6463 16.393H58.2087L74.8455 19.0889L77.2176 21.3936V26.009L72.2312 28.434H70.1975C70.3903 27.8364 70.4927 27.2001 70.4927 26.5419C70.4927 23.0329 67.5562 20.177 63.9455 20.177C60.3349 20.177 57.3984 23.0319 57.3984 26.5419C57.3984 27.2001 57.5019 27.8364 57.6936 28.434H22.0709C22.2637 27.8364 22.3661 27.2001 22.3661 26.5419C22.3661 23.0329 19.4296 20.177 15.819 20.177C12.2083 20.177 9.27183 23.0319 9.27183 26.5419C9.27183 26.7472 9.28378 26.9505 9.30353 27.1507L2.54695 25.8363V16.392H2.54799M7.79734 8.13759H20.2528L18.0112 14.6736H3.31824L7.79993 8.13759M37.5861 8.13759V14.6736H19.8786L22.1202 8.13759H37.584M39.3537 8.13759H41.0922L54.5409 14.6736H39.3542L39.3537 8.13759ZM63.9482 31.1844C61.3146 31.1844 59.1707 29.1008 59.1707 26.5399C59.1707 23.9774 61.3146 21.8959 63.9482 21.8959C66.5832 21.8959 68.7266 23.9784 68.7266 26.5399C68.7266 29.1023 66.5832 31.1844 63.9482 31.1844ZM15.8205 31.1844C13.1854 31.1844 11.0421 29.1008 11.0421 26.5399C11.0421 23.9774 13.1854 21.8959 15.8205 21.8959C18.454 21.8959 20.5979 23.9784 20.5979 26.5399C20.5979 29.1023 18.454 31.1844 15.8205 31.1844ZM1.49085 27.3835L9.78065 28.9948C10.7708 31.2883 13.1049 32.9032 15.8205 32.9032C18.0512 32.9032 20.02 31.8125 21.2045 30.1513H58.5652C59.7482 31.8115 61.7195 32.9032 63.9492 32.9032C66.1789 32.9032 68.1487 31.8125 69.3331 30.1513H72.4417C72.5789 30.1513 72.7151 30.1197 72.8372 30.0601L78.4987 27.3071C78.7986 27.1614 78.9878 26.8634 78.9878 26.5373V21.0339C78.9878 20.8052 78.8942 20.5871 78.7284 20.4262L75.8979 17.6732C75.767 17.5473 75.5996 17.4623 75.4187 17.4327L58.5621 14.7022L41.6946 6.50537C41.5745 6.44831 41.4383 6.41724 41.3011 6.41724H7.32593C7.03072 6.41724 6.75422 6.56141 6.58947 6.79982L0.930052 15.0521L0.929013 15.0542L0.927973 15.0562C0.926934 15.0583 0.925374 15.0593 0.924335 15.0567C0.884315 15.1173 0.853651 15.1841 0.828703 15.2549C0.828184 15.2727 0.816749 15.288 0.812592 15.3058C0.791802 15.3777 0.778809 15.452 0.778809 15.5305V26.5378C0.779848 26.9474 1.07714 27.3 1.48981 27.3804" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39.4572 17.717H42.5756V18.7359H39.4572V17.717Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M19.7072 17.717H22.8256V18.7359H19.7072V17.717Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Estate</span>
+          <input class="filter__input" type="checkbox" name="estate" value="Estate">
+          <svg>width="81" height="41" viewBox="0 0 81 41" fill="none" xmlns="http://www.w3.org/2000/svg" <path fill-rule="evenodd" clip-rule="evenodd" d="M2.54124 16.393H18.6422L18.6442 16.394L18.6463 16.393H58.2087L74.8455 19.0889L77.2176 21.3936V26.009L72.2312 28.434H70.1975C70.3903 27.8364 70.4927 27.2001 70.4927 26.5419C70.4927 23.0329 67.5562 20.177 63.9455 20.177C60.3349 20.177 57.3984 23.0319 57.3984 26.5419C57.3984 27.2001 57.5019 27.8364 57.6936 28.434H22.0709C22.2637 27.8364 22.3661 27.2001 22.3661 26.5419C22.3661 23.0329 19.4296 20.177 15.819 20.177C12.2083 20.177 9.27183 23.0319 9.27183 26.5419C9.27183 26.7472 9.28378 26.9505 9.30353 27.1507L2.54695 25.8363V16.392H2.54799M7.79734 8.13759H20.2528L18.0112 14.6736H3.31824L7.79993 8.13759M37.5861 8.13759V14.6736H19.8786L22.1202 8.13759H37.584M39.3537 8.13759H41.0922L54.5409 14.6736H39.3542L39.3537 8.13759ZM63.9482 31.1844C61.3146 31.1844 59.1707 29.1008 59.1707 26.5399C59.1707 23.9774 61.3146 21.8959 63.9482 21.8959C66.5832 21.8959 68.7266 23.9784 68.7266 26.5399C68.7266 29.1023 66.5832 31.1844 63.9482 31.1844ZM15.8205 31.1844C13.1854 31.1844 11.0421 29.1008 11.0421 26.5399C11.0421 23.9774 13.1854 21.8959 15.8205 21.8959C18.454 21.8959 20.5979 23.9784 20.5979 26.5399C20.5979 29.1023 18.454 31.1844 15.8205 31.1844ZM1.49085 27.3835L9.78065 28.9948C10.7708 31.2883 13.1049 32.9032 15.8205 32.9032C18.0512 32.9032 20.02 31.8125 21.2045 30.1513H58.5652C59.7482 31.8115 61.7195 32.9032 63.9492 32.9032C66.1789 32.9032 68.1487 31.8125 69.3331 30.1513H72.4417C72.5789 30.1513 72.7151 30.1197 72.8372 30.0601L78.4987 27.3071C78.7986 27.1614 78.9878 26.8634 78.9878 26.5373V21.0339C78.9878 20.8052 78.8942 20.5871 78.7284 20.4262L75.8979 17.6732C75.767 17.5473 75.5996 17.4623 75.4187 17.4327L58.5621 14.7022L41.6946 6.50537C41.5745 6.44831 41.4383 6.41724 41.3011 6.41724H7.32593C7.03072 6.41724 6.75422 6.56141 6.58947 6.79982L0.930052 15.0521L0.929013 15.0542L0.927973 15.0562C0.926934 15.0583 0.925374 15.0593 0.924335 15.0567C0.884315 15.1173 0.853651 15.1841 0.828703 15.2549C0.828184 15.2727 0.816749 15.288 0.812592 15.3058C0.791802 15.3777 0.778809 15.452 0.778809 15.5305V26.5378C0.779848 26.9474 1.07714 27.3 1.48981 27.3804" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M2.54124 16.393H18.6422L18.6442 16.394L18.6463 16.393H58.2087L74.8455 19.0889L77.2176 21.3936V26.009L72.2312 28.434H70.1975C70.3903 27.8364 70.4927 27.2001 70.4927 26.5419C70.4927 23.0329 67.5562 20.177 63.9455 20.177C60.3349 20.177 57.3984 23.0319 57.3984 26.5419C57.3984 27.2001 57.5019 27.8364 57.6936 28.434H22.0709C22.2637 27.8364 22.3661 27.2001 22.3661 26.5419C22.3661 23.0329 19.4296 20.177 15.819 20.177C12.2083 20.177 9.27183 23.0319 9.27183 26.5419C9.27183 26.7472 9.28378 26.9505 9.30353 27.1507L2.54695 25.8363V16.392H2.54799M7.79734 8.13759H20.2528L18.0112 14.6736H3.31824L7.79993 8.13759M37.5861 8.13759V14.6736H19.8786L22.1202 8.13759H37.584M39.3537 8.13759H41.0922L54.5409 14.6736H39.3542L39.3537 8.13759ZM63.9482 31.1844C61.3146 31.1844 59.1707 29.1008 59.1707 26.5399C59.1707 23.9774 61.3146 21.8959 63.9482 21.8959C66.5832 21.8959 68.7266 23.9784 68.7266 26.5399C68.7266 29.1023 66.5832 31.1844 63.9482 31.1844ZM15.8205 31.1844C13.1854 31.1844 11.0421 29.1008 11.0421 26.5399C11.0421 23.9774 13.1854 21.8959 15.8205 21.8959C18.454 21.8959 20.5979 23.9784 20.5979 26.5399C20.5979 29.1023 18.454 31.1844 15.8205 31.1844ZM1.49085 27.3835L9.78065 28.9948C10.7708 31.2883 13.1049 32.9032 15.8205 32.9032C18.0512 32.9032 20.02 31.8125 21.2045 30.1513H58.5652C59.7482 31.8115 61.7195 32.9032 63.9492 32.9032C66.1789 32.9032 68.1487 31.8125 69.3331 30.1513H72.4417C72.5789 30.1513 72.7151 30.1197 72.8372 30.0601L78.4987 27.3071C78.7986 27.1614 78.9878 26.8634 78.9878 26.5373V21.0339C78.9878 20.8052 78.8942 20.5871 78.7284 20.4262L75.8979 17.6732C75.767 17.5473 75.5996 17.4623 75.4187 17.4327L58.5621 14.7022L41.6946 6.50537C41.5745 6.44831 41.4383 6.41724 41.3011 6.41724H7.32593C7.03072 6.41724 6.75422 6.56141 6.58947 6.79982L0.930052 15.0521L0.929013 15.0542L0.927973 15.0562C0.926934 15.0583 0.925374 15.0593 0.924335 15.0567C0.884315 15.1173 0.853651 15.1841 0.828703 15.2549C0.828184 15.2727 0.816749 15.288 0.812592 15.3058C0.791802 15.3777 0.778809 15.452 0.778809 15.5305V26.5378C0.779848 26.9474 1.07714 27.3 1.48981 27.3804" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39.4572 17.717H42.5756V18.7359H39.4572V17.717Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M19.7072 17.717H22.8256V18.7359H19.7072V17.717Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Estate</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="saloon" value="Saloon"><svg width="80" height="41" viewBox="0 0 80 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.3952 17.1499C18.3974 17.151 58.4584 17.1499 58.4584 17.1499L75.3058 19.9457L77.7079 22.3357V27.1221L72.6584 29.6368H70.5989C70.7942 29.0171 70.8979 28.3573 70.8979 27.6747C70.8979 24.0358 67.9242 21.0741 64.2679 21.0741C60.6116 21.0741 57.6379 24.0347 57.6379 27.6747C57.6379 28.3573 57.7426 29.0171 57.9368 29.6368H21.8631C22.0584 29.0171 22.1621 28.3573 22.1621 27.6747C22.1621 24.0358 19.1884 21.0741 15.5321 21.0741C11.8758 21.0741 8.90209 24.0347 8.90209 27.6747C8.90209 27.8876 8.91419 28.0984 8.93419 28.306L3.14472 26.943V17.1488H18.3979M37.5721 8.58876V15.3669H14.3774L21.9105 8.58876H37.57M39.3621 8.58876H41.1226L54.7416 15.3669H39.3626L39.3621 8.58876ZM64.2679 32.4891C61.601 32.4891 59.43 30.3284 59.43 27.6726C59.43 25.0153 61.601 22.8566 64.2679 22.8566C66.9363 22.8566 69.1068 25.0163 69.1068 27.6726C69.1068 30.33 66.9363 32.4891 64.2679 32.4891ZM15.531 32.4891C12.8626 32.4891 10.6921 30.3284 10.6921 27.6726C10.6921 25.0153 12.8626 22.8566 15.531 22.8566C18.1979 22.8566 20.3689 25.0163 20.3689 27.6726C20.3689 30.33 18.1979 32.4891 15.531 32.4891ZM9.41472 30.2185C10.4174 32.5969 12.781 34.2716 15.531 34.2716C17.79 34.2716 19.7837 33.1405 20.9831 31.4177H58.8168C60.0147 33.1395 62.011 34.2716 64.2689 34.2716C66.5268 34.2716 68.5216 33.1405 69.721 31.4177H72.8689C73.0079 31.4177 73.1458 31.385 73.2695 31.3232L79.0026 28.4682C79.3063 28.3171 79.4979 28.0081 79.4979 27.67V21.9627C79.4979 21.7255 79.4031 21.4994 79.2353 21.3325L76.3689 18.4775C76.2363 18.347 76.0668 18.2588 75.8837 18.2282L58.8137 15.3965L41.7326 6.89608C41.611 6.83691 41.4731 6.80469 41.3342 6.80469H21.1395C20.8405 6.80469 20.5605 6.9542 20.3937 7.20144L12.031 14.7028C11.9847 14.7752 11.9537 14.8444 11.9284 14.9178C11.891 15.0451 11.8779 15.1223 11.8779 15.2036L1.54788 15.2977L1.35156 27.6753C1.35262 28.1 1.65367 28.4656 2.07156 28.5491L9.41367 30.2201" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0526 18.5229H24.2105V19.5796H21.0526V18.5229Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40 18.5229H43.1579V19.5796H40V18.5229Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Saloon</span>
+          <input class="filter__input" type="checkbox" name="saloon" value="Saloon">
+          <svg>width="80" height="41" viewBox="0 0 80 41" fill="none" xmlns="http://www.w3.org/2000/svg" <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3952 17.1499C18.3974 17.151 58.4584 17.1499 58.4584 17.1499L75.3058 19.9457L77.7079 22.3357V27.1221L72.6584 29.6368H70.5989C70.7942 29.0171 70.8979 28.3573 70.8979 27.6747C70.8979 24.0358 67.9242 21.0741 64.2679 21.0741C60.6116 21.0741 57.6379 24.0347 57.6379 27.6747C57.6379 28.3573 57.7426 29.0171 57.9368 29.6368H21.8631C22.0584 29.0171 22.1621 28.3573 22.1621 27.6747C22.1621 24.0358 19.1884 21.0741 15.5321 21.0741C11.8758 21.0741 8.90209 24.0347 8.90209 27.6747C8.90209 27.8876 8.91419 28.0984 8.93419 28.306L3.14472 26.943V17.1488H18.3979M37.5721 8.58876V15.3669H14.3774L21.9105 8.58876H37.57M39.3621 8.58876H41.1226L54.7416 15.3669H39.3626L39.3621 8.58876ZM64.2679 32.4891C61.601 32.4891 59.43 30.3284 59.43 27.6726C59.43 25.0153 61.601 22.8566 64.2679 22.8566C66.9363 22.8566 69.1068 25.0163 69.1068 27.6726C69.1068 30.33 66.9363 32.4891 64.2679 32.4891ZM15.531 32.4891C12.8626 32.4891 10.6921 30.3284 10.6921 27.6726C10.6921 25.0153 12.8626 22.8566 15.531 22.8566C18.1979 22.8566 20.3689 25.0163 20.3689 27.6726C20.3689 30.33 18.1979 32.4891 15.531 32.4891ZM9.41472 30.2185C10.4174 32.5969 12.781 34.2716 15.531 34.2716C17.79 34.2716 19.7837 33.1405 20.9831 31.4177H58.8168C60.0147 33.1395 62.011 34.2716 64.2689 34.2716C66.5268 34.2716 68.5216 33.1405 69.721 31.4177H72.8689C73.0079 31.4177 73.1458 31.385 73.2695 31.3232L79.0026 28.4682C79.3063 28.3171 79.4979 28.0081 79.4979 27.67V21.9627C79.4979 21.7255 79.4031 21.4994 79.2353 21.3325L76.3689 18.4775C76.2363 18.347 76.0668 18.2588 75.8837 18.2282L58.8137 15.3965L41.7326 6.89608C41.611 6.83691 41.4731 6.80469 41.3342 6.80469H21.1395C20.8405 6.80469 20.5605 6.9542 20.3937 7.20144L12.031 14.7028C11.9847 14.7752 11.9537 14.8444 11.9284 14.9178C11.891 15.0451 11.8779 15.1223 11.8779 15.2036L1.54788 15.2977L1.35156 27.6753C1.35262 28.1 1.65367 28.4656 2.07156 28.5491L9.41367 30.2201" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0526 18.5229H24.2105V19.5796H21.0526V18.5229Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40 18.5229H43.1579V19.5796H40V18.5229Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Saloon</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="van" value="VAN"><svg width="81" height="41" viewBox="0 0 81 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5147 18.7733C16.5168 18.7743 63.8731 18.7733 63.8731 18.7733L72.7138 21.5378L75.0859 23.9011V28.6339L70.0996 31.1205H68.0658C68.2587 30.5077 68.361 29.8552 68.361 29.1803C68.361 25.5821 65.4245 22.6536 61.8139 22.6536C58.2033 22.6536 55.2668 25.5811 55.2668 29.1803C55.2668 29.8552 55.3702 30.5077 55.562 31.1205H19.9392C20.1321 30.5077 20.2345 29.8552 20.2345 29.1803C20.2345 25.5821 17.2979 22.6536 13.6873 22.6536C10.0767 22.6536 7.14021 25.5811 7.14021 29.1803C7.14021 29.3908 7.15216 29.5993 7.17191 29.8046L6.13244 28.4568V18.7723H16.5173M35.4518 7.69763V17.0118H7.34966L10.111 7.69763H35.4498M37.2195 7.69763H38.958L60.2027 17.0118H37.22L37.2195 7.69763ZM61.8139 33.9424C59.1804 33.9424 57.0365 31.8058 57.0365 29.1798C57.0365 26.5522 59.1804 24.4177 61.8139 24.4177C64.449 24.4177 66.5924 26.5532 66.5924 29.1798C66.5924 31.8074 64.449 33.9424 61.8139 33.9424ZM13.6863 33.9424C11.0512 33.9424 8.90783 31.8058 8.90783 29.1798C8.90783 26.5522 11.0512 24.4177 13.6863 24.4177C16.3198 24.4177 18.4637 26.5532 18.4637 29.1798C18.4637 31.8074 16.3198 33.9424 13.6863 33.9424ZM7.64643 31.6972C8.63653 34.049 10.9707 35.7049 13.6863 35.7049C15.917 35.7049 17.8858 34.5865 19.0702 32.883H56.431C57.6139 34.5855 59.5853 35.7049 61.815 35.7049C64.0446 35.7049 66.0144 34.5865 67.1989 32.883H70.3075C70.4447 32.883 70.5808 32.8506 70.703 32.7895L76.3645 29.9665C76.6644 29.8171 76.8536 29.5115 76.8536 29.1772V23.5338C76.8536 23.2993 76.76 23.0757 76.5942 22.9106L73.7637 20.0876C73.6327 19.9586 73.4654 19.8714 73.2845 19.8411L60.066 14.9515L39.5604 5.50151C39.4403 5.443 39.3041 5.41113 39.1669 5.41113H8.82987C8.53466 5.41113 8.25816 5.55897 8.0934 5.80345L5.03267 16.3557C4.98694 16.4273 4.95627 16.4957 4.93133 16.5683C4.89442 16.6942 4.88143 16.7705 4.88143 16.8509L4.55556 16.9439L4.36169 29.1829C4.36273 29.6029 4.66002 29.9644 5.07269 30.047L7.64539 31.6993" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M37.8494 20.1311H40.9678V21.1759H37.8494V20.1311Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">VAN</span>
+          <input class="filter__input" type="checkbox" name="van" value="VAN">
+          <svg>width="81" height="41" viewBox="0 0 81 41" fill="none" xmlns="http://www.w3.org/2000/svg" <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5147 18.7733C16.5168 18.7743 63.8731 18.7733 63.8731 18.7733L72.7138 21.5378L75.0859 23.9011V28.6339L70.0996 31.1205H68.0658C68.2587 30.5077 68.361 29.8552 68.361 29.1803C68.361 25.5821 65.4245 22.6536 61.8139 22.6536C58.2033 22.6536 55.2668 25.5811 55.2668 29.1803C55.2668 29.8552 55.3702 30.5077 55.562 31.1205H19.9392C20.1321 30.5077 20.2345 29.8552 20.2345 29.1803C20.2345 25.5821 17.2979 22.6536 13.6873 22.6536C10.0767 22.6536 7.14021 25.5811 7.14021 29.1803C7.14021 29.3908 7.15216 29.5993 7.17191 29.8046L6.13244 28.4568V18.7723H16.5173M35.4518 7.69763V17.0118H7.34966L10.111 7.69763H35.4498M37.2195 7.69763H38.958L60.2027 17.0118H37.22L37.2195 7.69763ZM61.8139 33.9424C59.1804 33.9424 57.0365 31.8058 57.0365 29.1798C57.0365 26.5522 59.1804 24.4177 61.8139 24.4177C64.449 24.4177 66.5924 26.5532 66.5924 29.1798C66.5924 31.8074 64.449 33.9424 61.8139 33.9424ZM13.6863 33.9424C11.0512 33.9424 8.90783 31.8058 8.90783 29.1798C8.90783 26.5522 11.0512 24.4177 13.6863 24.4177C16.3198 24.4177 18.4637 26.5532 18.4637 29.1798C18.4637 31.8074 16.3198 33.9424 13.6863 33.9424ZM7.64643 31.6972C8.63653 34.049 10.9707 35.7049 13.6863 35.7049C15.917 35.7049 17.8858 34.5865 19.0702 32.883H56.431C57.6139 34.5855 59.5853 35.7049 61.815 35.7049C64.0446 35.7049 66.0144 34.5865 67.1989 32.883H70.3075C70.4447 32.883 70.5808 32.8506 70.703 32.7895L76.3645 29.9665C76.6644 29.8171 76.8536 29.5115 76.8536 29.1772V23.5338C76.8536 23.2993 76.76 23.0757 76.5942 22.9106L73.7637 20.0876C73.6327 19.9586 73.4654 19.8714 73.2845 19.8411L60.066 14.9515L39.5604 5.50151C39.4403 5.443 39.3041 5.41113 39.1669 5.41113H8.82987C8.53466 5.41113 8.25816 5.55897 8.0934 5.80345L5.03267 16.3557C4.98694 16.4273 4.95627 16.4957 4.93133 16.5683C4.89442 16.6942 4.88143 16.7705 4.88143 16.8509L4.55556 16.9439L4.36169 29.1829C4.36273 29.6029 4.66002 29.9644 5.07269 30.047L7.64539 31.6993" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M37.8494 20.1311H40.9678V21.1759H37.8494V20.1311Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">VAN</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="suv" value="SUV"><svg width="81" height="41" viewBox="0 0 81 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.57 19.2108C18.5721 19.2118 58.6331 19.2108 58.6331 19.2108L75.4805 19.8857L77.8826 24.3386V31.6833L72.8331 31.558H70.7736C70.9689 30.9452 71.0726 30.2927 71.0726 29.6178C71.0726 26.0196 68.0989 23.0911 64.4426 23.0911C60.7863 23.0911 57.8126 26.0186 57.8126 29.6178C57.8126 30.2927 57.9173 30.9452 58.1115 31.558H22.0379C22.2331 30.9452 22.3368 30.2927 22.3368 29.6178C22.3368 26.0196 19.3631 23.0911 15.7068 23.0911C12.0505 23.0911 9.07681 26.0186 9.07681 29.6178C9.07681 29.8283 9.08891 30.0368 9.10891 30.2421L2.26681 28.8943V19.2098H18.5726M7.58523 8.65752H20.1984L17.9284 17.4493H3.04944L7.58786 8.65752M37.751 8.65752V17.4493H19.8194L22.0894 8.65752H37.7489M39.541 8.65752H41.3015L54.9205 17.4493H39.5415L39.541 8.65752ZM64.4258 33.0123C62.54 33.0123 61.0052 31.489 61.0052 29.6168C61.0052 27.744 62.5405 26.2212 64.4258 26.2212C66.3126 26.2212 67.8473 27.744 67.8473 29.6168C67.8473 31.489 66.3126 33.0123 64.4258 33.0123ZM15.4784 33.0123C13.5915 33.0123 12.0568 31.489 12.0568 29.6168C12.0568 27.744 13.5915 26.2212 15.4784 26.2212C17.3642 26.2212 18.8989 27.744 18.8989 29.6168C18.8989 31.489 17.3636 33.0123 15.4784 33.0123ZM9.5926 32.1357C10.5952 34.4875 12.9589 36.1435 15.7089 36.1435C17.9679 36.1435 19.9615 35.0251 21.161 33.3215H58.9947C60.1926 35.024 62.1889 36.1435 64.4468 36.1435C66.7047 36.1435 68.6994 35.0251 69.8989 33.3215H73.0468C73.1857 33.3215 73.3236 33.2892 73.4473 33.228L79.1805 33.017C79.4842 32.8676 79.6758 32.562 79.6758 32.2277V23.9724C79.6758 23.7378 79.581 23.5142 79.4131 23.3492L76.5468 18.4366C76.4142 18.3076 76.2447 18.2204 76.0615 18.1901L58.9915 17.4796L41.9105 6.46244C41.7889 6.40394 41.651 6.37207 41.5121 6.37207H7.10681C6.80786 6.37207 6.52786 6.51991 6.36102 6.76438L0.629965 17.839C0.583649 17.9106 0.552596 17.979 0.527333 18.0516C0.489965 18.1775 0.476807 18.2538 0.476807 18.3342V29.6215C0.477859 30.0415 0.778912 30.403 1.19681 30.4855L9.59154 32.1378" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39.6484 22.1357H42.8063V23.1805H39.6484V22.1357Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.7537 29.449H58.5958V30.4938H21.7537V29.449Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M70.701 29.449H78.5958V30.4938H70.701V29.449Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">SUV</span>
+          <input class="filter__input" type="checkbox" name="suv" value="SUV">
+          <svg>width="81" height="41" viewBox="0 0 81 41" fill="none" xmlns="http://www.w3.org/2000/svg" <path fill-rule="evenodd" clip-rule="evenodd" d="M18.57 19.2108C18.5721 19.2118 58.6331 19.2108 58.6331 19.2108L75.4805 19.8857L77.8826 24.3386V31.6833L72.8331 31.558H70.7736C70.9689 30.9452 71.0726 30.2927 71.0726 29.6178C71.0726 26.0196 68.0989 23.0911 64.4426 23.0911C60.7863 23.0911 57.8126 26.0186 57.8126 29.6178C57.8126 30.2927 57.9173 30.9452 58.1115 31.558H22.0379C22.2331 30.9452 22.3368 30.2927 22.3368 29.6178C22.3368 26.0196 19.3631 23.0911 15.7068 23.0911C12.0505 23.0911 9.07681 26.0186 9.07681 29.6178C9.07681 29.8283 9.08891 30.0368 9.10891 30.2421L2.26681 28.8943V19.2098H18.5726M7.58523 8.65752H20.1984L17.9284 17.4493H3.04944L7.58786 8.65752M37.751 8.65752V17.4493H19.8194L22.0894 8.65752H37.7489M39.541 8.65752H41.3015L54.9205 17.4493H39.5415L39.541 8.65752ZM64.4258 33.0123C62.54 33.0123 61.0052 31.489 61.0052 29.6168C61.0052 27.744 62.5405 26.2212 64.4258 26.2212C66.3126 26.2212 67.8473 27.744 67.8473 29.6168C67.8473 31.489 66.3126 33.0123 64.4258 33.0123ZM15.4784 33.0123C13.5915 33.0123 12.0568 31.489 12.0568 29.6168C12.0568 27.744 13.5915 26.2212 15.4784 26.2212C17.3642 26.2212 18.8989 27.744 18.8989 29.6168C18.8989 31.489 17.3636 33.0123 15.4784 33.0123ZM9.5926 32.1357C10.5952 34.4875 12.9589 36.1435 15.7089 36.1435C17.9679 36.1435 19.9615 35.0251 21.161 33.3215H58.9947C60.1926 35.024 62.1889 36.1435 64.4468 36.1435C66.7047 36.1435 68.6994 35.0251 69.8989 33.3215H73.0468C73.1857 33.3215 73.3236 33.2892 73.4473 33.228L79.1805 33.017C79.4842 32.8676 79.6758 32.562 79.6758 32.2277V23.9724C79.6758 23.7378 79.581 23.5142 79.4131 23.3492L76.5468 18.4366C76.4142 18.3076 76.2447 18.2204 76.0615 18.1901L58.9915 17.4796L41.9105 6.46244C41.7889 6.40394 41.651 6.37207 41.5121 6.37207H7.10681C6.80786 6.37207 6.52786 6.51991 6.36102 6.76438L0.629965 17.839C0.583649 17.9106 0.552596 17.979 0.527333 18.0516C0.489965 18.1775 0.476807 18.2538 0.476807 18.3342V29.6215C0.477859 30.0415 0.778912 30.403 1.19681 30.4855L9.59154 32.1378" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39.6484 22.1357H42.8063V23.1805H39.6484V22.1357Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.7537 29.449H58.5958V30.4938H21.7537V29.449Z" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M70.701 29.449H78.5958V30.4938H70.701V29.449Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">SUV</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="coupe" value="Coupe"><svg width="80" height="42" viewBox="0 0 80 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.8391 17.5415C17.8412 17.5426 57.9023 17.5415 57.9023 17.5415L74.7497 20.3373L77.1518 22.7273V27.5137L72.1023 30.0284H70.0428C70.2381 29.4087 70.3418 28.7489 70.3418 28.0663C70.3418 24.4274 67.3681 21.4657 63.7118 21.4657C60.0555 21.4657 57.0818 24.4263 57.0818 28.0663C57.0818 28.7489 57.1865 29.4087 57.3807 30.0284H21.307C21.5023 29.4087 21.606 28.7489 21.606 28.0663C21.606 24.4274 18.6323 21.4657 14.976 21.4657C11.3197 21.4657 8.34598 24.4263 8.34598 28.0663C8.34598 28.2792 8.35809 29.5466 8.37809 29.7543L2.58861 27.3346V17.5404H17.8418M37.016 8.98036V15.7585H13.8212L18.8407 11.242C20.2291 9.99312 22.8702 8.98036 24.7328 8.98036H37.0139M38.806 8.98036H40.5665L54.1855 15.7585H38.8065L38.806 8.98036ZM63.7118 32.8807C61.0449 32.8807 58.8739 30.72 58.8739 28.0642C58.8739 25.4069 61.0449 23.2482 63.7118 23.2482C66.3802 23.2482 68.5507 25.4079 68.5507 28.0642C68.5507 30.7216 66.3802 32.8807 63.7118 32.8807ZM14.9749 32.8807C12.3065 32.8807 10.136 30.72 10.136 28.0642C10.136 25.4069 12.3065 23.2482 14.9749 23.2482C17.6418 23.2482 19.8128 25.4079 19.8128 28.0642C19.8128 30.7216 17.6418 32.8807 14.9749 32.8807ZM9.38493 31.7148C9.9744 32.5373 12.9012 34.6632 14.4486 34.6632C16.7076 34.6632 19.2276 33.5321 20.427 31.8093H58.2607C59.4586 33.5311 61.4549 34.6632 63.7128 34.6632C65.9707 34.6632 67.9655 33.5321 69.1649 31.8093H72.3128C72.4518 31.8093 72.5897 31.7766 72.7134 31.7148L78.4465 28.8598C78.7502 28.7087 78.9418 28.3997 78.9418 28.0616V22.3543C78.9418 22.1171 78.847 21.891 78.6791 21.7241L75.8128 18.8691C75.6802 18.7386 75.5107 18.6504 75.3276 18.6198L58.2576 15.7881L41.1765 7.28769C40.9565 7.23697 39.3634 7.19629 37.6207 7.19629H20.427L13.8512 12.9986C12.5397 14.1561 11.3734 15.3094 11.3734 15.3094L11.476 15.0944C11.4191 15.2133 11.3228 15.5952 11.3228 15.5952L0.992825 15.6893L0.796509 28.0669C0.797561 28.4916 1.09861 28.8572 1.51651 28.9407C1.51651 28.9407 8.92704 31.075 9.38493 31.7164" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39.4438 18.9146H42.6017V19.9712H39.4438V18.9146Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Coupe</span>
+          <input class="filter__input" type="checkbox" name="coupe" value="Coupe">
+          <svg>width="80" height="42" viewBox="0 0 80 42" fill="none" xmlns="http://www.w3.org/2000/svg" <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8391 17.5415C17.8412 17.5426 57.9023 17.5415 57.9023 17.5415L74.7497 20.3373L77.1518 22.7273V27.5137L72.1023 30.0284H70.0428C70.2381 29.4087 70.3418 28.7489 70.3418 28.0663C70.3418 24.4274 67.3681 21.4657 63.7118 21.4657C60.0555 21.4657 57.0818 24.4263 57.0818 28.0663C57.0818 28.7489 57.1865 29.4087 57.3807 30.0284H21.307C21.5023 29.4087 21.606 28.7489 21.606 28.0663C21.606 24.4274 18.6323 21.4657 14.976 21.4657C11.3197 21.4657 8.34598 24.4263 8.34598 28.0663C8.34598 28.2792 8.35809 29.5466 8.37809 29.7543L2.58861 27.3346V17.5404H17.8418M37.016 8.98036V15.7585H13.8212L18.8407 11.242C20.2291 9.99312 22.8702 8.98036 24.7328 8.98036H37.0139M38.806 8.98036H40.5665L54.1855 15.7585H38.8065L38.806 8.98036ZM63.7118 32.8807C61.0449 32.8807 58.8739 30.72 58.8739 28.0642C58.8739 25.4069 61.0449 23.2482 63.7118 23.2482C66.3802 23.2482 68.5507 25.4079 68.5507 28.0642C68.5507 30.7216 66.3802 32.8807 63.7118 32.8807ZM14.9749 32.8807C12.3065 32.8807 10.136 30.72 10.136 28.0642C10.136 25.4069 12.3065 23.2482 14.9749 23.2482C17.6418 23.2482 19.8128 25.4079 19.8128 28.0642C19.8128 30.7216 17.6418 32.8807 14.9749 32.8807ZM9.38493 31.7148C9.9744 32.5373 12.9012 34.6632 14.4486 34.6632C16.7076 34.6632 19.2276 33.5321 20.427 31.8093H58.2607C59.4586 33.5311 61.4549 34.6632 63.7128 34.6632C65.9707 34.6632 67.9655 33.5321 69.1649 31.8093H72.3128C72.4518 31.8093 72.5897 31.7766 72.7134 31.7148L78.4465 28.8598C78.7502 28.7087 78.9418 28.3997 78.9418 28.0616V22.3543C78.9418 22.1171 78.847 21.891 78.6791 21.7241L75.8128 18.8691C75.6802 18.7386 75.5107 18.6504 75.3276 18.6198L58.2576 15.7881L41.1765 7.28769C40.9565 7.23697 39.3634 7.19629 37.6207 7.19629H20.427L13.8512 12.9986C12.5397 14.1561 11.3734 15.3094 11.3734 15.3094L11.476 15.0944C11.4191 15.2133 11.3228 15.5952 11.3228 15.5952L0.992825 15.6893L0.796509 28.0669C0.797561 28.4916 1.09861 28.8572 1.51651 28.9407C1.51651 28.9407 8.92704 31.075 9.38493 31.7164" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39.4438 18.9146H42.6017V19.9712H39.4438V18.9146Z" fill="#8B8B8B"/></svg><span class="filter__bodytype">Coupe</span>
         </label>
         <label class="filter__label">
-          <input class="filter__input" type="checkbox" name="pick_up" value="Pick-up"><svg width="80" height="42" viewBox="0 0 80 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.9038 17.8219C18.9059 17.8229 58.4662 17.8219 58.4662 17.8219L75.1029 20.5179L77.475 22.8225V28.9663L72.4887 29.8629H70.4549C70.6477 29.2653 70.7501 28.6291 70.7501 27.9709C70.7501 24.4619 67.8136 21.606 64.203 21.606C60.5924 21.606 57.6559 24.4609 57.6559 27.9709C57.6559 28.6291 57.7593 29.2653 57.9511 29.8629H22.3283C22.5212 29.2653 22.6235 28.6291 22.6235 27.9709C22.6235 24.4619 19.687 21.606 16.0764 21.606C12.4658 21.606 9.52929 24.4609 9.52929 27.9709C9.52929 28.1762 9.54125 28.3794 9.561 28.5796L3.84389 27.2653V17.8209H18.9064M39.6106 9.56655H46.0268L55.8373 16.1026H39.6111L39.6106 9.56655ZM64.2051 32.6133C61.5716 32.6133 59.4277 30.5298 59.4277 27.9688C59.4277 25.4064 61.5716 23.3248 64.2051 23.3248C66.8402 23.3248 68.9836 25.4074 68.9836 27.9688C68.9836 30.5313 66.8402 32.6133 64.2051 32.6133ZM16.0775 32.6133C13.4424 32.6133 11.299 30.5298 11.299 27.9688C11.299 25.4064 13.4424 23.3248 16.0775 23.3248C18.711 23.3248 20.8549 25.4074 20.8549 27.9688C20.8549 30.5313 18.711 32.6133 16.0775 32.6133ZM10.0376 30.4238C11.0277 32.7173 13.3618 34.3322 16.0775 34.3322C18.3082 34.3322 20.2769 33.2415 21.4614 31.5802H58.8222C60.0051 33.2405 61.9765 34.3322 64.2061 34.3322C66.4358 34.3322 68.4056 33.2415 69.5901 31.5802H72.6986C72.8358 31.5802 72.972 31.5486 73.0941 31.489L78.7556 30.7738C79.0555 30.6281 79.2447 30.3301 79.2447 30.004V22.4629C79.2447 22.2341 79.1512 22.0161 78.9854 21.8551L76.1549 19.1021C76.0239 18.9763 75.8565 18.8912 75.6757 18.8617L58.8191 16.1311L47.1489 7.93432C47.0288 7.87727 46.8927 7.84619 46.7554 7.84619H37.7287C37.4334 7.84619 37.1569 7.99036 36.9922 8.22878L33.4117 15.4622C33.366 15.532 33.3353 15.5988 33.3104 15.6696C33.2735 15.7923 33.2605 15.8667 33.2605 15.9452L2.26857 16.0359L2.07471 27.9714C2.07575 28.381 2.37304 28.7335 2.78571 28.814L10.036 30.4253" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M41.278 19.146H44.3964V20.1649H41.278V19.146Z" fill="#8B8B8B"/><path d="M39.2355 17.7041L39.5063 30.0568" stroke="#8B8B8B"/></svg><span class="filter__bodytype">Pick-up</span>
+          <input class="filter__input" type="checkbox" name="pick_up" value="Pick-up">
+          <svg>width="80" height="42" viewBox="0 0 80 42" fill="none" xmlns="http://www.w3.org/2000/svg" <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9038 17.8219C18.9059 17.8229 58.4662 17.8219 58.4662 17.8219L75.1029 20.5179L77.475 22.8225V28.9663L72.4887 29.8629H70.4549C70.6477 29.2653 70.7501 28.6291 70.7501 27.9709C70.7501 24.4619 67.8136 21.606 64.203 21.606C60.5924 21.606 57.6559 24.4609 57.6559 27.9709C57.6559 28.6291 57.7593 29.2653 57.9511 29.8629H22.3283C22.5212 29.2653 22.6235 28.6291 22.6235 27.9709C22.6235 24.4619 19.687 21.606 16.0764 21.606C12.4658 21.606 9.52929 24.4609 9.52929 27.9709C9.52929 28.1762 9.54125 28.3794 9.561 28.5796L3.84389 27.2653V17.8209H18.9064M39.6106 9.56655H46.0268L55.8373 16.1026H39.6111L39.6106 9.56655ZM64.2051 32.6133C61.5716 32.6133 59.4277 30.5298 59.4277 27.9688C59.4277 25.4064 61.5716 23.3248 64.2051 23.3248C66.8402 23.3248 68.9836 25.4074 68.9836 27.9688C68.9836 30.5313 66.8402 32.6133 64.2051 32.6133ZM16.0775 32.6133C13.4424 32.6133 11.299 30.5298 11.299 27.9688C11.299 25.4064 13.4424 23.3248 16.0775 23.3248C18.711 23.3248 20.8549 25.4074 20.8549 27.9688C20.8549 30.5313 18.711 32.6133 16.0775 32.6133ZM10.0376 30.4238C11.0277 32.7173 13.3618 34.3322 16.0775 34.3322C18.3082 34.3322 20.2769 33.2415 21.4614 31.5802H58.8222C60.0051 33.2405 61.9765 34.3322 64.2061 34.3322C66.4358 34.3322 68.4056 33.2415 69.5901 31.5802H72.6986C72.8358 31.5802 72.972 31.5486 73.0941 31.489L78.7556 30.7738C79.0555 30.6281 79.2447 30.3301 79.2447 30.004V22.4629C79.2447 22.2341 79.1512 22.0161 78.9854 21.8551L76.1549 19.1021C76.0239 18.9763 75.8565 18.8912 75.6757 18.8617L58.8191 16.1311L47.1489 7.93432C47.0288 7.87727 46.8927 7.84619 46.7554 7.84619H37.7287C37.4334 7.84619 37.1569 7.99036 36.9922 8.22878L33.4117 15.4622C33.366 15.532 33.3353 15.5988 33.3104 15.6696C33.2735 15.7923 33.2605 15.8667 33.2605 15.9452L2.26857 16.0359L2.07471 27.9714C2.07575 28.381 2.37304 28.7335 2.78571 28.814L10.036 30.4253" fill="#8B8B8B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M41.278 19.146H44.3964V20.1649H41.278V19.146Z" fill="#8B8B8B"/><path d="M39.2355 17.7041L39.5063 30.0568" stroke="#8B8B8B"/></svg><span class="filter__bodytype">Pick-up</span>
         </label>
       </div>
     </div>
@@ -461,16 +499,16 @@
   <button class="filter__submit" type="submit">Apply filter</button>
 </form>
               <div class="grid-categories">
-<div class="sorting"> 
+<div class="sorting">
   <button class="sorting__filter" type="button">
     <input type="text" name="sorting"><span>Sorting</span><img src="/assets/images/icons/sorting.svg" alt="sorting">
-    <div class="sorting__choose">
-      <div class="sorting__choose__item" data-value="by_many">By many</div>
-      <div class="sorting__choose__item" data-value="cheaper">Cheaper</div>
-      <div class="sorting__choose__item" data-value="expensive">Expensive</div>
-      <div class="sorting__choose__item" data-value="by_date">By date</div>
-    </div>
   </button>
+  <div class="sorting__choose">
+    <div class="sorting__choose__item" data-value="by_many">By many</div>
+    <div class="sorting__choose__item" data-value="cheaper">Cheaper</div>
+    <div class="sorting__choose__item" data-value="expensive">Expensive</div>
+    <div class="sorting__choose__item" data-value="by_date">By date</div>
+  </div>
   <div class="sorting__views">
     <button class="sorting__view sorting__view-list" type="button"><img src="/assets/images/icons/sorting-list.svg" alt="sorting-list"></button>
     <button class="sorting__view sorting__view-cards active" type="button"><img src="/assets/images/icons/sorting-cards.svg" alt="sorting-cards"></button>
@@ -495,8 +533,8 @@
                                         <div class="card__date">1 day ago</div>
                                       </div></a>
                                     <div class="card__right">
-                                      <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                      <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                      <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                      <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                         <div class="card__user__title">Regina Miles</div>
                                         <div class="rating">
                                           <div class="rating__amount">
@@ -523,8 +561,8 @@
                                         <div class="card__date">1 hours ago</div>
                                       </div></a>
                                     <div class="card__right">
-                                      <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                      <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                      <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                      <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                         <div class="card__user__title">Regina Miles</div>
                                         <div class="rating">
                                           <div class="rating__amount">
@@ -551,8 +589,8 @@
                                         <div class="card__date">20 hours ago</div>
                                       </div></a>
                                     <div class="card__right">
-                                      <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                      <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                      <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                      <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                         <div class="card__user__title">Regina Miles</div>
                                         <div class="rating">
                                           <div class="rating__amount">
@@ -579,8 +617,8 @@
                                         <div class="card__date">Week ago</div>
                                       </div></a>
                                     <div class="card__right">
-                                      <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                      <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                      <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                      <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                         <div class="card__user__title">Regina Miles</div>
                                         <div class="rating">
                                           <div class="rating__amount">
@@ -607,8 +645,8 @@
                                         <div class="card__date">2 days ago</div>
                                       </div></a>
                                     <div class="card__right">
-                                      <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                      <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                      <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                      <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                         <div class="card__user__title">Regina Miles</div>
                                         <div class="rating">
                                           <div class="rating__amount">
@@ -635,8 +673,8 @@
                                         <div class="card__date">12 hours ago</div>
                                       </div></a>
                                     <div class="card__right">
-                                      <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                                      <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                                      <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                                      <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                         <div class="card__user__title">Regina Miles</div>
                                         <div class="rating">
                                           <div class="rating__amount">
@@ -651,7 +689,7 @@
                                   </div>
                                 </div>
                 </div>
-<div class="more__button"> 
+<div class="more__button">
   <button type="button">Load more</button>
 </div>
               </div>
@@ -659,13 +697,36 @@
           </div>
         </section>
       </div>
-<footer class="footer"> 
+<footer class="footer">
   <div class="footer__wrapper">
     <nav class="footer__links"><a class="footer__links" href="#">Place an ad</a><a class="footer__links" href="#">Ads</a><a class="footer__links" href="#">Categories</a><a class="footer__links" href="#">Registration</a><a class="footer__links" href="#">Data processing policy</a></nav>
     <div class="footer__rights">All Right Reserved.</div>
   </div>
 </footer>
     </main>
+<form class="signin" action="#">
+  <div class="signin__popup">
+    <div class="settings__popup__title">Sign in</div>
+    <div class="settings__close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="signin__mail settings__input">
+      <input type="email" placeholder="Enter your email" name="email" required><img class="settings__input__img" src="/assets/images/icons/close-black.svg" alt="close-black">
+    </div>
+    <div class="settings__input settings__input__password">
+      <input type="password" placeholder="New password" name="new-password" required><img class="settings__input__img" src="/assets/images/icons/eyeslash.svg" alt="eyeslash">
+    </div>
+    <div class="signin__password">
+      <label class="signin__password__label">
+        <input type="checkbox" name=""><span>Remember password</span>
+      </label>
+      <button class="signin__question" type="button">Forgot your password?</button>
+    </div>
+    <div class="signin__buttons">
+      <button class="settings__button settings__button-white" type="button">Register a new account</button>
+      <button class="settings__button settings__button-active" type="button">Sign in</button>
+    </div>
+  </div>
+</form>
     <div class="bg"></div>
+    <div class="popup-bg"></div>
   </body>
 </html>

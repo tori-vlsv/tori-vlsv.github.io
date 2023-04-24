@@ -6,8 +6,8 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <meta content="#ffc40d" name="msapplication-TileColor">
     <meta content="#ffffff" name="theme-color">
-    <meta content="Главная страница" name="description">
-    <meta content="Главная, страница" name="keywords">
+    <meta content="Объявление" name="description">
+    <meta content="Объявление" name="keywords">
     <meta content="summary" name="twitter:card">
     <meta content="" name="twitter:description">
     <meta content="" name="twitter:image">
@@ -32,7 +32,7 @@
       Похоже у вас отключён Javascript, поэтому вы видете это сообщение.
       
     </noscript>
-  <script defer src="/assets/js/bundle.a0c112a.bundle.js"></script><link href="/assets/css/857.43c60f0.bundle.css" rel="stylesheet"><link href="/assets/css/bundle.bf1abc3.bundle.css" rel="stylesheet"></head>
+  <script defer src="/assets/js/vendor.6ca3f51.bundle.js"></script><script defer src="/assets/js/bundle.8c54769.bundle.js"></script><link href="/assets/css/777.6ca3f51.bundle.css" rel="stylesheet"><link href="/assets/css/bundle.57e1347.bundle.css" rel="stylesheet"></head>
   <body>
     <div class="render"></div>
 <header class="header">
@@ -43,16 +43,16 @@
         <div class="header__localization">
           <button class="header__translate" type="button"><span>Eng</span><img class="header__translate__icon" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue"></button>
           <div class="header__languages">
-            <div class="header__language"> <span>En</span><img src="/assets/images/icons/flag-en.svg" alt="flag-en"></div>
-            <div class="header__language"> <span>Th</span><img src="/assets/images/icons/flag-th.svg" alt="flag-th"></div>
-            <div class="header__language"> <span>Ru</span><img src="/assets/images/icons/flag-ru.svg" alt="flag-ru"></div>
+            <div class="header__language"><span>En</span><img src="/assets/images/icons/flag-en.svg" alt="flag-en"></div>
+            <div class="header__language"><span>Th</span><img src="/assets/images/icons/flag-th.svg" alt="flag-th"></div>
+            <div class="header__language"><span>Ru</span><img src="/assets/images/icons/flag-ru.svg" alt="flag-ru"></div>
           </div>
           <div class="header__geo">
             <button class="header__geo__current countries__button" type="button"><img src="/assets/images/icons/pin.svg" alt="pin"><span>Thailand</span></button>
             <div class="header__search countries__search">
               <form class="header__search__block" action="#">
-                <div class="header__search__input"> <img class="header__search__icon" src="/assets/images/icons/search.svg" alt="search">
-                  <input type="search" name="search" placeholder="Search">
+                <div class="header__search__input"><img class="header__search__icon" src="/assets/images/icons/search.svg" alt="search">
+                  <input type="search" placeholder="Search" name="search">
                 </div>
               </form>
               <div class="header__search__countries">
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="header__login"> 
+        <div class="header__login">
           <button class="header__registration" type="button">Log in & Registration</button>
           <button class="header__user" type="button"><img class="header__user__photo" src="/assets/images/avatar.png" alt="header-photo"><span>Regina Miles</span><img class="header__user__icon" src="/assets/images/icons/arrow-down-black.svg" alt="arrow-down-black"></button>
           <div class="header__profile">
@@ -85,7 +85,7 @@
 </header>
     <main>
       <div class="page-container">
-<section class="search"> 
+<section class="search">
   <div class="wrapper">
     <div class="search__wrapper">
       <div class="search__menu">
@@ -96,12 +96,12 @@
         <div class="header__search countries__search"></div>
       </div>
 <form class="search__form" action="#">
-  <label class="search__input"> <img class="search__icon" src="/assets/images/icons/search.svg" alt="search">
-    <input type="search" name="search" placeholder="Search" autocomplete="off" required>
+  <label class="search__input"><img class="search__icon" src="/assets/images/icons/search.svg" alt="search">
+    <input type="search" placeholder="Search" autocomplete="off" name="search" required>
     <div class="search__results custom-scroll"><a class="search__results-item search__results-main" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
         <div class="search__results__arrow"><---</div>
-        <div class="search__results__text">Car & Vehicles </div></a><a class="search__results-item search__results-secondary" href="#">
+        <div class="search__results__text">Car & Vehicles</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
         <div class="search__results__text">Camry</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
@@ -109,7 +109,7 @@
         <div class="search__results__title search__results__title-blue">Toyota</div>
         <div class="search__results__text">Land Cruiser 100</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
-        <div class="search__results__text">Land Cruiser 200 (2007 - 2012) </div></a><a class="search__results-item search__results-secondary" href="#">
+        <div class="search__results__text">Land Cruiser 200 (2007 - 2012)</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
         <div class="search__results__text">Land Cruiser 200 restyling (2012 - 2015)</div></a><a class="search__results-item search__results-secondary" href="#">
         <div class="search__results__title search__results__title-blue">Toyota</div>
@@ -119,83 +119,111 @@
   </label>
   <button class="search__button" type="submit">Find</button>
 </form>
-      <div class="search__categories"> 
+      <div class="search__categories">
         <div class="search__container">
           <div class="search__list custom-scroll">
-            <button class="search__category" type="button" data-id="1"><img class="search__cat__image" src="/assets/images/search/item-1.png" alt="item-1"><span>Property</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="2"><img class="search__cat__image" src="/assets/images/search/item-2.png" alt="item-2"><span>Pets</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category active" type="button" data-id="3"><img class="search__cat__image" src="/assets/images/search/item-3.png" alt="item-3"><span>Services</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="4"><img class="search__cat__image" src="/assets/images/search/item-4.png" alt="item-4"><span>Car & Vehicles</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="5"><img class="search__cat__image" src="/assets/images/search/item-5.png" alt="item-5"><span>Parts</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="6"><img class="search__cat__image" src="/assets/images/search/item-6.png" alt="item-6"><span>Hobby</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="7"><img class="search__cat__image" src="/assets/images/search/item-7.png" alt="item-7"><span>Garden</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="8"><img class="search__cat__image" src="/assets/images/search/item-8.png" alt="item-8"><span>Jobs</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="9"><img class="search__cat__image" src="/assets/images/search/item-9.png" alt="item-9"><span>Fashion</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="10"><img class="search__cat__image" src="/assets/images/search/item-10.png" alt="item-10"><span>For kids</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="11"><img class="search__cat__image" src="/assets/images/search/item-11.png" alt="item-11"><span>Electronics</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="12"><img class="search__cat__image" src="/assets/images/search/item-12.png" alt="item-12"><span>Collecting</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="13"><img class="search__cat__image" src="/assets/images/search/item-13.png" alt="item-13"><span>Furniture</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="search__category" type="button" data-id="14"><img class="search__cat__image" src="/assets/images/search/item-14.png" alt="item-14"><span>Other</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="search__category" type="button" data-id="1"><img class="search__cat__image" src="/assets/images/search/item-1.png" alt="item-1"><span>Property</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="2"><img class="search__cat__image" src="/assets/images/search/item-2.png" alt="item-2"><span>Pets</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category active" type="button" data-id="3"><img class="search__cat__image" src="/assets/images/search/item-3.png" alt="item-3"><span>Services</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="4"><img class="search__cat__image" src="/assets/images/search/item-4.png" alt="item-4"><span>Car & Vehicles</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="5"><img class="search__cat__image" src="/assets/images/search/item-5.png" alt="item-5"><span>Parts</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="6"><img class="search__cat__image" src="/assets/images/search/item-6.png" alt="item-6"><span>Hobby</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="7"><img class="search__cat__image" src="/assets/images/search/item-7.png" alt="item-7"><span>Garden</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="8"><img class="search__cat__image" src="/assets/images/search/item-8.png" alt="item-8"><span>Jobs</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="9"><img class="search__cat__image" src="/assets/images/search/item-9.png" alt="item-9"><span>Fashion</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="10"><img class="search__cat__image" src="/assets/images/search/item-10.png" alt="item-10"><span>For kids</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="11"><img class="search__cat__image" src="/assets/images/search/item-11.png" alt="item-11"><span>Electronics</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="12"><img class="search__cat__image" src="/assets/images/search/item-12.png" alt="item-12"><span>Collecting</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="13"><img class="search__cat__image" src="/assets/images/search/item-13.png" alt="item-13"><span>Furniture</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="search__category" type="button" data-id="14"><img class="search__cat__image" src="/assets/images/search/item-14.png" alt="item-14"><span>Other</span>
+              <svg>width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" <path d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624" stroke="#1A2030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
           </div>
           <div class="search__innercats">
-            <div class="search__innercat" data-id="1" style="display: block;">
+            <div class="search__innercat" style="display: block" data-id="1">
               <div class="search__title">Services</div>
               <div class="search__grid custom-scroll">
                 <div class="search__column">
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Transport, transportation</a></h2><a class="search__childcat" href="#">Car service</a><a class="search__childcat" href="#">Rent a car</a><a class="search__childcat" href="#">Commercial transportation</a><a class="search__childcat" href="#">Movers</a><a class="search__childcat" href="#">Moving</a><a class="search__childcat" href="#">Special equipment</a>
+                    <h2 class="search__subcat"><a href="#">Transport, transportation</a></h2><a class="search__childcat" href="#">Car service</a><a class="search__childcat" href="#">Rent a car</a><a class="search__childcat" href="#">Commercial transportation</a><a class="search__childcat" href="#">Movers</a><a class="search__childcat" href="#">Moving</a><a class="search__childcat" href="#">Special equipment</a>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Business Services</a></h2><a class="search__childcat" href="#">Accounting, finance</a><a class="search__childcat" href="#">Consulting</a><a class="search__childcat" href="#">Typesetting and text correction</a><a class="search__childcat" href="#">Translation</a><a class="search__childcat" href="#">Insurance</a><a class="search__childcat" href="#">Legal services</a>
+                    <h2 class="search__subcat"><a href="#">Business Services</a></h2><a class="search__childcat" href="#">Accounting, finance</a><a class="search__childcat" href="#">Consulting</a><a class="search__childcat" href="#">Typesetting and text correction</a><a class="search__childcat" href="#">Translation</a><a class="search__childcat" href="#">Insurance</a><a class="search__childcat" href="#">Legal services</a>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Household services</a></h2><a class="search__childcat" href="#">Production of keys</a><a class="search__childcat" href="#">Tailoring and repair of clothes</a>
-                  </div>
-                </div>
-                <div class="search__column">
-                  <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Cleaning</a></h2><a class="search__childcat" href="#">Garbage removal</a><a class="search__childcat" href="#">Spring-cleaning</a><a class="search__childcat" href="#">Ironing</a><a class="search__childcat" href="#">Movers</a><a class="search__childcat" href="#">Window cleaning</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
-                    <button class="search__more" type="button">4 more</button>
-                  </div>
-                  <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Training, courses</a></h2><a class="search__childcat" href="#">School and university subjects</a><a class="search__childcat" href="#">Foreign languages</a><a class="search__childcat" href="#">Driving</a><a class="search__childcat" href="#">Music, theater</a><a class="search__childcat" href="#">Sports, dancing</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
-                    <button class="search__more" type="button">4 more</button>
-                  </div>
-                  <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Transport, transportation</a></h2><a class="search__childcat" href="#">Car service</a><a class="search__childcat" href="#">Rent a car</a><a class="search__childcat" href="#">Commercial transportation</a>
+                    <h2 class="search__subcat"><a href="#">Household services</a></h2><a class="search__childcat" href="#">Production of keys</a><a class="search__childcat" href="#">Tailoring and repair of clothes</a>
                   </div>
                 </div>
                 <div class="search__column">
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Garden, landscaping</a></h2><a class="search__childcat" href="#">Wells</a><a class="search__childcat" href="#">Ponds and fountains</a><a class="search__childcat" href="#">Road construction</a><a class="search__childcat" href="#">Fences, railings, awnings</a><a class="search__childcat" href="#">Excavation</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
+                    <h2 class="search__subcat"><a href="#">Cleaning</a></h2><a class="search__childcat" href="#">Garbage removal</a><a class="search__childcat" href="#">Spring-cleaning</a><a class="search__childcat" href="#">Ironing</a><a class="search__childcat" href="#">Movers</a><a class="search__childcat" href="#">Window cleaning</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
+                    <button class="search__more" type="button">4 more</button>
+                  </div>
+                  <div class="search__block">
+                    <h2 class="search__subcat"><a href="#">Training, courses</a></h2><a class="search__childcat" href="#">School and university subjects</a><a class="search__childcat" href="#">Foreign languages</a><a class="search__childcat" href="#">Driving</a><a class="search__childcat" href="#">Music, theater</a><a class="search__childcat" href="#">Sports, dancing</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
+                    <button class="search__more" type="button">4 more</button>
+                  </div>
+                  <div class="search__block">
+                    <h2 class="search__subcat"><a href="#">Transport, transportation</a></h2><a class="search__childcat" href="#">Car service</a><a class="search__childcat" href="#">Rent a car</a><a class="search__childcat" href="#">Commercial transportation</a>
+                  </div>
+                </div>
+                <div class="search__column">
+                  <div class="search__block">
+                    <h2 class="search__subcat"><a href="#">Garden, landscaping</a></h2><a class="search__childcat" href="#">Wells</a><a class="search__childcat" href="#">Ponds and fountains</a><a class="search__childcat" href="#">Road construction</a><a class="search__childcat" href="#">Fences, railings, awnings</a><a class="search__childcat" href="#">Excavation</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
                     <button class="search__more" type="button">3 more</button>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Equipment repair</a></h2><a class="search__childcat" href="#">TVs</a><a class="search__childcat" href="#">Mobile devices</a><a class="search__childcat" href="#">Small household appliances</a><a class="search__childcat" href="#">Photo, audio, video equipment</a><a class="search__childcat" href="#">Computer technology</a><a class="search__childcat" href="#">Gaming consoles</a><a class="search__childcat" href="#">Large home appliances</a>
+                    <h2 class="search__subcat"><a href="#">Equipment repair</a></h2><a class="search__childcat" href="#">TVs</a><a class="search__childcat" href="#">Mobile devices</a><a class="search__childcat" href="#">Small household appliances</a><a class="search__childcat" href="#">Photo, audio, video equipment</a><a class="search__childcat" href="#">Computer technology</a><a class="search__childcat" href="#">Gaming consoles</a><a class="search__childcat" href="#">Large home appliances</a>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">IT, internet, telecom</a></h2><a class="search__childcat" href="#">Creation and promotion of sites</a>
+                    <h2 class="search__subcat"><a href="#">IT, internet, telecom</a></h2><a class="search__childcat" href="#">Creation and promotion of sites</a>
                   </div>
                 </div>
                 <div class="search__column">
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Beauty, health</a></h2><a class="search__childcat" href="#">Hairdresser services</a><a class="search__childcat" href="#">Mani Pedi</a><a class="search__childcat" href="#">Makeup</a><a class="search__childcat" href="#">Cosmetology, hair removal</a><a class="search__childcat" href="#">SPA services, health</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
+                    <h2 class="search__subcat"><a href="#">Beauty, health</a></h2><a class="search__childcat" href="#">Hairdresser services</a><a class="search__childcat" href="#">Mani Pedi</a><a class="search__childcat" href="#">Makeup</a><a class="search__childcat" href="#">Cosmetology, hair removal</a><a class="search__childcat" href="#">SPA services, health</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a><a class="search__childcat search__childcat-hidden" href="#">One more item</a>
                     <button class="search__more" type="button">2 more</button>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Equipment installation</a></h2>
+                    <h2 class="search__subcat"><a href="#">Equipment installation</a></h2>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Equipment, production</a></h2><a class="search__childcat" href="#">Equipment rent</a><a class="search__childcat" href="#">Installation and maintenance of equipment</a><a class="search__childcat" href="#">Production, processing</a>
+                    <h2 class="search__subcat"><a href="#">Equipment, production</a></h2><a class="search__childcat" href="#">Equipment rent</a><a class="search__childcat" href="#">Installation and maintenance of equipment</a><a class="search__childcat" href="#">Production, processing</a>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Master for an hour</a></h2>
+                    <h2 class="search__subcat"><a href="#">Master for an hour</a></h2>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Food and grocery delivery</a></h2>
+                    <h2 class="search__subcat"><a href="#">Food and grocery delivery</a></h2>
                   </div>
                   <div class="search__block">
-                    <h2 class="search__subcat"> <a href="#">Advertising, printing</a></h2><a class="search__childcat" href="#">Marketing, advertising, PR</a><a class="search__childcat" href="#">Printing, design</a>
+                    <h2 class="search__subcat"><a href="#">Advertising, printing</a></h2><a class="search__childcat" href="#">Marketing, advertising, PR</a><a class="search__childcat" href="#">Printing, design</a>
                   </div>
                 </div>
               </div>
@@ -206,10 +234,10 @@
     </div>
   </div>
 </section>
-<div class="breadcrumbs"> 
+<div class="breadcrumbs">
   <div class="wrapper">
     <ul class="breadcrumbs__list">
-      <li> <a href="#">Clothes</a><span>/</span></li>
+      <li><a href="#">Clothes</a><span>/</span></li>
       <li><a href="#">Men's Clothing</a><span>/</span></li>
       <li><a href="#">Outerwear</a><span>/</span></li>
       <li>
@@ -246,35 +274,35 @@
         </div>
         <div class="product__block product__map">
           <h3>Address</h3>
-          <address> <img src="/assets/images/icons/pin-gray.svg" alt="pin-gray"><span>2686 สะพาน ยี่สิบสองกรกฎาคม 1 วิไลสักดิ์เหนือ, 38729</span>
-            <button class="product__map__hide" type="button"> <span>Hide map</span><img src="/assets/images/icons/arrow-up-blue.svg" alt="arrow-up-blue"></button>
+          <address><img src="/assets/images/icons/pin-gray.svg" alt="pin-gray"><span>2686 สะพาน ยี่สิบสองกรกฎาคม 1 วิไลสักดิ์เหนือ, 38729</span>
+            <button class="product__map__hide" type="button"><span>Hide map</span><img src="/assets/images/icons/arrow-up-blue.svg" alt="arrow-up-blue"></button>
           </address>
           <div id="map"></div>
         </div>
         <div class="product__block">
           <h3>Specifications</h3>
-          <table> 
-            <tr> 
+          <table>
+            <tr>
               <td>Processor manufacturer</td>
               <td>Intel</td>
             </tr>
-            <tr> 
+            <tr>
               <td>Screen resolution</td>
               <td>14"</td>
             </tr>
-            <tr> 
+            <tr>
               <td>Clock frequency</td>
               <td>Clock frequency</td>
             </tr>
-            <tr> 
+            <tr>
               <td>Processor model</td>
               <td>Core i5-1135G7</td>
             </tr>
-            <tr> 
+            <tr>
               <td>Screen diagonal</td>
               <td>1920x1080 pix</td>
             </tr>
-            <tr> 
+            <tr>
               <td>Operating system</td>
               <td>Windows 11 Home</td>
             </tr>
@@ -324,12 +352,12 @@
                               </div>
                               <div class="card__footer">
                                 <div class="card__category">Furniture</div>
-                                <div class="card__geo"><span>BangPhlat</span>  20 minutes</div>
+                                <div class="card__geo"><span>BangPhlat</span> 20 minutes</div>
                                 <div class="card__date">12 hours ago</div>
                               </div></a>
                             <div class="card__right">
-                              <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                              <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                              <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                              <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                 <div class="card__user__title">Regina Miles</div>
                                 <div class="rating">
                                   <div class="rating__amount">
@@ -356,8 +384,8 @@
                                 <div class="card__date">1 day ago</div>
                               </div></a>
                             <div class="card__right">
-                              <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                              <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                              <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                              <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                 <div class="card__user__title">Regina Miles</div>
                                 <div class="rating">
                                   <div class="rating__amount">
@@ -384,8 +412,8 @@
                                 <div class="card__date">1 hours ago</div>
                               </div></a>
                             <div class="card__right">
-                              <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                              <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                              <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                              <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                 <div class="card__user__title">Regina Miles</div>
                                 <div class="rating">
                                   <div class="rating__amount">
@@ -412,8 +440,8 @@
                                 <div class="card__date">3 days ago</div>
                               </div></a>
                             <div class="card__right">
-                              <div class="card__favorite"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 9.5C1.25 6.04824 4.04822 3.25 7.5 3.25C9.26772 3.25 10.8639 3.98438 12 5.16271C13.1361 3.98438 14.7323 3.25 16.5 3.25C19.9518 3.25 22.75 6.04824 22.75 9.5C22.75 12.5381 20.9668 15.3433 18.8454 17.4856C16.7168 19.6353 14.1191 21.2492 12.2365 21.8748C12.083 21.9259 11.917 21.9259 11.7635 21.8748C9.88091 21.2492 7.28321 19.6353 5.15457 17.4856C3.03322 15.3433 1.25 12.5381 1.25 9.5ZM7.5 4.75C4.87665 4.75 2.75 6.87666 2.75 9.5C2.75 11.9619 4.21678 14.4067 6.22043 16.4302C8.12163 18.3502 10.391 19.7727 12 20.3682C13.609 19.7727 15.8784 18.3502 17.7796 16.4302C19.7832 14.4067 21.25 11.9619 21.25 9.5C21.25 6.87666 19.1233 4.75 16.5 4.75C14.8941 4.75 13.4741 5.54621 12.6132 6.76872C12.4727 6.96821 12.244 7.0869 12 7.0869C11.756 7.0869 11.5273 6.96821 11.3868 6.76872C10.5259 5.54621 9.10588 4.75 7.5 4.75Z" fill="#1D5BFB"/></svg></div>
-                              <div class="card__user"> <img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
+                              <div class="card__favorite"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z" fill="white" stroke="#1D5BFB" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                              <div class="card__user"><img class="card__user__avatar" src="/assets/images/avatar.png" alt="avatar">
                                 <div class="card__user__title">Regina Miles</div>
                                 <div class="rating">
                                   <div class="rating__amount">
@@ -432,13 +460,36 @@
           </div>
         </section>
       </div>
-<footer class="footer"> 
+<footer class="footer">
   <div class="footer__wrapper">
     <nav class="footer__links"><a class="footer__links" href="#">Place an ad</a><a class="footer__links" href="#">Ads</a><a class="footer__links" href="#">Categories</a><a class="footer__links" href="#">Registration</a><a class="footer__links" href="#">Data processing policy</a></nav>
     <div class="footer__rights">All Right Reserved.</div>
   </div>
 </footer>
     </main>
+<form class="signin" action="#">
+  <div class="signin__popup">
+    <div class="settings__popup__title">Sign in</div>
+    <div class="settings__close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="signin__mail settings__input">
+      <input type="email" placeholder="Enter your email" name="email" required><img class="settings__input__img" src="/assets/images/icons/close-black.svg" alt="close-black">
+    </div>
+    <div class="settings__input settings__input__password">
+      <input type="password" placeholder="New password" name="new-password" required><img class="settings__input__img" src="/assets/images/icons/eyeslash.svg" alt="eyeslash">
+    </div>
+    <div class="signin__password">
+      <label class="signin__password__label">
+        <input type="checkbox" name=""><span>Remember password</span>
+      </label>
+      <button class="signin__question" type="button">Forgot your password?</button>
+    </div>
+    <div class="signin__buttons">
+      <button class="settings__button settings__button-white" type="button">Register a new account</button>
+      <button class="settings__button settings__button-active" type="button">Sign in</button>
+    </div>
+  </div>
+</form>
     <div class="bg"></div>
+    <div class="popup-bg"></div>
   </body>
 </html>
