@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="#ffc40d" name="msapplication-TileColor">
+    <meta content="#ffffff" name="theme-color">
+    <meta content="Отзывы" name="description">
+    <meta content="Отзывы" name="keywords">
+    <meta content="summary" name="twitter:card">
+    <meta content="" name="twitter:description">
+    <meta content="" name="twitter:image">
+    <meta content="Amico" property="og:title">
+    <meta content="" property="og:description">
+    <meta content="" property="og:image">
+    <link href="/assets/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/assets/images/favicons/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/assets/images/favicons/favicon.ico" rel="shortcut icon">
+    <link color="#5bbad5" href="/assets/images/favicons/safari-pinned-tab.svg" rel="mask-icon">
+    <title>Amico | Отзывы</title>
+    <link href="../manifest.json" rel="manifest" crossorigin>
+    <meta content="../browserconfig.xml" name="msapplication-config">
+    <script>
+      function autorun() {}
+      if (window.addEventListener) window.addEventListener("load", autorun, false);
+      else window.onload = autorun;
+    </script>
+    <noscript>
+      Похоже у вас отключён Javascript, поэтому вы видете это сообщение.
+      
+    </noscript>
+    <link href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet" crossorigin="" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" crossorigin="" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-geosearch/3.8.0/bundle.min.js"></script>
+  <script defer src="/assets/js/vendor.f2c3054.bundle.js"></script><script defer src="/assets/js/bundle.a3124e7.bundle.js"></script><link href="/assets/css/860.f2c3054.bundle.css" rel="stylesheet"><link href="/assets/css/bundle.7e0feee.bundle.css" rel="stylesheet"></head>
+  <body>
+    <div class="render"></div>
+<header class="header">
+  <div class="wrapper">
+    <div class="header__wrapper">
+      <div class="header__left"><a class="header__logo" href="/"><img src="/assets/images/logo.svg" alt="logo"></a></div>
+      <div class="header__right">
+        <div class="header__localization">
+          <button class="header__translate" type="button"><span>Eng</span><img class="header__translate__icon" src="/assets/images/icons/arrow-down-blue.svg" alt="arrow-down-blue"></button>
+          <div class="header__languages">
+            <div class="header__language"><span>En</span><img src="/assets/images/icons/flag-en.svg" alt="flag-en"></div>
+            <div class="header__language"><span>Th</span><img src="/assets/images/icons/flag-th.svg" alt="flag-th"></div>
+            <div class="header__language"><span>Ru</span><img src="/assets/images/icons/flag-ru.svg" alt="flag-ru"></div>
+          </div>
+          <div class="header__geo">
+            <button class="header__geo__current countries__button" type="button"><img src="/assets/images/icons/pin.svg" alt="pin"><span>Thailand</span></button>
+            <div class="header__search countries__search">
+              <form class="header__search__block" action="#">
+                <div class="header__search__input"><img class="header__search__icon" src="/assets/images/icons/search.svg" alt="search">
+                  <input type="search" placeholder="Search" name="search">
+                </div>
+              </form>
+              <div class="header__search__countries">
+                <div class="header__search__country">Thailand</div>
+                <div class="header__search__country">China</div>
+                <div class="header__search__country">Japan</div>
+                <div class="header__search__country">Russia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__login">
+          <button class="header__registration" type="button">Log in & Registration</button>
+          <button class="header__user" type="button"><img class="header__user__photo" src="/assets/images/avatar.png" alt="header-photo"><span>Regina Miles</span><img class="header__user__icon" src="/assets/images/icons/arrow-down-black.svg" alt="arrow-down-black"></button>
+          <div class="header__profile">
+            <div class="header__profile__rating">
+<div class="rating">
+  <div class="rating__amount">
+    <div class="rating__number">4.3</div>
+    <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"></div>
+  </div><a class="rating__reviews" href="#">12 reviews</a>
+</div>
+            </div><a class="header__profile__item" href="#"><span class="header__profile__name">My post</span><span class="header__profile__name header__profile__name-blue">1</span></a><a class="header__profile__item" href="#"><span class="header__profile__name">Favorites</span><span class="header__profile__name header__profile__name-blue">34</span></a><a class="header__profile__item" href="#"><span class="header__profile__name">Messages</span><span class="header__profile__name header__profile__name-blue">1</span></a><a class="header__profile__item" href="#"><span class="header__profile__name">Settings</span></a><a class="header__profile__item header__profile__item-gray" href="#"><span class="header__profile__name">Exit</span></a>
+          </div>
+        </div>
+        <button class="header__submit" type="button"><img class="header__icon" src="/assets/images/icons/plus.svg" alt="plus"><span>Submit an ad</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+    <main class="page-reviews">
+      <div class="page-container">
+<nav class="menu">
+  <div class="wrapper">
+    <div class="menu__wrapper"><a class="menu__item" href="#">Property</a><a class="menu__item" href="#">Pets</a><a class="menu__item" href="#">Services</a><a class="menu__item" href="#">Car & Vehicles</a><a class="menu__item" href="#">Hobby</a><a class="menu__item" href="#">Browse all categories</a></div>
+  </div>
+</nav>
+        <div class="profile">
+          <div class="wrapper">
+            <div class="mobile__header"><a href="/"><img class="chat__header__icon" src="/assets/images/icons/arrow-left-blue.svg" alt="arrow-left-blue"></a></div>
+            <div class="page-layout">
+              <aside class="profile__sidebar">
+                <div class="profile__sidebar__sticky">
+                  <div class="profile__sidebar__header"><img class="profile__sidebar__photo" src="/assets/images/user.png" alt="user">
+                    <div class="profile__sidebar__title">Lee Kalee</div>
+<div class="rating">
+  <div class="rating__amount">
+    <div class="rating__number">4.3</div>
+    <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"></div>
+  </div><a class="rating__reviews" href="#">12 reviews</a>
+</div>
+                  </div>
+                  <div class="profile__sidebar__footer">
+                    <button class="profile__sidebar__button profile__sidebar__button-blue" type="button">Send Message</button>
+                    <button class="profile__sidebar__button" type="button">Leave сomment</button>
+                  </div>
+                </div>
+              </aside>
+              <div class="profile__content">
+                <div class="profile__block">
+                          <div class="reviews">
+                            <div class="reviews__visual">
+                              <div class="reviews__title"><h1>Reviews</h1></div>
+                              <div class="reviews__status">
+                                <div class="reviews__number">4.3</div>
+                                <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"></div>
+                              </div>
+                              <div class="reviews__rating">
+                                <div class="reviews__items">
+                                  <div class="reviews__item">
+                                    <div class="reviews__progress">
+                                      <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"></div><progress max="12" value="8"><progress>
+                                    </div>
+                                    <div class="reviews__amount">8</div>
+                                  </div>
+                                  <div class="reviews__item">
+                                    <div class="reviews__progress">
+                                      <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"></div><progress max="12" value="3"><progress>
+                                    </div>
+                                    <div class="reviews__amount">3</div>
+                                  </div>
+                                  <div class="reviews__item">
+                                    <div class="reviews__progress">
+                                      <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"></div><progress max="12" value="0"><progress>
+                                    </div>
+                                    <div class="reviews__amount">0</div>
+                                  </div>
+                                  <div class="reviews__item">
+                                    <div class="reviews__progress">
+                                      <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"></div><progress max="12" value="0"><progress>
+                                    </div>
+                                    <div class="reviews__amount">0</div>
+                                  </div>
+                                  <div class="reviews__item">
+                                    <div class="reviews__progress">
+                                      <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled"></div><progress max="12" value="1"><progress>
+                                    </div>
+                                    <div class="reviews__amount">1</div>
+                                  </div>
+                                </div>
+                                <div class="reviews__right">
+                                  <div class="reviews__info">User rating is formed from 12 reviews left by other users.</div><a class="reviews__button reviews__button-mobile" href="/create-review">Leave сomment</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="reviews__block"><img class="reviews__photo" src="/assets/images/avatar-small.png" alt="avatar-small">
+                              <div class="reviews__content">
+                                <div class="reviews__header">
+                                  <h3 class="reviews__subtitle">Regina Miles</h3>
+                                  <time class="reviews__text">5 March</time>
+                                </div>
+                              </div>
+                              <div class="reviews__status-min">
+                                <div class="reviews__number">4.0</div>
+                                <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled">
+                                  <div class="reviews__text reviews__model-mobile">HUAWEI MateBook D14</div>
+                                </div>
+                              </div>
+                              <div class="reviews__text reviews__model">The deal went through: “HUAWEI MateBook D14”</div>
+                              <div class="reviews__footer">
+                                <h3 class="reviews__subtitle">Comment</h3>
+                                <div class="reviews__text">Great vendor! Agreed to exchange for a phone.</div>
+                              </div>
+                            </div>
+                            <div class="reviews__block"><img class="reviews__photo" src="/assets/images/avatar-small.png" alt="avatar-small">
+                              <div class="reviews__content">
+                                <div class="reviews__header">
+                                  <h3 class="reviews__subtitle">Regina Miles</h3>
+                                  <time class="reviews__text">5 March</time>
+                                </div>
+                              </div>
+                              <div class="reviews__status-min">
+                                <div class="reviews__number">4.0</div>
+                                <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled">
+                                  <div class="reviews__text reviews__model-mobile">HUAWEI MateBook D14</div>
+                                </div>
+                              </div>
+                              <div class="reviews__text reviews__model">The deal went through: “HUAWEI MateBook D14”</div>
+                              <div class="reviews__footer">
+                                <h3 class="reviews__subtitle">Comment</h3>
+                                <div class="reviews__text">Great vendor! Agreed to exchange for a phone.</div>
+                              </div>
+                            </div>
+                            <div class="reviews__block"><img class="reviews__photo" src="/assets/images/avatar-small.png" alt="avatar-small">
+                              <div class="reviews__content">
+                                <div class="reviews__header">
+                                  <h3 class="reviews__subtitle">Regina Miles</h3>
+                                  <time class="reviews__text">5 March</time>
+                                </div>
+                              </div>
+                              <div class="reviews__status-min">
+                                <div class="reviews__number">4.0</div>
+                                <div class="rating__stars"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star" src="/assets/images/icons/star-active.svg" alt="star-active"><img class="rating__star rating__star-disabled" src="/assets/images/icons/star-disabled.svg" alt="star-disabled">
+                                  <div class="reviews__text reviews__model-mobile">HUAWEI MateBook D14</div>
+                                </div>
+                              </div>
+                              <div class="reviews__text reviews__model">The deal went through: “HUAWEI MateBook D14”</div>
+                              <div class="reviews__footer">
+                                <h3 class="reviews__subtitle">Comment</h3>
+                                <div class="reviews__text">Great vendor! Agreed to exchange for a phone.</div>
+                              </div>
+                            </div>
+                            <button class="reviews__button" type="button">Show more</button>
+                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<footer class="footer">
+  <div class="footer__wrapper">
+    <nav class="footer__links"><a class="footer__links" href="#">Place an ad</a><a class="footer__links" href="#">Ads</a><a class="footer__links" href="#">Categories</a><a class="footer__links" href="#">Registration</a><a class="footer__links" href="#">Data processing policy</a></nav>
+    <div class="footer__rights">All Right Reserved.</div>
+  </div>
+</footer>
+    </main>
+<div class="signin">
+  <form class="signin__step signin__popup__first" action="#">
+    <div class="settings__popup__title">Sign in</div>
+    <div class="settings__close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="signin__mail settings__input signin-error">
+      <input type="email" placeholder="Enter your email" name="email" required><img class="settings__input__icon" src="/assets/images/icons/close-black.svg" alt="close-black"><span class="error-text">The email is not linked to the profile.</span>
+    </div>
+    <div class="settings__input settings__input__password signin-error">
+      <input type="password" placeholder="New password" name="new-password" required><img class="settings__input__icon password-show" src="/assets/images/icons/eyeslash.svg" alt="eyeslash"><img class="settings__input__icon symbols-show" src="/assets/images/icons/eye.svg" alt="eye"><span class="error-text">Wrong password</span>
+    </div>
+    <div class="signin__password">
+      <label class="signin__password__label filter__label">
+        <input class="filter__input" type="checkbox" name="remember"><span class="filter__checkbox">Remember password</span>
+      </label>
+      <button class="signin__question" type="button">Forgot your password?</button>
+    </div>
+    <div class="signin__buttons">
+      <button class="settings__button settings__button-white signin__register" type="button">Register a new account</button>
+      <button class="settings__button settings__button-active" type="submit">Sign in</button>
+    </div>
+  </form>
+  <form class="signin__step signin__login" action="#">
+    <div class="settings__popup__title">Create an account</div>
+    <div class="settings__close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="signin__login__inputs">
+      <div class="signin__login__input signin__login__input-half">
+        <input type="text" placeholder="First name" name="first_name" required>
+      </div>
+      <div class="signin__login__input signin__login__input-half">
+        <input type="text" placeholder="Last name" name="last_name" required>
+      </div>
+      <div class="signin__mail settings__input signin__login__input">
+        <input type="email" placeholder="Enter your email" name="email" required><img class="settings__input__icon" src="/assets/images/icons/close-black.svg" alt="close-black">
+      </div>
+      <div class="settings__input settings__input__password signin__login__input">
+        <input type="password" placeholder="New password" name="new-password" required><img class="settings__input__icon password-show" src="/assets/images/icons/eyeslash.svg" alt="eyeslash"><img class="settings__input__icon symbols-show" src="/assets/images/icons/eye.svg" alt="eye">
+      </div>
+    </div>
+    <button class="settings__button settings__button-disabled signin__create" type="submit">Create account</button>
+  </form>
+  <form class="signin__forgot" action="#">
+    <div class="signin__step signin__popup__second">
+      <div class="settings__popup__title">Password Recovery</div>
+      <div class="settings__close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="signin__text settings__input">
+        <input type="text" placeholder="Phone or E-mail" name="phone_email" required>
+      </div>
+      <div class="signin__buttons">
+        <button class="settings__button settings__button-active settings__next" type="button">Rest password</button>
+      </div>
+    </div>
+    <div class="signin__step signin__popup__third">
+      <div class="settings__popup__title">Сhange password</div>
+      <div class="settings__close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="signin__description">Enter the code that will come to your mail <span> ReginaMiles@gmail.com </span></div>
+      <div class="signin__text settings__input">
+        <input type="text" placeholder="Email code" name="email_code" required>
+      </div>
+      <div class="signin__buttons">
+        <button class="settings__button settings__button-white settings__prev" type="button">Сhange email</button>
+        <button class="settings__button settings__button-active settings__next" type="button">Сonfirm</button>
+      </div>
+    </div>
+    <div class="signin__step signin__popup__fourth">
+      <div class="settings__popup__title">Create a new password</div>
+      <div class="settings__close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="signin__text settings__input">
+        <input type="password" placeholder="New password" name="new_password" required>
+      </div>
+      <div class="signin__buttons">
+        <button class="settings__button settings__button-active settings__confirm" type="submit">Сonfirm</button>
+      </div>
+    </div>
+  </form>
+</div>
+    <div class="bg"></div>
+    <div class="popup-bg"></div>
+<div class="profile-edit">
+  <div class="wrapper">
+    <div class="mobile__header">
+      <button class="profile-edit__close" type="button"><img class="chat__header__icon" src="/assets/images/icons/arrow-left-blue.svg" alt="arrow-left-blue"></button>
+      <h1>Profile settings</h1>
+      <button class="profile-edit__save" type="button">Save</button>
+    </div>
+    <div class="profile__sidebar__img"><img class="profile__sidebar__photo" src="/assets/images/avatar-big.png" alt="avatar-big">
+      <label class="profile__upload profile__upload-main">
+        <input type="file" accept="image/png, image/gif, image/jpeg">
+      </label>
+    </div>
+    <div class="profile-edit__blocks">
+      <div class="profile-edit__block">
+        <div class="profile-edit__header">Individual, user number</div>
+        <div class="profile-edit__footer">
+          <div class="profile-edit__value">186 578</div>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><span>Regina Miles</span>
+            <button class="settings__change-mobname settings__change" type="button"><img src="/assets/images/icons/edit.svg" alt="edit"></button>
+            <form class="settings__popup settings__popup-name" action="#">
+              <div class="settings__popup__step active">
+                <div class="mobile__header">
+                  <div class="settings__close"><img class="chat__header__icon" src="/assets/images/icons/arrow-left-blue.svg" alt="arrow-left-blue"></div>
+                </div>
+                <div class="settings__popup__title">Name</div>
+                <div class="settings__subtitle-small">Write a new profile name</div>
+                <input type="text" placeholder="Enter your name" name="name" required>
+                <div class="settings__popup__buttons">
+                  <button class="settings__button-disabled settings__button-next settings__button settings__button-active settings__button-confirm" type="submit">Change</button>
+                </div>
+              </div>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><span>ReginaMiles@gmail.com</span>
+            <button class="settings__change" type="button"><img src="/assets/images/icons/edit.svg" alt="edit"></button>
+            <form class="settings__popup settings__popup-mail" action="#">
+              <div class="settings__popup__step settings__popup__first active">
+                <div class="mobile__header">
+                  <div class="settings__close"><img class="chat__header__icon" src="/assets/images/icons/arrow-left-blue.svg" alt="arrow-left-blue"></div>
+                </div>
+                <div class="settings__popup__title">Change Email</div>
+                <div class="settings__subtitle-small">Write a new email</div>
+                <input class="error" type="email" placeholder="Enter your email" name="email" required><span class="error-text">The email address you entered is already in use</span>
+                <div class="settings__popup__buttons">
+                  <button class="settings__button-next settings__button settings__button-active settings__button-confirm settings__button-disabled" type="button">Change</button>
+                </div>
+              </div>
+              <div class="settings__popup__step settings__popup__second">
+                <div class="mobile__header">
+                  <div class="settings__button-back"><img class="chat__header__icon" src="/assets/images/icons/arrow-left-blue.svg" alt="arrow-left-blue"></div>
+                </div>
+                <div class="settings__popup__title">Confirm email change</div>
+                <div class="settings__popup__text">Enter the code that will come to your mail <span id="settings-email">ReginaMiles@gmail.com</span></div>
+                <input type="text" placeholder="Email code" name="email-confirm" required>
+                <div class="settings__popup__buttons">
+                  <button class="settings__button-next settings__button settings__button-active settings__button-confirm" type="submit">Сonfirm</button>
+                </div>
+              </div>
+              <div class="settings__popup__step settings__popup__third">
+                <div class="mobile__header">
+                  <div class="settings__close"><img class="chat__header__icon" src="/assets/images/icons/arrow-left-blue.svg" alt="arrow-left-blue"></div>
+                </div>
+                <div class="settings__popup__title">Confirm email change</div>
+                <div class="settings__popup__text">A letter was sent to <br><span>ReginaMiles@gmail.com</span> <br> - open it and confirm the change of address. If there is no email, check Spam</div>
+              </div>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td><span>+66 123 456-78-90</span>
+            <button class="settings__change" type="button"><img src="/assets/images/icons/edit.svg" alt="edit"></button>
+            <form class="settings__popup settings__popup-tel" action="#">
+              <div class="settings__popup__step settings__popup__first active">
+                <div class="mobile__header">
+                  <div class="settings__close"><img class="chat__header__icon" src="/assets/images/icons/arrow-left-blue.svg" alt="arrow-left-blue"></div>
+                </div>
+                <div class="settings__popup__title">Adding a number</div>
+                <input id="tel" type="tel" placeholder="+66 ___ ___-__-__" required>
+                <div class="settings__popup__buttons">
+                  <button class="settings__button-next settings__button settings__button-active settings__button-confirm settings__button-disabled" type="button">Change</button>
+                </div>
+              </div>
+              <div class="settings__popup__step settings__popup__second">
+                <div class="mobile__header">
+                  <div class="settings__close"><img class="chat__header__icon" src="/assets/images/icons/arrow-left-blue.svg" alt="arrow-left-blue"></div>
+                </div>
+                <div class="settings__popup__title">Number confirmation</div>
+                <div class="settings__popup__text">Enter the code that will come to the number <span id="settings-tel">+66 123 456-78-90</span> within 2 minutes.</div>
+                <input type="text" placeholder="SMS code" required>
+                <div class="settings__popup__buttons">
+                  <button class="settings__button-back settings__button settings__button-white" type="button">Сhange number</button>
+                  <button class="settings__button-next settings__button settings__button-active settings__button-confirm" type="submit">Change</button>
+                </div>
+              </div>
+            </form>
+          </td>
+        </tr>
+      </table>
+      <div class="profile-edit__block">
+        <div class="profile-edit__header">Deleting a profile</div>
+        <div class="profile-edit__footer">
+          <div class="profile-edit__value">Everything will be deleted</div>
+          <button class="profile-edit__button popup__delete__button" type="button"><img src="/assets/images/icons/edit.svg" alt="edit"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<form class="popup__delete" action="#">
+  <div class="settings__popup__title">Are you sure you want to delete your profile?</div>
+  <div class="settings__popup__buttons">
+    <button class="settings__button-back settings__button settings__button-delete" type="submit">Delete</button>
+    <button class="settings__button-back settings__button settings__button-white popup__delete__close" type="button">Cancel</button>
+  </div>
+</form>
+  </body>
+</html>
