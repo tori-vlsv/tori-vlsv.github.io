@@ -1,0 +1,108 @@
+.profile__sidebar {
+  &__sticky {
+    position: sticky;
+    top: 102px;
+    background: $white;
+    border-radius: 6px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__header,
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+  &__links {
+    padding-top: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: $gray-200;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__link {
+    font-size: 20px;
+    line-height: 30px;
+    transition: color 0.3s;
+    will-change: color;
+    &:hover {
+      color: $blue-100;
+    }
+    &-gray {
+      color: $gray-100;
+      &:hover {
+        color: $black-100;
+      }
+    }
+  }
+  &__footer {
+    gap: 8px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__button {
+    border: 1px solid $blue-100;
+    border-radius: 6px;
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $blue-100;
+    width: 100%;
+    will-change: color, border-color, background-color;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+    &:hover {
+      border-color: $blue-hover;
+      color: $blue-hover;
+    }
+    &-blue {
+      font-size: 20px;
+      line-height: 24px;
+      color: $white;
+      background-color: $blue-100;
+      &:hover {
+        background-color: $blue-hover;
+        color: $white;
+      }
+    }
+  }
+  &__img {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .profile__sidebar {
+    display: none;
+    &__main {
+      align-items: flex-start;
+    }
+  }
+}

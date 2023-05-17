@@ -1,0 +1,240 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+  &__status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    &-min {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      grid-column: span 2;
+      grid-column-start: 2;
+      .reviews__number {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        font-weight: 400;
+        margin-bottom: -2px;
+      }
+      .rating__star {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  &__stars {
+    display: flex;
+    gap: 4px;
+  }
+  &__number {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  &__items {
+    width: 696px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__progress {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 500px;
+    height: 4px;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: $gray-250;
+  }
+  progress[value]::-webkit-progress-value {
+    background-color: $gray-300;
+  }
+  &__amount {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__rating {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  &__right {
+    max-width: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  &__button {
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid $blue-100;
+    border-radius: 6px;
+    color: $blue-100;
+    transition: 0.3s;
+    will-change: color;
+    text-align: center;
+    &:hover {
+      color: $blue-hover;
+      border-color: $blue-hover;
+    }
+  }
+  &__header,
+  &__footer {
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    gap: 4px;
+  }
+  &__footer {
+    gap: 8px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+  }
+  &__photo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__block {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 24px 1fr;
+    margin-bottom: 32px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__model {
+    &-mobile {
+      display: none;
+      color: $gray-100;
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .reviews {
+    padding-bottom: 86px;
+    gap: 16px;
+    &__header {
+      gap: 0;
+    }
+    &__items {
+      width: auto;
+    }
+    &__rating {
+      flex-direction: column-reverse;
+      margin-bottom: 23px;
+      .rating__star {
+        width: 16px;
+        height: 16px;
+        padding: 1.3px;
+      }
+    }
+    &__right {
+      max-width: 100%;
+    }
+    &__button {
+      display: none;
+    }
+    &__footer {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin-top: 8px;
+    }
+    &__status {
+      &-min {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      margin-bottom: 0;
+    }
+    progress[value] {
+      width: 195px;
+    }
+    &__info {
+      font-size: 12px;
+      line-height: 14px;
+      color: $gray-100;
+    }
+    &__title {
+      display: none;
+    }
+    &__block {
+      margin-bottom: 0;
+      grid-template-columns: 41px 1fr;
+      gap: 8px;
+    }
+    &__photo {
+      min-width: 41px;
+      min-height: 41px;
+    }
+    &__model {
+      display: none;
+      &-mobile {
+        display: block;
+      }
+    }
+    &__button {
+      &-mobile {
+        display: block;
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 358px;
+        text-align: center;
+        background-color: $blue-100;
+        color: $white;
+        margin: 0 auto;
+        z-index: 20;
+        border: none;
+        transition: background-color 0.3s;
+        will-change: background-color;
+        &:hover {
+          background-color: $blue-hover;
+          color: $white;
+        }
+      }
+    }
+  }
+}

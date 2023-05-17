@@ -1,0 +1,680 @@
+include ../mixins/reviews.pug
+.profile
+  .wrapper
+    .page-layout
+      aside.profile__sidebar
+        .profile__sidebar__sticky
+          .profile__sidebar__header
+            img.profile__sidebar__photo(
+              src="/assets/images/avatar-big.png"
+              alt="avatar-big"
+            )
+            .profile__sidebar__title Regina Miles
+            include ../components/rating.pug
+          .profile__sidebar__links
+            a.profile__sidebar__link(href="#") My announcements
+            a.profile__sidebar__link(href="#") Favorites
+            a.profile__sidebar__link(href="#") Messages
+          .profile__sidebar__links
+            a.profile__sidebar__link(href="#") Settings
+            a.profile__sidebar__link.profile__sidebar__link-gray(href="#") Exit
+      .profile__content
+        .mobile__header
+          button.close__map__mobile(type="button")
+            img.chat__header__icon(
+              src="/assets/images/icons/arrow-left-blue.svg"
+              alt="arrow-left-blue"
+            )
+        h1.page__title.profile__title Place an ad
+        .profile__block
+          h2 Describe item
+          span.profile__block-tip.profile__block-tip-mobile Name the item
+          .profile__input
+            input.profile__input__item(
+              type="text"
+              placeholder="Enter title"
+              name="ad_title"
+              required
+              value="HUAWEI MateBook D14"
+            )
+          h2 Category
+          .profile__breadcrumbs
+            .profile__breadcrumb Select category
+            .profile__breadcrumbs__generated
+          .profile__categories
+            .profile__categories__select
+              .profile__categories__col
+                label
+                  input(type="checkbox" name="property")
+                  .profile__category.profile__category-main(data-id="1")
+                    span Property
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="pets")
+                  .profile__category.profile__category-main(data-id="2")
+                    span Pets
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="job")
+                  .profile__category.profile__category-main(data-id="3")
+                    span Job
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="services")
+                  .profile__category.profile__category-main(data-id="4")
+                    span Services
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="spares")
+                  .profile__category.profile__category-main(data-id="5")
+                    span Spares
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="hobby")
+                  .profile__category.profile__category-main(data-id="6")
+                    span Hobby
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="garden")
+                  .profile__category.profile__category-main(data-id="7")
+                    span Garden
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+              .profile__categories__col
+                label
+                  input(type="checkbox" name="car_and_vehicle")
+                  .profile__category.profile__category-main(data-id="8")
+                    span Car & Vehicle
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="fashion")
+                  .profile__category.profile__category-main(data-id="9")
+                    span Fashion
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="for_kids")
+                  .profile__category.profile__category-main(data-id="10")
+                    span For kids
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="electronics")
+                  .profile__category.profile__category-main(data-id="11")
+                    span Electronics
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="collecting")
+                  .profile__category.profile__category-main(data-id="12")
+                    span Collecting
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="furniture")
+                  .profile__category.profile__category-main(data-id="13")
+                    span Furniture
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+                label
+                  input(type="checkbox" name="other")
+                  .profile__category.profile__category-main(data-id="14")
+                    span Other
+                    .profile__category__icon
+                      svg(
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                      )
+                        path(
+                          d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                          stroke="#8B8B8B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        )
+            .profile__categories__containers
+              .profile__categories__container.active(data-id="1")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="2")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="3")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="4")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="5")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="6")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="7")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="8")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="9")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="10")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="11")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="12")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="13")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+              .profile__categories__container(data-id="14")
+                .profile__categories__col
+                  label
+                    input(type="checkbox" name="transport_transportation")
+                    .profile__category.profile__category-main-secondary
+                      span Transport, transportation
+                      .profile__category__icon
+                        svg(
+                          fill="none"
+                          viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                        )
+                          path(
+                            d="M6.125 4.81245L8.74999 7.43745L6.125 10.0624"
+                            stroke="#8B8B8B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          )
+        .profile__block
+          h2 Add photo
+          span.profile__block-tip.profile__block-tip-last The first photo will be on the cover of the ad. Drag to reorder.
+          .profile__uploads
+            label.profile__upload.profile__upload-main(draggable="true")
+              input(type="file" accept="image/png, image/gif, image/jpeg")
+              .profile__upload-empty
+              .profile__upload-hover Add photo
+            label.profile__upload(draggable="true")
+              input(type="file" accept="image/png, image/gif, image/jpeg")
+              .profile__upload-empty
+              .profile__upload-hover Add photo
+            label.profile__upload(draggable="true")
+              input(type="file" accept="image/png, image/gif, image/jpeg")
+              .profile__upload-empty
+              .profile__upload-hover Add photo
+            label.profile__upload(draggable="true")
+              input(type="file" accept="image/png, image/gif, image/jpeg")
+              .profile__upload-empty
+              .profile__upload-hover Add photo
+            label.profile__upload(draggable="true")
+              input(type="file" accept="image/png, image/gif, image/jpeg")
+              .profile__upload-empty
+              .profile__upload-hover Add photo
+            label.profile__upload(draggable="true")
+              input(type="file" accept="image/png, image/gif, image/jpeg")
+              .profile__upload-empty
+              .profile__upload-hover Add photo
+            label.profile__upload(draggable="true")
+              input(type="file" accept="image/png, image/gif, image/jpeg")
+              .profile__upload-empty
+              .profile__upload-hover Add photo
+            label.profile__upload(draggable="true")
+              input(type="file" accept="image/png, image/gif, image/jpeg")
+              .profile__upload-empty
+              .profile__upload-hover Add photo
+        .profile__block
+          h2 Description
+          span.profile__block-tip.profile__block-tip-last Description must be at least 80 characters
+          .profile__textarea
+            textarea(
+              placeholder="Enter description"
+              max="9000"
+              min="80"
+              name="ad-description"
+              required
+            ) The Huawei MateBook D 14 8+512GB Mystic Silver (NbD-WDH9) is equipped with a Full HD IPS display that delivers detailed, high-contrast content. A quad-core Intel processor and 8GB of RAM provide optimal performance when multitasking, editing photos, and running various programs. The cooling system with Shark Fin 2.0 fan effectively removes heat from the internal components for stable operation of the device.&#10;&#10;Notebook Huawei MateBook D 14 8+512GB Mystic Silver (NbD-WDH9) is equipped with two speakers that reproduce high-quality dialogues of characters in movies and TV shows, audio files, and musical compositions. The model has a webcam hidden in the keyboard for convenient remote conferences, video communication with friends and relatives. The fingerprint scanner built into the power button allows you to unlock your laptop and prevent unauthorized persons from accessing your data. The Wi-Fi module provides a wireless connection to the Internet to search for information, download files, listen to music and watch videos online.
+            .profile__textarea__counter
+              span#textarea-value
+              span /
+              span 9000
+        .profile__block
+          h3 Price
+          .profile__input
+            input.profile__input__item.profile__input__item-price(
+              type="text"
+              placeholder="Enter price"
+              name="ad_price"
+              required
+              value="50 000 ฿"
+            )
+        .profile__block
+          h2 Location
+          span.profile__block-tip City name, street, address or zip code
+          label#custom-map-controls.profile__input
+            .profile__input__icon
+              img(src="/assets/images/icons/pin-white.svg" alt="pin-white")
+          #map
+        .profile__block
+          .profile__buttons
+            a.profile__button(href="#") Go out
+            button.profile__button.profile__button-blue(type="submit") Post

@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  &__links {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 17px 0;
+    height: 48px;
+    a {
+      transition: color 0.3s;
+      will-change: color;
+      &:hover {
+        color: $blue-100;
+      }
+    }
+  }
+  &__rights {
+    background-color: $background;
+    height: 38px;
+    padding: 12px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: $gray-100;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    display: none;
+  }
+}

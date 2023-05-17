@@ -1,0 +1,180 @@
+.product
+  .wrapper
+    .product__wrapper
+      .product__content
+        .mobile__header
+          img.chat__header__icon(
+            src="/assets/images/icons/arrow-left-blue.svg"
+            alt="arrow-left-blue"
+          )
+          .card__favorite
+            svg(
+              fill="none"
+              viewBox="0 0 24 21"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="21"
+            )
+              path(
+                d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z"
+                fill="white"
+                stroke="#1D5BFB"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              )
+        h1.page__title.product__title HUAWEI MateBook D14
+        button.product__favorites(type="button") Add to favorites
+        .product__sliders
+          .product__slider.swiper
+            .swiper-wrapper
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-1.png"
+                  alt="item-1"
+                )
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-1.png"
+                  alt="item-1"
+                )
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-1.png"
+                  alt="item-1"
+                )
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-1.png"
+                  alt="item-1"
+                )
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-1.png"
+                  alt="item-1"
+                )
+          .product__slider-mini.swiper
+            .swiper-wrapper
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-2.png"
+                  alt="item-2"
+                )
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-3.png"
+                  alt="item-3"
+                )
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-4.png"
+                  alt="item-4"
+                )
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-5.png"
+                  alt="item-5"
+                )
+              .swiper-slide
+                img(
+                  src="/assets/images/product-slider/item-6.png"
+                  alt="item-6"
+                )
+        .product__description
+          h1.product__title HUAWEI MateBook D14
+          .product__price 15 000 ฿
+        .product__card.product__card-mobile
+          .product__card__header
+            img.product__card__photo(
+              src="/assets/images/avatar-big.png"
+              alt="avatar-big"
+            )
+            .product__card__content
+              .product__card__name Regina Miles
+              include ../components/rating.pug
+          .product__card__footer
+            a.product__card__button.product__card__button-call(
+              href="tel:+66 123 456-78-90"
+            )
+              span Call
+            button.product__card__button.product__card__button-message(
+              type="button"
+            )
+              span Send Message
+        .product__block.product__map
+          h3 Address
+          address
+            svg.product__map__icon(
+              fill="none"
+              viewBox="0 0 28 28"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+            )
+              path(
+                clip-rule="evenodd"
+                d="M4.375 11.0833C4.375 5.76757 8.68424 1.45833 14 1.45833C19.3158 1.45833 23.625 5.76757 23.625 11.0833C23.625 15.1851 21.276 19.0302 19.0547 21.7698C17.9306 23.1562 16.8086 24.2966 15.968 25.0906C15.5471 25.488 15.1954 25.8 14.9472 26.0139C14.8231 26.1208 14.7248 26.2033 14.6567 26.2599C14.6226 26.2881 14.596 26.3099 14.5775 26.325L14.5558 26.3425L14.5496 26.3475L14.5477 26.349L14.5471 26.3496C14.5468 26.3498 14.5466 26.3499 14 25.6667C13.4534 26.3499 13.4532 26.3498 13.4529 26.3496L13.4523 26.349L13.4504 26.3475L13.4442 26.3425L13.4225 26.325C13.404 26.3099 13.3774 26.2881 13.3433 26.2599C13.2752 26.2033 13.1769 26.1208 13.0528 26.0139C12.8046 25.8 12.4529 25.488 12.032 25.0906C11.1914 24.2966 10.0694 23.1562 8.94534 21.7698C6.72405 19.0302 4.375 15.1851 4.375 11.0833ZM14 25.6667L13.4534 26.3499C13.773 26.6056 14.227 26.6056 14.5466 26.3499L14 25.6667ZM14 24.5181C14.2086 24.3344 14.4687 24.0994 14.7664 23.8183C15.5664 23.0627 16.6319 21.9792 17.6953 20.6677C19.849 18.0114 21.875 14.5649 21.875 11.0833C21.875 6.73407 18.3493 3.20833 14 3.20833C9.65074 3.20833 6.125 6.73407 6.125 11.0833C6.125 14.5649 8.15095 18.0114 10.3047 20.6677C11.3681 21.9792 12.4336 23.0627 13.2336 23.8183C13.5313 24.0994 13.7914 24.3344 14 24.5181Z"
+                fill="#8B8B8B"
+                fill-rule="evenodd"
+              )
+              path(
+                clip-rule="evenodd"
+                d="M9.625 11.0833C9.625 8.66709 11.5838 6.70833 14 6.70833C16.4162 6.70833 18.375 8.66709 18.375 11.0833C18.375 13.4996 16.4162 15.4583 14 15.4583C11.5838 15.4583 9.625 13.4996 9.625 11.0833ZM14 8.45833C12.5503 8.45833 11.375 9.63359 11.375 11.0833C11.375 12.5331 12.5503 13.7083 14 13.7083C15.4497 13.7083 16.625 12.5331 16.625 11.0833C16.625 9.63359 15.4497 8.45833 14 8.45833Z"
+                fill="#8B8B8B"
+                fill-rule="evenodd"
+              )
+            span.product__map__text 2686 สะพาน ยี่สิบสองกรกฎาคม 1 วิไลสักดิ์เหนือ, 38729
+            button.product__map__hide(type="button")
+              span Hide map
+              img(
+                src="/assets/images/icons/arrow-up-blue.svg"
+                alt="arrow-up-blue"
+              )
+          #map
+        .product__block
+          h3 Specifications
+          table
+            tr
+              td Processor manufacturer
+              td Intel
+            tr
+              td Screen resolution
+              td 14"
+            tr
+              td Clock frequency
+              td Clock frequency
+            tr
+              td Processor model
+              td Core i5-1135G7
+            tr
+              td Screen diagonal
+              td 1920x1080 pix
+            tr
+              td Operating system
+              td Windows 11 Home
+        .product__block
+          h3 Description
+          p The Huawei MateBook D 14 8+512GB Mystic Silver (NbD-WDH9) is equipped with a Full HD IPS display that delivers detailed, high-contrast content. A quad-core Intel processor and 8GB of RAM provide optimal performance when multitasking, editing photos, and running various programs. The cooling system with Shark Fin 2.0 fan effectively removes heat from the internal components for stable operation of the device.
+          p Notebook Huawei MateBook D 14 8+512GB Mystic Silver (NbD-WDH9) is equipped with two speakers that reproduce high-quality dialogues of characters in movies and TV shows, audio files, and musical compositions. The model has a webcam hidden in the keyboard for convenient remote conferences, video communication with friends and relatives. The fingerprint scanner built into the power button allows you to unlock your laptop and prevent unauthorized persons from accessing your data. The Wi-Fi module provides a wireless connection to the Internet to search for information, download files, listen to music and watch videos online.
+      aside.product__sidebar
+        .product__price 15 000 ฿
+        .product__card.product__card-pc
+          .product__card__header
+            img.product__card__photo(
+              src="/assets/images/avatar-big.png"
+              alt="avatar-big"
+            )
+            .product__card__content
+              .product__card__name Regina Miles
+              include ../components/rating.pug
+              .product__card__info Private person
+              .product__card__info 10 sales
+          .product__card__footer
+            a.product__card__button.product__card__button-call(
+              href="tel:+66 123 456-78-90"
+            )
+              span Call
+              span +66 123 456-78-90
+            button.product__card__button.product__card__button-message(
+              type="button"
+            )
+              span Send Message

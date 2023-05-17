@@ -1,0 +1,181 @@
+.chat {
+  &__header {
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    height: 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: rgba(139, 139, 139, 0.4);
+      bottom: 0;
+      left: 0;
+    }
+    &-mobile {
+      display: none;
+    }
+    &__call {
+      display: none;
+      width: 30px;
+      height: 30px;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    &__icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 23px;
+    }
+    &__product {
+      position: relative;
+      margin-right: 12px;
+    }
+    &__photo {
+      max-width: 100px;
+      width: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    &__user {
+      max-width: 30px;
+      max-height: 30px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: -7px;
+      left: -7px;
+    }
+    &__info {
+      display: flex;
+    }
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+    &__description-top,
+    &__description-down {
+      display: flex;
+      align-items: center;
+    }
+    &__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      margin-right: 16px;
+    }
+    &__date {
+      font-size: 12px;
+      line-height: 14px;
+      color: $gray-100;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 17px;
+      margin-right: 14px;
+    }
+    &__price {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__menu {
+      width: 40px;
+      height: 40px;
+      background: rgba(29, 91, 251, 0.1);
+      border: 1px solid $blue-100;
+      border-radius: 6px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .settings__button-white {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .chat {
+    &__header {
+      height: 53px;
+      &-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .chat__header__photo {
+          display: block;
+          max-width: 45px;
+        }
+        .chat__header__description-down {
+          display: block;
+        }
+      }
+      &__subtitle {
+        margin-right: 0;
+        line-height: 14px;
+        font-size: 12px;
+        padding-left: 46px;
+      }
+      &__photo {
+        display: none;
+      }
+      &__user {
+        max-width: 37px;
+        max-height: 37px;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      &__product {
+        margin-right: 8px;
+      }
+      &__description-down {
+        display: none;
+      }
+      &__description-top {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      &__title {
+        margin-right: 0;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      &__date {
+        font-size: 10px;
+        line-height: 12px;
+      }
+      &__info {
+        align-items: center;
+      }
+      &__menu {
+        display: none;
+      }
+      &__call {
+        display: block;
+      }
+      .settings__button-white {
+        display: none;
+      }
+    }
+  }
+}

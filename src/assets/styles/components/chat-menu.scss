@@ -1,0 +1,108 @@
+.chat {
+  &__menu {
+    display: none;
+    right: 12px;
+    top: 73px;
+    position: absolute;
+    width: 300px;
+    background: $white;
+    border: 1px solid rgba(139, 139, 139, 0.4);
+    border-radius: 6px;
+    box-shadow: 0px 2px 27px rgba(180, 180, 180, 0.25);
+    padding: 12px 0;
+    &__icon {
+      &:hover {
+        svg {
+          path {
+            fill: $blue-100;
+          }
+        }
+      }
+    }
+    &__delete {
+      &:hover {
+        svg {
+          rect {
+            stroke: $blue-100;
+          }
+          path {
+            stroke: $blue-100;
+          }
+        }
+      }
+    }
+    &__item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px 8px;
+      transition: color 0.3s, background-color 0.3s;
+      will-change: color, background-color;
+      &:not(&.add__file) {
+        &:hover {
+          svg {
+            path {
+              fill: $blue-100;
+            }
+          }
+        }
+      }
+      &.add__file {
+        &:hover {
+          svg {
+            path {
+              stroke: $blue-100;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: rgba(29, 91, 251, 0.1);
+        color: $blue-100;
+      }
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        width: 100%;
+        transition: color 0.3s, background-color 0.3s;
+        will-change: color, background-color;
+      }
+      svg path {
+        transition: fill 0.3s, stroke 0.3s;
+        will-change: fill, stroke;
+      }
+      svg rect {
+        transition: stroke 0.3s;
+        will-change: stroke;
+      }
+    }
+    &__select {
+      &:hover {
+        svg {
+          path {
+            fill: transparent !important;
+            stroke: $blue-100;
+          }
+          rect {
+            stroke: $blue-100;
+          }
+        }
+      }
+    }
+    &__block {
+      border-bottom: 1px solid rgba(139, 139, 139, 0.4);
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

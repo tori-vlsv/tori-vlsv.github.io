@@ -1,0 +1,76 @@
+.post__popup {
+  display: none;
+  position: fixed;
+  padding: 16px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: $white;
+  z-index: 2001;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    img {
+      padding: 10px;
+    }
+  }
+  &__img {
+    height: 286px;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    &-blue {
+      color: $blue-100;
+    }
+  }
+  &__button {
+    border-radius: 8px;
+    background-color: $blue-100;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 8px;
+    width: 262px;
+    padding: 12px 100px;
+    margin: 44px auto 0;
+  }
+}

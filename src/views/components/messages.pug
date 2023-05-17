@@ -1,0 +1,64 @@
+include ../mixins/message.pug
+include ../mixins/reviews.pug
+.profile.messages
+  .wrapper
+    .page-layout
+      aside.profile__sidebar
+        .profile__sidebar__sticky
+          .profile__sidebar__header
+            img.profile__sidebar__photo(
+              src="/assets/images/avatar-big.png"
+              alt="avatar-big"
+            )
+            .profile__sidebar__title Regina Miles
+            include ../components/rating.pug
+          .profile__sidebar__links
+            a.profile__sidebar__link(href="#") My announcements
+            a.profile__sidebar__link(href="#") Favorites
+            a.profile__sidebar__link(href="#") Messages
+          .profile__sidebar__links
+            a.profile__sidebar__link(href="#") Settings
+            a.profile__sidebar__link.profile__sidebar__link-gray(href="#") Exit
+      .profile__content
+        .mobile__header.settings__popup__header
+          a.close__map__mobile(href="#")
+            img.chat__header__icon(
+              src="/assets/images/icons/arrow-left-blue.svg"
+              alt="arrow-left-blue"
+            )
+          .filter__search__input
+            img.filter__search__icon(
+              src="/assets/images/icons/search.svg"
+              alt="search"
+            )
+            input(type="search" placeholder="Search" name="search" required)
+        h1.page__title.profile__title Messages
+        .profile__states
+          .sorting.sorting-blue.profile__sorting
+            button.sorting__filter(type="button")
+              img.sorting__filter__dots(
+                src="/assets/images/icons/dots-blue.svg"
+                alt="dots-blue"
+              )
+              input(type="text" name="sorting")
+              span Nothing
+              img.sorting__filter__arrow(
+                src="/assets/images/icons/arrow-down-blue.svg"
+                alt="arrow-down-blue"
+              )
+            .sorting__choose
+              .sorting__choose__item.active(data-value="nothing") Nothing
+              .sorting__choose__item(data-value="select_all") All messages
+              .sorting__choose__item(data-value="unread") Unread messages
+          include ./search-default.pug
+        .grid-categories__grid.profile__messages.active
+          .edit__messages
+            .edit__messages__count
+              span#counter-messages 0
+              span message
+            .edit__messages__buttons
+              button.edit__messages__button(type="button")
+                img(src="/assets/images/icons/trash-blue.svg" alt="trash-blue")
+                span Delete
+          +message('#', '/assets/images/message-img.png', 'message-img', 'Regina Miles', '6 hours ago', 'HUAWEI MateBook D14', '15000 ฿', 'You: Why are you selling?', false)
+          +message('#', '/assets/images/message-img.png', 'message-img', 'Regina Miles', '6 hours ago', 'HUAWEI MateBook D14', '15000 ฿', 'You: Why are you selling?', true)

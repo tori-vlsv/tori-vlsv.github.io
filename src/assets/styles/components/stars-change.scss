@@ -1,0 +1,27 @@
+.stars__rating {
+  direction: rtl;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+  }
+  &__input {
+    display: none;
+  }
+  &__label svg {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    path {
+      transition: fill 0.3s;
+      will-change: fill;
+    }
+  }
+  &__label:hover svg path,
+  &__label:hover ~ &__label svg path,
+  &__input:checked ~ &__label svg path {
+    fill: #f3cd03;
+  }
+}

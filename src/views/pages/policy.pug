@@ -1,0 +1,19 @@
+extends ../layouts/master.pug
+
+block title
+  title Amico | Политика конфиденциальности
+
+block basicSeo
+  meta(content="Политика конфиденциальности" name="description")
+  meta(content="Политика, конфиденциальности" name="keywords")
+
+block manifestBrowserconfigFiles
+  link(href="../manifest.json" rel="manifest" crossorigin)
+  meta(content="../browserconfig.xml" name="msapplication-config")
+
+block content
+  main.page-policy
+    .page-container
+      include ../components/menu.pug
+      include ../components/policy.pug
+    include ../components/footer.pug

@@ -1,0 +1,117 @@
+.chat {
+  &__footer {
+    height: 127px;
+    position: relative;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 16px 32px;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: rgba(139, 139, 139, 0.4);
+      top: 0;
+      left: 0;
+    }
+    .chat__menu {
+      left: 32px;
+      top: inherit;
+      bottom: 88px;
+    }
+    &__menu {
+      background: rgba(29, 91, 251, 0.1);
+      border: 1px solid #1d5bfb;
+      border-radius: 6px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile__textarea textarea {
+      min-height: 95px;
+      border-color: $gray-100;
+      padding: 14px 16px;
+      resize: none;
+      font-size: 14px;
+      line-height: 21px;
+      outline: none;
+    }
+    &__text {
+      width: 100%;
+    }
+    &__send {
+      width: 40px;
+      height: 40px;
+      padding: 6px 5px 5px 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__photo {
+      display: none;
+      padding: 0;
+      width: auto;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .chat {
+    &__footer {
+      height: 62px;
+      padding: 16px;
+      z-index: 10000;
+      gap: 8px;
+      .profile__textarea textarea {
+        border: none;
+        min-height: 30px;
+        padding: 6.5px 8px;
+        height: 30px;
+        outline: none;
+        line-height: 17px;
+      }
+      &__menu {
+        border: none;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      &__send {
+        display: none;
+      }
+      &__photo {
+        display: block;
+      }
+      .chat__menu {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+        border: none;
+        height: 194px;
+        padding: 18px 0 16px 0;
+        z-index: 22;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 2px;
+          background-color: $gray-250;
+          top: 8px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}

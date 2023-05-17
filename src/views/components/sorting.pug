@@ -1,0 +1,16 @@
+.sorting
+  button.sorting__filter(type="button")
+    input(type="text" name="sorting")
+    span Sorting
+    img(src="/assets/images/icons/sorting.svg" alt="sorting")
+  .sorting__choose
+    .sorting__title Show first
+    .sorting__choose__item(data-value="by_many") By many
+    .sorting__choose__item(data-value="cheaper") Cheaper
+    .sorting__choose__item(data-value="expensive") Expensive
+    .sorting__choose__item(data-value="by_date") By date
+  .sorting__views
+    button.sorting__view.sorting__view-list(type="button")
+      img(src="/assets/images/icons/sorting-list.svg" alt="sorting-list")
+    button.sorting__view.sorting__view-cards.active(type="button")
+      img(src="/assets/images/icons/sorting-cards.svg" alt="sorting-cards")

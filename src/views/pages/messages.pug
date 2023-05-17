@@ -1,0 +1,21 @@
+extends ../layouts/master.pug
+
+block title
+  title Amico | Сообщения
+
+block basicSeo
+  meta(content="Сообщения" name="description")
+  meta(content="Сообщения" name="keywords")
+
+block manifestBrowserconfigFiles
+  link(href="../manifest.json" rel="manifest" crossorigin)
+  meta(content="../browserconfig.xml" name="msapplication-config")
+
+block content
+  main.page-messages.hasMobMenu
+    .page-container
+      include ../components/menu.pug
+      include ../components/messages.pug
+      include ../components/delete-popup.pug
+    include ../components/footer.pug
+    include ../components/menu-mobile.pug

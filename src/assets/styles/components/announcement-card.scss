@@ -1,0 +1,121 @@
+.announcement__card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  margin-top: 16px;
+  &__photo {
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+    min-height: 180px;
+    min-width: 250px;
+    max-height: 180px;
+    max-width: 250px;
+    display: block;
+    height: 100%;
+    img {
+      transition: transform 0.3s;
+      width: 100%;
+      height: 100%;
+      will-change: transform;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    &:hover {
+      .announcement__card__title {
+        color: $blue-hover;
+      }
+    }
+  }
+  &__header,
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $blue-100;
+    transition: color 0.3s;
+    will-change: color;
+  }
+  &__price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__adress,
+  &__date {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__adress {
+    color: $blue-100;
+    padding-left: 12px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      background-color: $green-100;
+      left: 0;
+      top: 50%;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__date {
+    color: $gray-100;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .announcement__card {
+    padding: 0;
+
+    &__photo {
+      min-width: 152px;
+      max-width: 152px;
+      min-height: 112px;
+      max-height: 152px;
+      object-fit: cover;
+    }
+    &__adress {
+      display: none;
+    }
+    &__date {
+      display: none;
+    }
+    &__title {
+      color: $blue-100;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &__price {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

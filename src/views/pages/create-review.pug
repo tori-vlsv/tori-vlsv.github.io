@@ -1,0 +1,19 @@
+extends ../layouts/master.pug
+
+block title
+  title Amico | Оставить отзыв
+
+block basicSeo
+  meta(content="Оставить отзыв" name="description")
+  meta(content="Оставить, отзыв" name="keywords")
+
+block manifestBrowserconfigFiles
+  link(href="../manifest.json" rel="manifest" crossorigin)
+  meta(content="../browserconfig.xml" name="msapplication-config")
+
+block content
+  main
+    .page-container
+      include ../components/menu.pug
+      include ../components/create-review.pug
+    include ../components/footer.pug

@@ -1,0 +1,32 @@
+textarea:placeholder,
+input:placeholder {
+  font-family: "Inter";
+  color: $gray-100;
+}
+
+.page__title {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  span {
+    margin-left: 8px;
+    color: $gray-100;
+  }
+}
+
+button {
+  user-select: none;
+}
+
+label {
+  span {
+    user-select: none;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .page__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,20 @@
+extends ../layouts/master.pug
+
+block title
+  title Amico | Настройки
+
+block basicSeo
+  meta(content="Мои объявления" name="description")
+  meta(content="Мои объявления" name="keywords")
+
+block manifestBrowserconfigFiles
+  link(href="../manifest.json" rel="manifest" crossorigin)
+  meta(content="../browserconfig.xml" name="msapplication-config")
+
+block content
+  main
+    .page-container.page-settings
+      include ../components/menu.pug
+      include ../components/settings.pug
+    include ../components/footer.pug
+    include ../components/menu-mobile.pug

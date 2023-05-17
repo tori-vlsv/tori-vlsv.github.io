@@ -1,0 +1,222 @@
+.create__review {
+  .profile {
+    &__textarea {
+      textarea {
+        min-height: 132px;
+      }
+    }
+    &__block {
+      padding: 24px 262px 24px 24px;
+      h2 {
+        margin-bottom: 0;
+        font-size: 32px;
+        line-height: 48px;
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      &-tip {
+        margin-top: 8px;
+      }
+    }
+    &__upload {
+      height: 100px;
+      &-hover {
+        transition: color 0.3s, border-color 0.3s, background-color 0.3s,
+          opacity 0.3s, visibility 0.3s;
+        will-change: color, border-color, background-color, opacity, visibility;
+        background-color: $white;
+        border: 1px solid $blue-100;
+        font-weight: normal;
+        border-radius: 6px;
+        color: $blue-100;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  .announcement__card {
+    margin-top: 0;
+    &__header {
+      max-width: 336px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__photo {
+      max-width: 200px;
+      max-height: 144px;
+      min-height: 144px;
+      min-width: 200px;
+    }
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+  .filter__labels {
+    gap: 24px;
+    max-height: none;
+    margin: 24px 0;
+  }
+  &__deal {
+    margin-top: 6px;
+  }
+  &__button {
+    font-size: 16px;
+    line-height: 24px;
+    background: $blue-100;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: $white;
+    will-change: color, background-color;
+    transition: color 0.3s, background-color 0.3s;
+    &:hover {
+      border-color: $blue-hover;
+      background-color: $blue-hover;
+      color: $white;
+    }
+    &-submit {
+      padding: 8px 113.5px;
+      margin-top: 36px;
+    }
+  }
+  &__rating {
+    margin-top: 40px;
+  }
+  &__block {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .create__review {
+    padding-bottom: 14px;
+    &__button {
+      &-submit {
+        margin-top: 24px;
+        width: 100%;
+      }
+    }
+    &__uploads {
+      height: 80px;
+      overflow-x: auto;
+      min-width: 343px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &__rating {
+      margin-top: 32px;
+    }
+    &__untitle {
+      display: none;
+    }
+    &__block {
+      margin-top: 16px;
+    }
+    &__continue {
+      display: none;
+    }
+    .stars__rating__wrap {
+      justify-content: center;
+    }
+    .stars__rating__label svg {
+      width: 64px;
+      height: 64px;
+      padding: 5.33px;
+    }
+    &__subtitle {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .profile {
+      &__uploads {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+        height: 80px;
+      }
+      &__upload {
+        min-width: 104px;
+        height: 80px;
+        background-color: $blue-100;
+      }
+      &__textarea {
+        textarea {
+          min-height: 158px;
+          padding: 8px;
+        }
+      }
+      &__title {
+        display: none;
+      }
+      &__block {
+        padding: 0;
+        h2 {
+          font-size: 24px;
+          line-height: 36px;
+          margin-bottom: 16px;
+        }
+        h3 {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 0;
+        }
+        &-tip {
+          margin-bottom: 0;
+        }
+      }
+      &__block .create__review__subtitle {
+        h3 {
+          font-size: 24px;
+          line-height: 36px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    h1 + .profile__block {
+      margin-top: 0;
+    }
+    .filter {
+      &__labels {
+        margin: 16px 0 0 0;
+      }
+    }
+    .announcement__card {
+      padding: 0;
+      &__photo {
+        max-width: 152px;
+        min-width: 152px;
+        min-height: 112px;
+        max-height: 112px;
+        object-fit: cover;
+      }
+      &__footer {
+        display: none;
+      }
+      &__title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: $black-100;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+      }
+      &__header-right {
+        display: none;
+      }
+      &__price {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 8px;
+      }
+    }
+  }
+}

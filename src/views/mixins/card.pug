@@ -1,0 +1,134 @@
+mixin card(href, src, alt, title, price, description, category, geo, date, isMyPost, isDisabled)
+  if isMyPost
+    .card.card-label
+      label
+        if isDisabled
+          input.card__checker(
+            type="checkbox"
+            name="" + alt
+            data-status="disabled"
+          )
+        else
+          input.card__checker(
+            type="checkbox"
+            name="" + alt
+            data-status="active"
+          )
+        .card__info
+          if isDisabled
+            .card__status.card__status-disabled
+              span Disabled
+          else
+            .card__status.card__status-active
+              span Active
+          .card__likes
+            img(src="/assets/images/icons/heart-red.svg" alt="heart-red")
+            span 8
+          .card__views
+            img(src="/assets/images/icons/eye-black.svg" alt="eye-black")
+            span 8
+          .card__target
+            img(src="/assets/images/icons/focus-blue.svg" alt="focus-blue")
+            span Post
+          .card__options.sorting
+            button.sorting__filter(type="button")
+              input(type="text" name="sorting")
+              img(src="/assets/images/icons/dots-blue.svg" alt="dots-blue")
+            .sorting__choose
+              .sorting__choose__item(data-value="post")
+                img(
+                  src="/assets/images/icons/focus-black.svg"
+                  alt="focus-black"
+                )
+                p Post
+              .sorting__choose__item(data-value="edit")
+                img(src="/assets/images/icons/edit-black.svg" alt="edit-black")
+                p Edit
+              .sorting__choose__item(data-value="to-archive")
+                img(
+                  src="/assets/images/icons/to-archive-black.svg"
+                  alt="to-archive-black"
+                )
+                p To the archive
+              .sorting__choose__item(data-value="delete")
+                img(
+                  src="/assets/images/icons/trash-black.svg"
+                  alt="trash-black"
+                )
+                p Delete
+        .card__inner
+          .card__img
+            img(src="" + src alt="" + alt)
+          .card__content
+            .card__left
+              .card__header
+                a.card__title(href="" + href)= title
+                .card__price= price
+                .card__description !{ description }
+              .card__footer
+                .card__category !{ category }
+                .card__geo !{ geo }
+                .card__date= date
+  else
+    .card
+      a.card__img(href="" + href)
+        img(src="" + src alt="" + alt)
+      .card__content
+        a.card__left(href="" + href)
+          .card__header
+            .card__title= title
+            .card__price= price
+            .card__description !{ description }
+          .card__footer
+            .card__category !{ category }
+            .card__geo !{ geo }
+            .card__date= date
+        .card__right
+          .card__favorite
+            svg(
+              fill="none"
+              viewBox="0 0 24 21"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="21"
+            )
+              path(
+                d="M7.5 0.75C3.77208 0.75 0.75 3.7721 0.75 7.5C0.75 10.7302 2.63881 13.6556 4.79928 15.8374C6.97201 18.0316 9.63484 19.6943 11.6058 20.3493C11.8617 20.4344 12.1383 20.4344 12.3942 20.3493C14.3652 19.6943 17.028 18.0316 19.2007 15.8374C21.3612 13.6556 23.25 10.7302 23.25 7.5C23.25 3.77209 20.2279 0.75 16.5 0.75C14.7709 0.75 13.1933 1.40109 12 2.46887C10.8067 1.40109 9.22909 0.75 7.5 0.75Z"
+                fill="white"
+                stroke="#1D5BFB"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              )
+          .card__user
+            img.card__user__avatar(
+              src="/assets/images/avatar.png"
+              alt="avatar"
+            )
+            .card__user__title Regina Miles
+            .rating
+              .rating__amount
+                .rating__number 4.3
+                .rating__stars
+                  img.rating__star(
+                    src="/assets/images/icons/star-active.svg"
+                    alt="star-active"
+                  )
+                  img.rating__star(
+                    src="/assets/images/icons/star-active.svg"
+                    alt="star-active"
+                  )
+                  img.rating__star(
+                    src="/assets/images/icons/star-active.svg"
+                    alt="star-active"
+                  )
+                  img.rating__star(
+                    src="/assets/images/icons/star-active.svg"
+                    alt="star-active"
+                  )
+                  img.rating__star(
+                    src="/assets/images/icons/star-disabled.svg"
+                    alt="star-disabled"
+                  )
+              a.rating__reviews(href="#") 12 reviews
+            .card__user__status Private person
+            .card__user__count 10 Sales

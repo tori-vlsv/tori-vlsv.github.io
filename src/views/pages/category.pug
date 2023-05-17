@@ -1,0 +1,21 @@
+extends ../layouts/master.pug
+
+block title
+  title Amico | Категория
+
+block basicSeo
+  meta(content="Категория" name="description")
+  meta(content="Категория" name="keywords")
+
+block manifestBrowserconfigFiles
+  link(href="../manifest.json" rel="manifest" crossorigin)
+  meta(content="../browserconfig.xml" name="msapplication-config")
+
+block content
+  main.page-category.hasMobMenu
+    .page-container
+      include ../components/search-main.pug
+      include ../components/breadcrumbs.pug
+      include ../components/category.pug
+    include ../components/footer.pug
+    include ../components/menu-mobile.pug

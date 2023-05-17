@@ -1,0 +1,72 @@
+header.header
+  .wrapper
+    .header__wrapper
+      .header__left
+        a.header__logo(href="/")
+          img(src="/assets/images/logo.svg" alt="logo")
+      .header__right
+        .header__localization
+          button.header__translate(type="button")
+            span Eng
+            img.header__translate__icon(
+              src="/assets/images/icons/arrow-down-blue.svg"
+              alt="arrow-down-blue"
+            )
+          .header__languages
+            a.header__language(href="#")
+              span En
+              img(src="/assets/images/icons/flag-en.svg" alt="flag-en")
+            a.header__language(href="#")
+              span Th
+              img(src="/assets/images/icons/flag-th.svg" alt="flag-th")
+            a.header__language(href="#")
+              span Ru
+              img(src="/assets/images/icons/flag-ru.svg" alt="flag-ru")
+          .header__geo
+            button.header__geo__current.countries__button(type="button")
+              img(src="/assets/images/icons/pin.svg" alt="pin")
+              span Thailand
+            .header__search.countries__search
+              form.header__search__block(action="#")
+                .header__search__input
+                  img.header__search__icon(
+                    src="/assets/images/icons/search.svg"
+                    alt="search"
+                  )
+                  input(type="search" placeholder="Search" name="search")
+              .header__search__countries
+                .header__search__country Thailand
+                .header__search__country China
+                .header__search__country Japan
+                .header__search__country Russia
+        .header__login
+          button.header__registration(type="button") Log in & Registration
+          button.header__user(type="button")
+            img.header__user__photo(
+              src="/assets/images/avatar.png"
+              alt="header-photo"
+            )
+            span Regina Miles
+            img.header__user__icon(
+              src="/assets/images/icons/arrow-down-black.svg"
+              alt="arrow-down-black"
+            )
+          .header__profile
+            .header__profile__rating
+              include ../components/rating.pug
+            a.header__profile__item(href="#")
+              span.header__profile__name My post
+              span.header__profile__name.header__profile__name-blue 1
+            a.header__profile__item(href="#")
+              span.header__profile__name Favorites
+              span.header__profile__name.header__profile__name-blue 34
+            a.header__profile__item(href="#")
+              span.header__profile__name Messages
+              span.header__profile__name.header__profile__name-blue 1
+            a.header__profile__item(href="#")
+              span.header__profile__name Settings
+            a.header__profile__item.header__profile__item-gray(href="#")
+              span.header__profile__name Exit
+        a.header__submit(href="#")
+          img.header__icon(src="/assets/images/icons/plus.svg" alt="plus")
+          span Submit an ad

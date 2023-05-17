@@ -1,0 +1,21 @@
+.more__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  button {
+    background: $white;
+    border: 1px solid $blue-100;
+    border-radius: 6px;
+    padding: 8px 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $blue-100;
+    transition: color 0.3s, border-color 0.3s;
+    will-change: color, border-color;
+    &:hover {
+      color: $blue-hover;
+      border-color: $blue-hover;
+    }
+  }
+}

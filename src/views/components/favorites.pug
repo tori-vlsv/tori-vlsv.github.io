@@ -1,0 +1,28 @@
+.profile
+  .wrapper
+    .page-layout
+      aside.profile__sidebar
+        .profile__sidebar__sticky
+          .profile__sidebar__header
+            img.profile__sidebar__photo(
+              src="/assets/images/avatar-big.png"
+              alt="avatar-big"
+            )
+            .profile__sidebar__title Regina Miles
+            include ../components/rating.pug
+          .profile__sidebar__links
+            a.profile__sidebar__link(href="#") My announcements
+            a.profile__sidebar__link(href="#") Favorites
+            a.profile__sidebar__link(href="#") Messages
+          .profile__sidebar__links
+            a.profile__sidebar__link(href="#") Settings
+            a.profile__sidebar__link.profile__sidebar__link-gray(href="#") Exit
+      .profile__content
+        .mobile__header
+          button.close__map__mobile(type="button")
+            img.chat__header__icon(
+              src="/assets/images/icons/arrow-left-blue.svg"
+              alt="arrow-left-blue"
+            )
+        h1.page__title.profile__title Favorites
+        include ../components/grid-categories.pug

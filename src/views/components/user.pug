@@ -1,0 +1,44 @@
+include ../mixins/card.pug
+include ../mixins/reviews.pug
+.profile
+  .wrapper
+    .mobile__header
+      img.chat__header__icon(
+        src="/assets/images/icons/arrow-left-blue.svg"
+        alt="arrow-left-blue"
+      )
+    .page-layout
+      aside.profile__sidebar
+        .profile__sidebar__sticky
+          .profile__sidebar__header
+            img.profile__sidebar__photo(
+              src="/assets/images/user.png"
+              alt="user"
+            )
+            .profile__sidebar__main
+              .profile__sidebar__title Lee Kalee
+              include ../components/rating.pug
+          .profile__sidebar__footer
+            button.profile__sidebar__button.profile__sidebar__button-blue(
+              type="button"
+            ) Send Message
+            button.profile__sidebar__button(type="button") Leave сomment
+      .profile__content
+        h1.page__title.profile__title Post
+        .profile__block.user__block
+          include ./search-button.pug
+        .grid-categories
+          .grid-categories__grid
+            +card('#', '/assets/images/recommendations/item-2.png','item-2', 'Kitty', 'Free', '200,000 km, 3.5 AT (280 hp),SUV, full, petrol <br> Not on the move requires engine replacement.', 'Pets', '<span>Rattanakosin</span> 12 minutes', '1 day ago')
+            +card('#', '/assets/images/recommendations/item-3.png','item-3', 'Infiniti fx35 (2005)', '300 626 ฿', 'The shoes are new. <br> Size 39. <br> Genuine leather.The size didn\'t fit. <br> In the native box.', 'Car & Vehicles', '<span>Chatuchak</span> 30 minutes', '1 hours ago')
+            +card('#', '/assets/images/recommendations/item-7.png','item-7', 'Comics collection', '15 000 ฿', 'Comics of the Marvel universe are on sale. <br> In excellent condition. All pages are as new without creases and scuffs. <br> Purchased in a personal collection of comics.', 'Collecting', '<span>BangPhlat</span> 5 minutes', '20 hours ago')
+            +card('#', '/assets/images/recommendations/item-8.png','item-8', 'Villa', '3 200 000 ฿', '200,000 km, 3.5 AT (280 hp),SUV, full, petrol <br> Not on the move requires engine replacement.', 'Property', '<span>BangPhlat</span> 25 minutes', 'Week ago')
+            +card('#', '/assets/images/recommendations/item-5.png','item-5', 'iPhone 11', '11 000 ฿', 'The shoes are new. <br> Size 39. <br> Genuine leather.The size didn\'t fit. <br> In the native box.', 'Electronics', '<span>BangPhlat</span> 5 minutes', '2 days ago')
+            +card('#', '/assets/images/recommendations/item-1.png','item-1', 'Flower in a pot', '700 ฿', 'Comics of the Marvel universe are on sale. <br> In excellent condition. All pages are as new without creases and scuffs. <br> Purchased in a personal collection of comics.', 'Furniture', '<span>BangPhlat</span> 20 minutes', '12 hours ago')
+          include ./more-button.pug
+        .profile__block
+          h2 Description
+          p The Huawei MateBook D 14 8+512GB Mystic Silver (NbD-WDH9) is equipped with a Full HD IPS display that delivers detailed, high-contrast content. A quad-core Intel processor and 8GB of RAM provide optimal performance when multitasking, editing photos, and running various programs. The cooling system with Shark Fin 2.0 fan effectively removes heat from the internal components for stable operation of the device.
+          p Notebook Huawei MateBook D 14 8+512GB Mystic Silver (NbD-WDH9) is equipped with two speakers that reproduce high-quality dialogues of characters in movies and TV shows, audio files, and musical compositions. The model has a webcam hidden in the keyboard for convenient remote conferences, video communication with friends and relatives. The fingerprint scanner built into the power button allows you to unlock your laptop and prevent unauthorized persons from accessing your data. The Wi-Fi module provides a wireless connection to the Internet to search for information, download files, listen to music and watch videos online.
+          .user__reviews
+            +reviews('<h2>Reviews</h2>')

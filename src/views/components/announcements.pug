@@ -1,0 +1,31 @@
+.profile
+  .wrapper
+    button.mobile__header(type="button")
+      img.chat__header__icon(
+        src="/assets/images/icons/arrow-left-blue.svg"
+        alt="arrow-left-blue"
+      )
+    .page-layout
+      aside.profile__sidebar
+        .profile__sidebar__sticky
+          .profile__sidebar__header
+            img.profile__sidebar__photo(
+              src="/assets/images/user.png"
+              alt="user"
+            )
+            .profile__sidebar__title Lee Kalee
+            include ../components/rating.pug
+          .profile__sidebar__footer
+            button.profile__sidebar__button.profile__sidebar__button-blue(
+              type="button"
+            ) Send Message
+            button.profile__sidebar__button(type="button") Leave сomment
+      .profile__content
+        h1.page__title.profile__title User announcements
+        .profile__block
+          h2 What did you discuss?
+          include ../components/search-default.pug
+          include ../components/announcement-card.pug
+          include ../components/announcement-card.pug
+          include ../components/announcement-card.pug
+          include ../components/announcement-card.pug

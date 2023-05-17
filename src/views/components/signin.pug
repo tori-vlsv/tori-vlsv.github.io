@@ -1,0 +1,178 @@
+.signin
+  form.signin__step.signin__popup__first(action="#")
+    .mobile__header
+      img.chat__header__icon.settings__close(
+        src="/assets/images/icons/arrow-left-blue.svg"
+        alt="arrow-left-blue"
+      )
+    img.signin__logo(src="/assets/images/logo-mobile.svg" alt="logo-mobile")
+    .signin__popup__text Login or register to use the functions of Amiko
+    .signin__buttons
+      button.settings__button.settings__button-white.signin__register(
+        type="button"
+      ) Register a new account
+      button.settings__button.settings__button-active.signin__signin(
+        type="button"
+      ) Sign in
+  form.signin__step.signin__popup__signin(action="#")
+    .mobile__header
+      img.chat__header__icon.settings__close(
+        src="/assets/images/icons/arrow-left-blue.svg"
+        alt="arrow-left-blue"
+      )
+      a.header__logo(href="/")
+        img(src="/assets/images/logo.svg" alt="logo")
+    .settings__popup__title Sign in
+    .settings__close.signin__close <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    .signin__mail.settings__input.signin-error
+      .signin__subtitle Email
+      input(type="email" placeholder="Enter your email" name="email" required)
+      img.settings__input__icon(
+        src="/assets/images/icons/close-black.svg"
+        alt="close-black"
+      )
+      span.error-text The email is not linked to the profile.
+    .settings__input.settings__input__password.signin-error
+      .signin__subtitle Password
+      input(
+        type="password"
+        placeholder="New password"
+        name="new-password"
+        required
+      )
+      img.settings__input__icon.password-show(
+        src="/assets/images/icons/eyeslash.svg"
+        alt="eyeslash"
+      )
+      img.settings__input__icon.symbols-show(
+        src="/assets/images/icons/eye.svg"
+        alt="eye"
+      )
+      span.error-text Wrong password
+    .signin__password
+      label.signin__password__label.filter__label
+        input.filter__input(type="checkbox" name="remember")
+        span.filter__checkbox Remember password
+      button.signin__question(type="button") Forgot your password?
+    .signin__buttons
+      button.settings__button.settings__button-white.signin__register(
+        type="button"
+      ) Register a new account
+      button.settings__button.settings__button-active(type="submit") Sign in
+  form.signin__step.signin__login(action="#")
+    .mobile__header
+      img.chat__header__icon.settings__close(
+        src="/assets/images/icons/arrow-left-blue.svg"
+        alt="arrow-left-blue"
+      )
+      a.header__logo(href="/")
+        img(src="/assets/images/logo.svg" alt="logo")
+    .settings__popup__title Create an account
+    .settings__close.signin__close <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    .signin__login__inputs
+      .signin__login__input.signin__login__input-half
+        .signin__subtitle First name
+        input(type="text" placeholder="First name" name="first_name" required)
+      .signin__login__input.signin__login__input-half
+        .signin__subtitle Last name
+        input(type="text" placeholder="Last name" name="last_name" required)
+      .signin__mail.settings__input.signin__login__input
+        .signin__subtitle Email
+        input(
+          type="email"
+          placeholder="Enter your email"
+          name="email"
+          required
+        )
+        img.settings__input__icon(
+          src="/assets/images/icons/close-black.svg"
+          alt="close-black"
+        )
+      .settings__input.settings__input__password.signin__login__input
+        .signin__subtitle Password
+        input(
+          type="password"
+          placeholder="Password"
+          name="new-password"
+          required
+        )
+        img.settings__input__icon.password-show(
+          src="/assets/images/icons/eyeslash.svg"
+          alt="eyeslash"
+        )
+        img.settings__input__icon.symbols-show(
+          src="/assets/images/icons/eye.svg"
+          alt="eye"
+        )
+    button.settings__button.settings__button-disabled.signin__create(
+      type="submit"
+    ) Create account
+  form.signin__forgot(action="#")
+    .signin__step.signin__popup__second
+      .mobile__header
+        img.chat__header__icon.settings__close(
+          src="/assets/images/icons/arrow-left-blue.svg"
+          alt="arrow-left-blue"
+        )
+        a.header__logo(href="/")
+          img(src="/assets/images/logo.svg" alt="logo")
+      .settings__popup__title Password Recovery
+      .settings__close.signin__close <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      .signin__text.settings__input
+        input(
+          type="text"
+          placeholder="Phone or E-mail"
+          name="phone_email"
+          required
+        )
+      .signin__buttons
+        button.signin__button-pc.settings__button.settings__button-active.settings__next.settings__button-disabled(
+          type="button"
+        ) Rest password
+        button.signin__button-mobile.settings__button.settings__button-active.settings__next.settings__button-disabled(
+          type="button"
+        ) Change
+    .signin__step.signin__popup__third
+      .mobile__header
+        img.chat__header__icon.settings__close(
+          src="/assets/images/icons/arrow-left-blue.svg"
+          alt="arrow-left-blue"
+        )
+        a.header__logo(href="/")
+          img(src="/assets/images/logo.svg" alt="logo")
+      .settings__popup__title Сhange password
+      .settings__close.signin__close <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      .signin__description Enter the code that will come to your mail <span> ReginaMiles@gmail.com </span>
+      .signin__text.settings__input
+        input(type="text" placeholder="Email code" name="email_code" required)
+      .signin__buttons
+        button.settings__button.settings__button-white.settings__prev(
+          type="button"
+        ) Сhange email
+        button.settings__button.settings__button-active.settings__next(
+          type="button"
+        ) Сonfirm
+    .signin__step.signin__popup__fourth
+      .mobile__header
+        img.chat__header__icon.settings__close(
+          src="/assets/images/icons/arrow-left-blue.svg"
+          alt="arrow-left-blue"
+        )
+        a.header__logo(href="/")
+          img(src="/assets/images/logo.svg" alt="logo")
+      .settings__popup__title Create a new password
+      .settings__close.signin__close <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="6" fill="white"/><path d="M26.5 14.002L13.9987 26.5033" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 26.502L13.9987 14.0006" stroke="#1D5BFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      .signin__text.settings__input
+        input(
+          type="password"
+          placeholder="New password"
+          name="new_password"
+          required
+        )
+      .signin__buttons
+        button.signin__button-pc.settings__button.settings__button-active.settings__confirm(
+          type="submit"
+        ) Сonfirm
+        button.signin__button-mobile.settings__button.settings__button-active.settings__confirm(
+          type="submit"
+        ) Сonfirm

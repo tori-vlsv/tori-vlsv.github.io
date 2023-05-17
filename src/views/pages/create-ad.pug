@@ -1,0 +1,20 @@
+extends ../layouts/master.pug
+
+block title
+  title Amico | Создать объявление
+
+block basicSeo
+  meta(content="Создать объявление" name="description")
+  meta(content="Создать, объявление" name="keywords")
+
+block manifestBrowserconfigFiles
+  link(href="../manifest.json" rel="manifest" crossorigin)
+  meta(content="../browserconfig.xml" name="msapplication-config")
+
+block content
+  main.page-create-ad
+    .page-container
+      include ../components/menu.pug
+      include ../components/create-ad.pug
+      include ../components/category-popup.pug
+    include ../components/footer.pug
