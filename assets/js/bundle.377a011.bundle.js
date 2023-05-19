@@ -156,21 +156,21 @@ function categoryPopup() {
   let items = $('.category__popup__subblock .category__popup__name');
   let container = $('.profile__breadcrumbs__generated');
   let select = $('.category__popup__block, .category__popup__subblock .category__popup__name');
-  let inputs = $('.category__popup__name input')
+  let inputs = $('.category__popup__name input');
   let scrollableElement = document.querySelector('.category__popup');
-  button.on('click', function() {
+  button.on('click', function () {
     if ($(window).width() < 1232) {
       popup.show();
       (0,scroll_lock__WEBPACK_IMPORTED_MODULE_0__.disablePageScroll)(scrollableElement);
     }
   });
-  close.on('click', function() {
+  close.on('click', function () {
     if ($(window).width() < 1232) {
       popup.hide();
       (0,scroll_lock__WEBPACK_IMPORTED_MODULE_0__.enablePageScroll)();
     }
   });
-  category.on('click', function(e) {
+  category.on('click', function (e) {
     e.preventDefault();
     $(this).children().children('input').prop('checked', true);
     category.not(this).children().children('input').prop('checked', false);
@@ -180,7 +180,7 @@ function categoryPopup() {
     $(this).next().slideDown();
     $(this).addClass('active');
   });
-  items.on('click', function() {
+  items.on('click', function () {
     items.not(this).removeClass('active');
     category.children().children('input').prop('checked', false);
     $(this).addClass('active');
@@ -189,7 +189,7 @@ function categoryPopup() {
       (0,scroll_lock__WEBPACK_IMPORTED_MODULE_0__.enablePageScroll)();
     }
   });
-  select.on('click', function() {
+  select.on('click', function () {
     container.children().remove();
     create();
     $('.profile__breadcrumbs > .profile__breadcrumb').hide();
@@ -197,15 +197,14 @@ function categoryPopup() {
   function create() {
     Array.from(inputs).forEach(input => {
       if ($(input).prop('checked')) {
-        let item = 
-        `
+        let item = `
           <span>/</span>
           <div class="profile__breadcrumb">
             ${$(input).next().text()}
           </div>
         `;
         container.append(item);
-        $('.profile__breadcrumb').on('click', function() {
+        $('.profile__breadcrumb').on('click', function () {
           inputs.prop('checked', false);
           container.children().remove();
           $('.profile__breadcrumb').show();
@@ -213,9 +212,9 @@ function categoryPopup() {
       }
     });
   }
-};
+}
+;
 categoryPopup();
-
 
 /***/ }),
 
@@ -565,7 +564,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var wnumb__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(wnumb__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _easepick_bundle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(90);
 /* harmony import */ var _easepick_range_plugin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(548);
+/* harmony import */ var scroll_lock__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(444);
+/* harmony import */ var scroll_lock__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(scroll_lock__WEBPACK_IMPORTED_MODULE_4__);
 /* provided dependency */ var $ = __webpack_require__(638);
+
 
 
 
@@ -656,6 +658,142 @@ function calendar() {
   }
 }
 calendar();
+function mobileFilter() {
+  let brandButton = $('.filter__search__input__brand');
+  let sizeButton = $('.filter__search__input__size');
+  let colorButton = $('.filter__search__input__color');
+  let bodytypeButton = $('.filter__search__input__bodytype');
+  let brandPopup = $('.filter__popup__brand');
+  let sizePopup = $('.filter__popup__size');
+  let colorPopup = $('.filter__popup__color');
+  let bodytypePopup = $('.filter__popup__bodytype');
+  let brandInputs = $('.filter__popup__brand input');
+  let sizeInputs = $('.filter__popup__size input');
+  let colorInputs = $('.filter__popup__color input');
+  let bodytypeInputs = $('.filter__popup__bodytype input');
+  let brandValues = $('.filter__search__input__brand input');
+  let sizeValues = $('.filter__search__input__size input');
+  let colorValues = $('.filter__search__input__color input');
+  let bodytypeValues = $('.filter__search__input__bodytype input');
+  let brandReset = $('.filter__popup__brand .filter__popup__reset');
+  let sizeReset = $('.filter__popup__size .filter__popup__reset');
+  let colorReset = $('.filter__popup__color .filter__popup__reset');
+  let bodytypeReset = $('.filter__popup__bodytype .filter__popup__reset');
+  let scrollableElement = document.querySelector('.filter__popup__list');
+  let bg = $('.filter__popup__bg');
+  let close = $('.filter__popup__close, .filter__popup__button button');
+  let reset = $('.filter__popup__reset');
+  let selectedInputsBrand = [];
+  let selectedInputsSize = [];
+  let selectedInputsColor = [];
+  let selectedInputsBodytype = [];
+  brandReset.on('click', function () {
+    brandValues.val('');
+  });
+  sizeReset.on('click', function () {
+    sizeValues.val('');
+  });
+  colorReset.on('click', function () {
+    colorValues.val('');
+  });
+  bodytypeReset.on('click', function () {
+    bodytypeValues.val('');
+  });
+  brandInputs.on('input', function () {
+    if ($(this).is(':checked')) {
+      let nextElementText = $(this).siblings('span').text();
+      selectedInputsBrand.push(nextElementText);
+    } else {
+      let nextElementText = $(this).siblings('span').text();
+      let index = selectedInputsBrand.indexOf(nextElementText);
+      if (index !== -1) {
+        selectedInputsBrand.splice(index, 1);
+      }
+    }
+    brandValues.val(selectedInputsBrand);
+    let replaced = brandValues.val().replace(',', ', ');
+    brandValues.val(replaced);
+  });
+  sizeInputs.on('input', function () {
+    if ($(this).is(':checked')) {
+      let nextElementText = $(this).siblings('span').text();
+      selectedInputsSize.push(nextElementText);
+    } else {
+      let nextElementText = $(this).siblings('span').text();
+      let index = selectedInputsSize.indexOf(nextElementText);
+      if (index !== -1) {
+        selectedInputsSize.splice(index, 1);
+      }
+    }
+    sizeValues.val(selectedInputsSize);
+    let replaced = sizeValues.val().replace(',', ', ');
+    sizeValues.val(replaced);
+  });
+  colorInputs.on('input', function () {
+    if ($(this).is(':checked')) {
+      let nextElementText = $(this).siblings('span').text();
+      selectedInputsColor.push(nextElementText);
+    } else {
+      let nextElementText = $(this).siblings('span').text();
+      let index = selectedInputsColor.indexOf(nextElementText);
+      if (index !== -1) {
+        selectedInputsColor.splice(index, 1);
+      }
+    }
+    colorValues.val(selectedInputsColor);
+    let replaced = colorValues.val().replace(',', ', ');
+    colorValues.val(replaced);
+  });
+  bodytypeInputs.on('input', function () {
+    if ($(this).is(':checked')) {
+      let nextElementText = $(this).siblings('span').text();
+      selectedInputsBodytype.push(nextElementText);
+    } else {
+      let nextElementText = $(this).siblings('span').text();
+      let index = selectedInputsBodytype.indexOf(nextElementText);
+      if (index !== -1) {
+        selectedInputsBodytype.splice(index, 1);
+      }
+    }
+    bodytypeValues.val(selectedInputsBodytype);
+    let replaced = bodytypeValues.val().replace(',', ', ');
+    bodytypeValues.val(replaced);
+  });
+  brandButton.on('click', function () {
+    brandPopup.show();
+    (0,scroll_lock__WEBPACK_IMPORTED_MODULE_4__.disablePageScroll)(scrollableElement);
+    bg.removeClass('filter__popup__bg-hidden');
+  });
+  sizeButton.on('click', function () {
+    sizePopup.show();
+    (0,scroll_lock__WEBPACK_IMPORTED_MODULE_4__.disablePageScroll)(scrollableElement);
+    bg.removeClass('filter__popup__bg-hidden');
+  });
+  colorButton.on('click', function () {
+    colorPopup.show();
+    (0,scroll_lock__WEBPACK_IMPORTED_MODULE_4__.disablePageScroll)(scrollableElement);
+    bg.removeClass('filter__popup__bg-hidden');
+  });
+  bodytypeButton.on('click', function () {
+    bodytypePopup.show();
+    (0,scroll_lock__WEBPACK_IMPORTED_MODULE_4__.disablePageScroll)(scrollableElement);
+    bg.removeClass('filter__popup__bg-hidden');
+  });
+  close.on('click', function () {
+    brandPopup.hide();
+    sizePopup.hide();
+    colorPopup.hide();
+    bodytypePopup.hide();
+    (0,scroll_lock__WEBPACK_IMPORTED_MODULE_4__.enablePageScroll)();
+    bg.addClass('filter__popup__bg-hidden');
+  });
+  reset.on('click', function () {
+    $(this).parent().siblings('.filter__popup__list').find('.filter__label').children('input').prop('checked', false);
+  });
+}
+if ($(window).width() < 1232) {
+  mobileFilter();
+}
 
 /***/ }),
 
@@ -735,11 +873,11 @@ function mapPopup() {
     let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
     map.addLayer(layer);
     let iconOptions = {
-      iconUrl: '../assets/images/icons/marker-blue.svg',
+      iconUrl: '/assets/images/icons/marker-blue.svg',
       iconSize: [36, 36]
     };
     let customIcon = L.icon(iconOptions);
-    L.Icon.Default.prototype.options.iconUrl = '../assets/images/icons/marker-blue.svg';
+    L.Icon.Default.prototype.options.iconUrl = '/assets/images/icons/marker-blue.svg';
     L.Icon.Default.prototype.options.shadowSize = [0, 0];
     let markerOptions = {
       icon: customIcon
@@ -764,7 +902,7 @@ function mapPopup() {
       setParent(htmlObject, customMapContols);
     }
     map.on('moveend', function () {
-      $('.leaflet-marker-pane img').attr('src', '../assets/images/icons/marker-blue.svg');
+      $('.leaflet-marker-pane img').attr('src', '/assets/images/icons/marker-blue.svg');
       if ($('.leaflet-control-geosearch input').val()) {
         $('.chat__map__address').addClass('active');
       }
@@ -811,11 +949,11 @@ function navigation() {
     let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
     map.addLayer(layer);
     let iconOptions = {
-      iconUrl: '../assets/images/icons/marker-blue.svg',
+      iconUrl: '/assets/images/icons/marker-blue.svg',
       iconSize: [36, 36]
     };
     let customIcon = L.icon(iconOptions);
-    L.Icon.Default.prototype.options.iconUrl = '../assets/images/icons/marker-blue.svg';
+    L.Icon.Default.prototype.options.iconUrl = '/assets/images/icons/marker-blue.svg';
     L.Icon.Default.prototype.options.shadowSize = [0, 0];
     let markerOptions = {
       icon: customIcon
