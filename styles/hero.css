@@ -1,0 +1,254 @@
+.hero__wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero__button {
+    display: flex;
+}
+
+.hero__button svg {
+    flex-shrink: 0;
+}
+
+.hero__image {
+    z-index: 1;
+}
+
+.hero__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero__button a {
+    color: var(--blue-400);
+    font-size: 13px;
+    line-height: 15px;
+    text-align: left;
+}
+
+.hero-popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 58, 71, 0.7);
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0px 16px 24px 0px #60617029, 0px 2px 8px 0px #28293D0A;
+
+}
+
+.hero-popup:target {
+    display: flex;
+}
+
+.hero-popup h2 {
+    max-width: 80%;
+}
+
+.hero-popup__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-popup__wrapper {
+    background-color: var(--white);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-popup__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.hero-popup__text p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.hero-popup__content {
+    max-height: calc(100dvh - 41px);
+    overflow-y: auto;
+}
+
+@media (max-width: 1023px) {
+    .hero {
+        background-color: var(--blue-200);
+    }
+
+    .hero__bg--desk {
+        display: none;
+    }
+
+    .hero__wrapper {
+        padding: 6px 0 24px 0;
+    }
+
+    .hero h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .hero__image {
+        width: 291px;
+        height: auto;
+    }
+
+    .hero__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 10px;
+        align-items: center;
+    }
+
+    .hero__button {
+        column-gap: 8px;
+        align-items: center;
+    }
+
+    .hero__button a {
+        width: 60%;
+    }
+
+    .hero-popup {
+        align-items: flex-end;
+    }
+
+    .hero-popup h2 {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-popup__wrapper {
+        width: 100%;
+        max-width: 100%;
+        box-shadow: 0px -8px 8px 0px #28293D14;
+        border-radius: 16px 16px 0 0;
+        row-gap: 20px;
+        padding: 0 24px;
+    }
+
+    .hero-popup:target .hero-popup__wrapper {
+        transform: translateY(0);
+    }
+
+    .hero-popup:target::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .hero-popup__close {
+        display: none;
+    }
+
+    .hero-popup__tapbar {
+        width: 135px;
+        height: 5px;
+        border-radius: 100px;
+        background-color: var(--gray-100);
+        margin: 8px auto;
+    }
+
+    .hero-popup__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero__wrapper {
+        background-color: var(--blue-100);
+    }
+
+    .hero__bg--mob {
+        display: none;
+    }
+
+    .hero__bg img {
+        height: 100%;
+        width: auto;
+    }
+
+    .hero__wrapper {
+        border-radius: 16px;
+        overflow: hidden;
+        padding: 18px 48px;
+    }
+
+    .hero h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero__image {
+        width: 292px;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+        right: 63px;
+    }
+
+    .hero__button {
+        column-gap: 4px;
+        align-items: center;
+    }
+
+    .hero__content {
+        max-width: 70%;
+    }
+
+    .hero-popup {
+        align-items: center;
+    }
+
+    .hero-popup__tapbar {
+        display: none;
+    }
+
+    .hero-popup h2 {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .hero-popup__wrapper {
+        max-width: 630px;
+        border-radius: 8px;
+        row-gap: 24px;
+        padding: 24px;
+    }
+
+    .hero-popup__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}

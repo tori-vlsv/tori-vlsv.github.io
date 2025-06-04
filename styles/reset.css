@@ -1,0 +1,93 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border: 0;
+}
+
+html, body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    line-height: inherit;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: "Montserrat", sans-serif;
+    color: var(--black-default);
+}
+
+hr {
+  height: 0;
+  border-top-width: 1px;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+button,
+input {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+button {
+  font-family: "Fira Sans", sans-serif;
+  text-transform: none;
+  appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p {
+  margin: 0;
+  color: var(--black-default);
+}
+
+
+ol,
+ul,
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button,
+[role="button"] {
+    cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

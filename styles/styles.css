@@ -1,0 +1,54 @@
+@import url(reset.css);
+@import url(fonts.css);
+@import url(variables.css);
+@import url(hero.css);
+@import url(reviews.css);
+@import url(reviews-add.css);
+@import url(reviews-why.css);
+@import url(faq.css);
+
+h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 24px;
+}
+
+@media (max-width: 1023px) {
+    main {
+        row-gap: 24px;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        max-width: calc(984px + 24px * 2);
+    }
+
+    main {
+        row-gap: 48px;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
