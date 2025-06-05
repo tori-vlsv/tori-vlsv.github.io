@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" media="all" href="images/icons/favicon.ico" sizes="any">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
+    <link rel="stylesheet" href="styles/styles.css">
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Комус | Тестовое задание</title>
 </head>
 <header></header>
@@ -267,6 +266,84 @@
             </div>
         </div>
     </div>
+    <div class="tabs">
+        <div class="wrapper">
+            <div class="tabs__wrapper">
+                <div class="tabs__buttons">
+                    <button type="button" class="tabs__button active" data-target="block1">
+                        Таб 1
+                    </button>
+                    <button type="button" class="tabs__button" data-target="block2">
+                        Таб 2
+                    </button>
+                </div>
+                <div class="tabs__blocks">
+                    <div class="tabs__block active" id="block1">
+                        <div class="tabs__links">
+                            <a class="tabs__link" href="#">Ссылка</a>
+                            <a class="tabs__link" href="#">Ссылка</a>
+                            <a class="tabs__link" href="#">Ссылка</a>
+                            <a class="tabs__link" href="#">Ссылка</a>
+                            <a class="tabs__link" href="#">Ссылка</a>
+                            <a class="tabs__link" href="#">Ссылка</a>
+                        </div>
+                    </div>
+
+                    <div class="tabs__block" id="block2">
+                        <div class="tabs__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tabs__slide">
+                                        <div class="tabs__image tabs__image--first">
+                                            <img src="images/slide-1.png" alt="slide-1">
+                                        </div>
+                                        <div class="tabs__image tabs__image--second">
+                                            <img src="images/slide-12.png" alt="slide-1">
+                                        </div>
+                                        <div class="tabs__content">
+                                            <div class="tabs__text">
+                                                <h2>Цена недели</h2>
+                                                <p>успей купить выгодно</p>
+                                            </div>
+                                            <div class="tabs-timer">
+                                                <div class="tabs-timer__text">До окончания акции</div>
+                                                <div class="tabs-timer__wrapper">
+                                                    <div class="tabs-timer__amount"> 02 </div>
+                                                    <span>:</span>
+                                                    <div class="tabs-timer__amount"> 02 </div>
+                                                    <span>:</span>
+                                                    <div class="tabs-timer__amount"> 02 </div>
+                                                </div>
+                                                <div class="tabs-timer__names">
+                                                    <div class="tabs-timer__name">дней</div>
+                                                    <div class="tabs-timer__name">часов</div>
+                                                    <div class="tabs-timer__name">минут</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="tabs__slide"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.2834 3.21967C16.5722 3.51256 16.5722 3.98744 16.2834 4.28033L9.19543 11.4697C8.90666 11.7626 8.90666 12.2374 9.19543 12.5303L16.2834 19.7197C16.5722 20.0126 16.5722 20.4874 16.2834 20.7803C15.9947 21.0732 15.5265 21.0732 15.2377 20.7803L8.14972 13.591C7.28343 12.7123 7.28343 11.2877 8.14972 10.409L15.2377 3.21967C15.5265 2.92678 15.9947 2.92678 16.2834 3.21967Z"/></svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.71657 20.7803C7.42781 20.4874 7.42781 20.0126 7.71657 19.7197L14.8046 12.5303C15.0933 12.2374 15.0933 11.7626 14.8046 11.4697L7.71658 4.28033C7.42781 3.98744 7.42781 3.51256 7.71658 3.21967C8.00534 2.92678 8.47352 2.92678 8.76228 3.21967L15.8503 10.409C16.7166 11.2877 16.7166 12.7123 15.8503 13.591L8.76228 20.7803C8.47352 21.0732 8.00534 21.0732 7.71657 20.7803Z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </main>
 <footer></footer>
